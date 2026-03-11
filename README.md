@@ -16,6 +16,7 @@ This repository contains multiple Next.js Starter Kits, and the SPA Starters mon
   - [SPA Starters Monorepo and Angular SPA](#spa-starters-monorepo-and-angular-spa)
 - [Development Workflow](#development-workflow)
 - [SEO & AI Crawler Access](#seo--ai-crawler-access)
+- [GEO Optimization & Compliance](#geo-optimization--compliance)
 - [AI-Assisted Development](#ai-assisted-development)
 - [FAQ](#faq)
 
@@ -176,6 +177,16 @@ This repository is configured to allow AI crawlers and search engines to index y
 - **Error Page Handling**: 404 pages include noindex meta tags to prevent indexing of error pages
 
 📖 **[Read the AI Crawler Access Guide](docs/AI_CRAWLER_ACCESS.md)** for detailed configuration instructions, hosting provider setup (Vercel, Azure, Netlify), and how to restrict access if needed.
+
+## GEO Optimization & Compliance
+
+Starter kits implement **GEO (Generative Engine Optimization)** so content is discoverable by AI crawlers and LLM-based search engines. Requirements, validation rules, and checklists are documented in one place:
+
+- **[GEO Compliance Guide](docs/GEO_COMPLIANCE.MD)** — Full requirements, validation thresholds, and PR-ready checklist
+- **[GEO Endpoints (AI JSON, ai.txt, sitemap)](docs/AI_ENDPOINTS.md)** — Implementation details for `/ai/summary.json`, `/ai/faq.json`, `/ai/service.json`, `/.well-known/ai.txt`, `/sitemap-llm.xml`
+- **[AI Crawler Access](docs/AI_CRAWLER_ACCESS.md)** — Crawler configuration and hosting setup
+
+For testing and validation, see the [GEO Compliance Checklist](docs/GEO_COMPLIANCE.MD#-4-geo-compliance-checklist-pr‑ready) in the GEO Compliance Guide.
 
 ## AI-Assisted Development
 
