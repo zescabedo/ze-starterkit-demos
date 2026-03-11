@@ -1,5 +1,6 @@
 import type { NextConfig } from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
+import withBundleAnalyzer from '@next/bundle-analyzer';
 
 const nextConfig: NextConfig = {
   // Allow specifying a distinct distDir when concurrently running app in a container
@@ -10,6 +11,25 @@ const nextConfig: NextConfig = {
 
   // Disable the X-Powered-By header. Follows security best practices.
   poweredByHeader: false,
+
+  headers: async () => [
+    {
+      source: '/(.*)',
+      headers: [
+        { key: 'X-Content-Type-Options', value: 'nosniff' },
+        { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+        { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+        {
+          key: 'Permissions-Policy',
+          value: 'camera=(), microphone=(), geolocation=(self)',
+        },
+        {
+          key: 'Strict-Transport-Security',
+          value: 'max-age=63072000; includeSubDomains; preload',
+        },
+      ],
+    },
+  ],
 
   // use this configuration to ensure that only images from the whitelisted domains
   // can be served from the Next.js Image Optimization API
@@ -100,4 +120,8 @@ const nextConfig: NextConfig = {
 };
 
 const withNextIntl = createNextIntlPlugin();
-export default withNextIntl(nextConfig);
+
+// Wrap with bundle analyzer — run `ANALYZE=true npm run build` to inspect bundle
+const analyzeBundles = withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' });
+
+export default analyzeBundles(withNextIntl(nextConfig));

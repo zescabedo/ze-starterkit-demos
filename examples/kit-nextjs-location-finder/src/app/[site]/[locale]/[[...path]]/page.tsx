@@ -2,6 +2,7 @@ import { isDesignLibraryPreviewData } from '@sitecore-content-sdk/nextjs/editing
 import { notFound } from 'next/navigation';
 import { draftMode, headers } from 'next/headers';
 import { SiteInfo } from '@sitecore-content-sdk/nextjs';
+import { preload } from 'react-dom';
 import sites from '.sitecore/sites.json';
 import { routing } from 'src/i18n/routing';
 import scConfig from 'sitecore.config';
@@ -16,6 +17,39 @@ import {
 } from 'src/lib/structured-data/schema';
 import { StructuredData } from '@/components/structured-data/StructuredData';
 import { getFullUrl, getBaseUrl } from '@/lib/utils';
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function findHeroImageSrc(page: any): string | undefined {
+  const placeholders = page?.layout?.sitecore?.route?.placeholders;
+  if (!placeholders) return undefined;
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const search = (components: any[]): string | undefined => {
+    for (const comp of components) {
+      if (comp.componentName === 'Hero' && comp.fields?.image?.value?.src) {
+        return comp.fields.image.value.src;
+      }
+      // Recurse into nested placeholders (containers / flex)
+      if (comp.placeholders) {
+        for (const nested of Object.values(comp.placeholders)) {
+          if (Array.isArray(nested)) {
+            const found = search(nested);
+            if (found) return found;
+          }
+        }
+      }
+    }
+    return undefined;
+  };
+
+  for (const phComponents of Object.values(placeholders)) {
+    if (Array.isArray(phComponents)) {
+      const found = search(phComponents);
+      if (found) return found;
+    }
+  }
+  return undefined;
+}
 
 type PageProps = {
   params: Promise<{
@@ -53,6 +87,11 @@ export default async function Page({ params, searchParams }: PageProps) {
 
   if (!page) {
     notFound();
+  }
+
+  const heroImageSrc = findHeroImageSrc(page);
+  if (heroImageSrc) {
+    preload(heroImageSrc, { as: 'image', fetchPriority: 'high' });
   }
 
   // Generate page-specific structured data
@@ -204,6 +243,17 @@ export const generateMetadata = async ({ params }: PageProps) => {
       title: ogTitle,
       description: ogDescription,
       images: ogImageUrl ? [ogImageUrl] : undefined,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
   };
 };
