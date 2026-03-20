@@ -226,6 +226,8 @@ describe('PageContent Component', () => {
     it('should handle missing params gracefully', () => {
       const emptyParams = {} as typeof defaultProps.params;
       const propsWithoutParams = {
+        rendering: defaultProps.rendering,
+        page: defaultProps.page,
         params: emptyParams,
         fields: defaultProps.fields,
       };
@@ -324,4 +326,3 @@ describe('PageContent Component', () => {
     });
   });
 });
-
