@@ -360,6 +360,7 @@ jobs:
           NEXT_PUBLIC_DEFAULT_LANGUAGE: ${{ vars.NEXT_PUBLIC_DEFAULT_LANGUAGE || 'en' }}
           NEXT_PUBLIC_PERSONALIZE_SCOPE: ${{ vars.NEXT_PUBLIC_PERSONALIZE_SCOPE }}
           PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT: ${{ vars.PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT || '1000' }}
+          NEXT_PUBLIC_ENABLE_AIMARKDOWN: 'true'
         run: |
           set -e  # Exit immediately if any command fails
           echo "=========================================="
@@ -579,6 +580,7 @@ jobs:
           NEXT_PUBLIC_DEFAULT_LANGUAGE: ${{ vars.NEXT_PUBLIC_DEFAULT_LANGUAGE || 'en' }}
           NEXT_PUBLIC_PERSONALIZE_SCOPE: ${{ vars.NEXT_PUBLIC_PERSONALIZE_SCOPE }}
           PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT: ${{ vars.PERSONALIZE_MIDDLEWARE_EDGE_TIMEOUT || '1000' }}
+          NEXT_PUBLIC_ENABLE_AIMARKDOWN: 'true'
         run: |
           echo "Running GEO endpoint tests (site must be running)..."
           echo "Per-starter site names: skate-park | solterra | alaris | sync (must match build and exist in XM Cloud)"
