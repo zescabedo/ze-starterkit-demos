@@ -44,7 +44,7 @@ export const PageHeaderBlueText: React.FC<PageHeaderProps & { isPageEditing: boo
         data-component="PageHeader"
         data-class-change
         className={cn(
-          'bg-background text-primary-foreground group relative w-full overflow-hidden',
+          'bg-background text-foreground group relative w-full overflow-hidden',
           {
             'position-left': !hasPagesPositionStyles,
             [props?.params?.styles]: props?.params?.styles,
@@ -57,11 +57,11 @@ export const PageHeaderBlueText: React.FC<PageHeaderProps & { isPageEditing: boo
             <div className="@container/headercontent bg-primary text-primary-foreground relative z-10 max-w-[700px] p-10">
               {/* Left Line */}
               <div className="absolute bottom-0 left-0 top-0">
-                <div className="bg-foreground @md/headerwrapper:block absolute -bottom-[100vw] -top-[100vw] left-0 hidden w-[2px]"></div>
+                <div className="bg-primary-foreground @md/headerwrapper:block absolute -bottom-[100vw] -top-[100vw] left-0 hidden w-[2px]"></div>
               </div>
               {/* Right Line */}
               <div className="absolute bottom-0 right-0 top-0">
-                <div className="bg-foreground @md/headerwrapper:block absolute -bottom-[100vw] -top-[100vw] right-0 hidden w-[2px]"></div>
+                <div className="bg-primary-foreground @md/headerwrapper:block absolute -bottom-[100vw] -top-[100vw] right-0 hidden w-[2px]"></div>
               </div>
 
               <AnimatedSection reducedMotion={prefersReducedMotion} isPageEditing={isPageEditing}>

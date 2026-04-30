@@ -26,7 +26,7 @@ export const GlobalFooterBlackLarge: React.FC<GlobalFooterProps> = (props) => {
   if (fields) {
     return (
       <footer
-        className="@container bg-background text-foreground relative w-full overflow-hidden"
+        className="@container bg-secondary text-secondary-foreground relative w-full overflow-hidden"
         ref={footerRef}
         role="contentinfo"
       >

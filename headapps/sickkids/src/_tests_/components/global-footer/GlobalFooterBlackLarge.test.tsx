@@ -82,6 +82,6 @@ describe('GlobalFooterBlackLarge Component', () => {
     render(<GlobalFooterBlackLarge {...mockGlobalFooterProps} />);
 
     const footer = screen.getByRole('contentinfo');
-    expect(footer).toHaveClass('bg-background');
+    expect(footer).toHaveClass('bg-secondary');
   });
 });

@@ -43,7 +43,7 @@ export const PageHeaderFiftyFifty: React.FC<PageHeaderProps & { isPageEditing: b
       <section
         data-component="PageHeader"
         data-class-change
-        className={cn('bg-background text-primary-foreground group w-full overflow-hidden', {
+        className={cn('bg-background text-foreground group w-full overflow-hidden', {
           'position-left': !hasPagesPositionStyles,
           [props?.params?.styles]: props?.params?.styles,
         })}
