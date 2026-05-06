@@ -92,6 +92,10 @@
 **/package-lock.json
 **/yarn.lock
 **/pnpm-lock.yaml
+# Starters commit lockfiles — keep them visible/indexed in Cursor (override rules above)
+!examples/**/package-lock.json
+!examples/**/yarn.lock
+!examples/**/pnpm-lock.yaml
 
 # Large media files
 **/*.mp4
