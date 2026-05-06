@@ -93,3 +93,358 @@
 @utility indent {
   @apply px-8 @md:px-16;
 }
+
+/*
+ * Promo (SXA) — featured tile copy (No Image Compressed + Default with image).
+ * Mirrors aba.com `.featured-tile.featured-tile--without-image.featured-tile--without-image--light`
+ * (styles.min.css + homepage markup, May 2026).
+ * `:is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)` scopes
+ * the same typography to the text column of the two-column Default variant.
+ *
+ * Intentionally NOT inside @layer components: Tailwind v4 layer order + Sitecore `.ck-content` / `* { font-body }`
+ * were winning, so pill/teal/headline never appeared in the browser.
+ */
+:is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .featured-tile {
+    width: 100%;
+    transition:
+      box-shadow 0.25s ease-in-out,
+      -webkit-box-shadow 0.25s ease-in-out;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .featured-tile:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image {
+    background-color: var(--color-promo-no-image-tile-surface-dark);
+    padding: var(--padding-promo-no-image-tile-top) var(--padding-promo-no-image-tile-dark-inline)
+      var(--padding-promo-no-image-tile-dark-block-end) var(--padding-promo-no-image-tile-dark-inline);
+    position: relative;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image::before,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image::after {
+    width: var(--size-promo-no-image-corner);
+    height: var(--size-promo-no-image-corner);
+    display: none;
+    position: absolute;
+    content: '';
+    pointer-events: none;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image::before {
+    border-top: var(--border-width-promo-no-image-corner) solid var(--color-promo-no-image-corner-accent);
+    border-right: var(--border-width-promo-no-image-corner) solid var(--color-promo-no-image-corner-accent);
+    top: var(--size-promo-no-image-corner-offset);
+    right: var(--size-promo-no-image-corner-offset);
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image::after {
+    border-bottom: var(--border-width-promo-no-image-corner) solid var(--color-promo-no-image-corner-accent);
+    border-left: var(--border-width-promo-no-image-corner) solid var(--color-promo-no-image-corner-accent);
+    bottom: var(--size-promo-no-image-corner-offset);
+    left: var(--size-promo-no-image-corner-offset);
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light {
+    position: relative;
+    background-color: var(--color-promo-no-image-tile-surface);
+    padding: var(--padding-promo-no-image-tile-top) var(--padding-promo-no-image-tile-inline)
+      var(--padding-promo-no-image-tile-bottom) !important;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light::before,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light::after {
+    display: block !important;
+  }
+
+  .promo-no-image-compressed__headline,
+  .promo-no-image-headline,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .featured-tile__body {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* PromoText2 — dominant title (typography via `font-family: inherit` from layout / tokens) */
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light
+    .promo-no-image-headline.promo-no-image-compressed__headline
+    :where(h1, h2, h3),
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light
+    .promo-no-image-headline.promo-no-image-compressed__headline-title,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light
+    .promo-no-image-headline
+    .promo-no-image-compressed__headline-richtext
+    :where(p, h1, h2, h3) {
+    color: var(--color-promo-no-image-headline-fg) !important;
+    font-family: inherit !important;
+    font-weight: 700 !important;
+    font-size: clamp(1.875rem, 1.35rem + 1.75vw, 2.375rem) !important;
+    line-height: 1.18 !important;
+    letter-spacing: -0.02em !important;
+    text-transform: none !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light
+    .promo-no-image-compressed__headline-richtext {
+    margin-bottom: 0;
+  }
+
+  /* PromoText + PromoText3 — Lato body, smaller than headline */
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .promo-no-image-compressed__body {
+    font-family: var(--font-family-body), Lato, sans-serif;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light
+    .featured-tile__body
+    p,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light
+    .promo-no-image-compressed__body-richtext
+    :where(p, li) {
+    color: var(--color-promo-no-image-body-fg) !important;
+    margin-bottom: 12px !important;
+    font-family: var(--font-body), var(--font-family-body), Lato, sans-serif !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light
+    .featured-tile__body
+    .rich-text {
+    color: inherit;
+  }
+
+  /*
+   * Authors sometimes paste a heading into PromoText / PromoText3; neutralize global `h2` scale inside body slots
+   * so the category line does not inherit page heading styles.
+   */
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image--light
+    .promo-no-image-compressed__body-richtext
+    :where(h1, h2, h3, h4, h5, h6) {
+    color: var(--color-promo-no-image-body-fg) !important;
+    font-family: var(--font-body), var(--font-family-body), Lato, sans-serif !important;
+    font-size: var(--font-size-base) !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+    margin: 0 0 12px !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image:hover
+    .promo-no-image-compressed__headline
+    :where(h1, h2, h3):hover,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .featured-tile.featured-tile--without-image:hover
+    .promo-no-image-compressed__headline-title:hover {
+    text-decoration: underline;
+  }
+
+  /* Category pill — teal outline capsule (aba.com); `.promo-no-image-pill` for max specificity */
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .promo-no-image-pill.tag,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .tag {
+    min-width: 80px;
+    min-height: 28px;
+    height: auto;
+    background-color: var(--color-promo-no-image-pill-accent);
+    border: var(--border-width-promo-no-image-pill) solid var(--color-promo-no-image-pill-accent) !important;
+    border-radius: 9999px !important;
+    margin-bottom: 12px;
+    padding: var(--padding-promo-no-image-pill-y) var(--padding-promo-no-image-pill-x) !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: var(--font-size-promo-no-image-pill);
+    line-height: 1.2;
+    letter-spacing: var(--letter-spacing-promo-no-image-pill);
+    text-transform: uppercase;
+    text-decoration: none !important;
+    box-sizing: border-box;
+    transition:
+      background-color 0.25s ease-in-out,
+      border 0.25s ease-in-out;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .promo-no-image-pill.tag.tag--outline,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .tag.tag--outline {
+    position: relative;
+    z-index: 2;
+    background-color: var(--color-promo-no-image-pill-surface) !important;
+    border: var(--border-width-promo-no-image-pill) solid var(--color-promo-no-image-pill-accent) !important;
+    box-shadow: 0 1px 0 var(--color-promo-no-image-pill-shadow);
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .tag.tag--outline
+    > .promo-no-image-compressed__tag-richtext {
+    display: block;
+    transition: color 0.25s ease-in-out;
+  }
+
+  /*
+   * RTE / Experience Editor: `.ck-content` and `<p>` often ship with grey; force teal caps inside pill.
+   */
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .promo-no-image-pill
+    .promo-no-image-compressed__tag-richtext,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .promo-no-image-pill
+    .promo-no-image-compressed__tag-richtext.ck-content,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .tag.tag--outline
+    .promo-no-image-compressed__tag-richtext,
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .tag.tag--outline
+    .promo-no-image-compressed__tag-richtext
+    :where(p, span, div, a, strong) {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: var(--font-body), var(--font-family-body), Lato, sans-serif !important;
+    font-weight: 900 !important;
+    font-size: var(--font-size-promo-no-image-pill) !important;
+    line-height: var(--line-height-promo-no-image-pill) !important;
+    letter-spacing: var(--letter-spacing-promo-no-image-pill) !important;
+    text-transform: uppercase !important;
+    color: var(--color-promo-no-image-pill-accent) !important;
+    text-decoration: none !important;
+    display: inline !important;
+    border: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+    .tag.tag--outline
+    .promo-no-image-compressed__tag-richtext.ck-content {
+    background-color: transparent !important;
+  }
+
+  /* CTA — `.call-to-action` (aba.com); arrow follows `currentColor` on hover */
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .call-to-action {
+    color: var(--color-promo-no-image-cta-fg);
+    padding-right: 18px;
+    position: absolute;
+    bottom: var(--padding-promo-no-image-cta-bottom);
+    left: var(--padding-promo-no-image-cta-inline);
+    z-index: 1;
+    max-width: calc(100% - 72px);
+    margin: 0;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.88px;
+    text-transform: uppercase;
+    transition: color 0.25s ease-in-out;
+    text-decoration: none !important;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .call-to-action::after {
+    width: 8px;
+    height: 12px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    content: '';
+    background-color: currentColor;
+    transition: background-color 0.25s ease-in-out;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12'%3E%3Cpath fill='black' d='M2.01 0 0 2.01 4.17 6 0 9.99 2.01 12 8 6z'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12'%3E%3Cpath fill='black' d='M2.01 0 0 2.01 4.17 6 0 9.99 2.01 12 8 6z'/%3E%3C/svg%3E");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-size: 8px 12px;
+    -webkit-mask-size: 8px 12px;
+  }
+
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .call-to-action:hover {
+    color: var(--color-promo-no-image-cta-fg-hover);
+    text-decoration: underline !important;
+  }
+
+/*
+ * Promo Default — text left / image right (aba.com).
+ * NOTE: Do not use `var()` inside `@media` min-width — it is ignored in several browsers, which
+ * left the grid stuck at one column (image stacked below text).
+ */
+.promo--featured-tile-with-image .component-content {
+  display: block;
+  width: 100%;
+}
+
+.promo--featured-tile-with-image .promo-featured-tile__grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: stretch;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .promo--featured-tile-with-image .promo-featured-tile__grid {
+    grid-template-columns: var(--grid-promo-featured-tile-text-track) var(--grid-promo-featured-tile-media-track);
+  }
+}
+
+.promo--featured-tile-with-image .promo-featured-tile__text {
+  min-width: 0;
+  order: 1;
+}
+
+.promo--featured-tile-with-image .promo-featured-tile__media {
+  position: relative;
+  overflow: hidden;
+  min-height: var(--min-height-promo-featured-tile-media);
+  background-color: var(--color-promo-featured-tile-media-fallback-bg);
+  order: 2;
+}
+
+.promo--featured-tile-with-image .promo-featured-tile__media .promo-featured-tile__image,
+.promo--featured-tile-with-image .promo-featured-tile__media img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  .promo--featured-tile-with-image .promo-featured-tile__media {
+    min-height: 0;
+    align-self: stretch;
+  }
+
+  .promo--featured-tile-with-image .promo-featured-tile__media .promo-featured-tile__image,
+  .promo--featured-tile-with-image .promo-featured-tile__media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

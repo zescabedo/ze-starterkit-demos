@@ -89,6 +89,43 @@
   --color-footer-border: #e5e8ed;
   --color-footer-icon-bg: #09243e;
   --color-footer-icon-foreground: #ffffff;
+  /*
+   * Promo SXA — No Image Compressed (aba.com featured tile, May 2026).
+   * Used by `src/app/globals.css` for `.promo--no-image-compressed`; do not remap existing tokens above.
+   */
+  --color-promo-no-image-pill-accent: #0b8182;
+  --color-promo-no-image-pill-surface: #ffffff;
+  --color-promo-no-image-pill-shadow: rgba(11, 129, 130, 0.08);
+  --color-promo-no-image-headline-fg: #505050;
+  --color-promo-no-image-body-fg: #6c7684;
+  --color-promo-no-image-cta-fg: #0060b9;
+  --color-promo-no-image-cta-fg-hover: #09243e;
+  --color-promo-no-image-corner-accent: #ecb84c;
+  --color-promo-no-image-tile-surface: #ffffff;
+  --color-promo-no-image-tile-surface-dark: #6c7684;
+  --font-size-promo-no-image-pill: 10px;
+  --line-height-promo-no-image-pill: 12px;
+  --letter-spacing-promo-no-image-pill: 2px;
+  --padding-promo-no-image-pill-y: 8px;
+  --padding-promo-no-image-pill-x: 18px;
+  --padding-promo-no-image-tile-top: 37px;
+  --padding-promo-no-image-tile-inline: 28px;
+  --padding-promo-no-image-tile-bottom: 100px;
+  --padding-promo-no-image-tile-dark-block-end: 31px;
+  --padding-promo-no-image-tile-dark-inline: 28px;
+  --padding-promo-no-image-cta-bottom: 36px;
+  --padding-promo-no-image-cta-inline: 36px;
+  --border-width-promo-no-image-pill: 2px;
+  --border-width-promo-no-image-corner: 2px;
+  --size-promo-no-image-corner: 53px;
+  --size-promo-no-image-corner-offset: 15px;
+  /* Promo Default — two-column featured tile (text + PromoIcon); new tokens only */
+  --min-width-promo-featured-tile-split: 768px;
+  --min-height-promo-featured-tile-media: 240px;
+  --color-promo-featured-tile-media-fallback-bg: #f3f4f7;
+  /* ~aba.com ratio: text column wider than image */
+  --grid-promo-featured-tile-text-track: minmax(0, 1.65fr);
+  --grid-promo-featured-tile-media-track: minmax(0, 1fr);
   --disabled: [object Object];
   --figma-automations-logo: Brand A;
   --figma-automations-hero: Hero 1;
