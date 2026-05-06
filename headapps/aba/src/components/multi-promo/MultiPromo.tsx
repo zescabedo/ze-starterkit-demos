@@ -80,70 +80,71 @@ export const Default: React.FC<MultiPromoProps> = (props) => {
         data-component="MultiPromoCarousel"
         data-class-change
         className={cn(
-          'mx-auto my-8 max-w-screen-xl group-[.has-bg:not(.is-inset)]:my-4 group-[.container--full-bleed]:px-4 group-[.has-bg.is-inset]:px-0 md:my-16 md:group-[.has-bg:not(.is-inset)]:my-0 xl:group-[.container--full-bleed]:px-8',
+          'multi-promo-events group-[.has-bg:not(.is-inset)]:pt-2 group-[.has-bg.is-inset]:px-0',
           {
             'position-left': !hasPagesPositionStyles,
             [props?.params?.styles]: props?.params?.styles,
           }
         )}
       >
-        <div className="flex flex-col gap-4 group-[.is-inset]:px-4 sm:group-[.is-inset]:px-0 xl:flex-row xl:items-end xl:justify-between xl:gap-20">
-          {title && (
-            <div className="basis-full xl:basis-1/2">
-              <Text
-                tag="h2"
-                field={title?.jsonValue}
-                className="font-heading text-primary-foreground text-box-trim-both text-box-edge-asc-baseline -ml-1 max-w-[20ch] text-pretty text-4xl font-normal leading-[1.1333] tracking-tighter sm:text-5xl md:max-w-[17.5ch] lg:text-6xl"
-              />
-            </div>
+        <div className="mx-auto max-w-screen-xl group-[.is-inset]:px-4 sm:group-[.is-inset]:px-0">
+          {(title || description) && (
+            <header className="multi-promo-events__intro mb-8 md:mb-10">
+              {title && (
+                <Text tag="h2" field={title.jsonValue} className="multi-promo-events__intro-title" />
+              )}
+              {description && (
+                <RichText
+                  className="multi-promo-events__intro-description prose prose-sm max-w-3xl [&_p]:mb-2 [&_p:last-child]:mb-0"
+                  field={description.jsonValue}
+                />
+              )}
+            </header>
           )}
-          {description && (
-            <div className="basis-full xl:basis-1/2">
-              <RichText
-                className="text-primary-foreground prose text-box-trim-both text-box-edge-asc-baseline mt-6 max-w-[51.5ch] text-pretty text-lg leading-[1.444] tracking-tight [&_a]:text-primary-foreground [&_a]:underline [&_a:hover]:text-primary-foreground/90"
-                field={description?.jsonValue}
-              />
-            </div>
+          {children && (
+            <>
+              <Carousel
+                setApi={setApi}
+                opts={{
+                  align: 'start',
+                  breakpoints: {
+                    '(min-width: 640px)': { align: 'start' },
+                  },
+                  loop: true,
+                  skipSnaps: true,
+                }}
+                className="relative w-full overflow-visible"
+                ref={carouselRef}
+              >
+                <CarouselContent
+                  className={cn(
+                    'multi-promo-events__track mt-0 mb-0 flex gap-[var(--gap-multi-promo-grid)] py-1 sm:py-1',
+                    'last:mb-0'
+                  )}
+                >
+                  {children?.results?.map((item: MultiPromoItemProps, index: number) => (
+                    <CarouselItem
+                      key={index}
+                      className={cn(
+                        'min-w-[min(100%,260px)] max-w-none shrink-0 grow-0 basis-[260px] pl-0 transition-opacity duration-300',
+                        'sm:min-w-[45%] sm:basis-[45%]',
+                        'md:min-w-[31%] md:basis-[31%]',
+                        numColumns === '4'
+                          ? 'lg:min-w-0 lg:flex-1 lg:basis-0 xl:min-w-[200px]'
+                          : 'lg:min-w-0 lg:flex-1 lg:basis-0'
+                      )}
+                    >
+                      <MultiPromoItem key={index} isPageEditing={isPageEditing} {...item} />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </Carousel>
+              <div className="sr-only" aria-live="polite" aria-atomic="true">
+                {announcement}
+              </div>
+            </>
           )}
         </div>
-        {children && (
-          <>
-            <Carousel
-              setApi={setApi}
-              opts={{
-                align: 'center',
-                breakpoints: {
-                  '(min-width: 640px)': { align: 'start' },
-                },
-                loop: true,
-                skipSnaps: true,
-              }}
-              className="relative -ml-4 -mr-4 overflow-hidden sm:ml-0 sm:group-[.is-inset]:-mr-8 md:group-[.is-inset]:-mr-16 xl:-mr-0 xl:group-[.is-inset]:-mr-16
-              2xl:group-[.is-inset]:-mr-24"
-              ref={carouselRef}
-            >
-              <CarouselContent className="my-12 last:mb-0 sm:my-16 sm:-ml-8">
-                {children?.results?.map((item: MultiPromoItemProps, index: number) => (
-                  <CarouselItem
-                    key={index}
-                    className={cn(
-                      'min-w-[238px] max-w-[416px] basis-3/4 pl-4 transition-opacity duration-300 sm:basis-[45%] sm:pl-8 md:basis-[31%]',
-                      {
-                        [`lg:basis-[31%]`]: numColumns === '3',
-                        [`xl:basis-[23%]`]: numColumns === '4',
-                      }
-                    )}
-                  >
-                    <MultiPromoItem key={index} isPageEditing={isPageEditing} {...item} />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-            <div className="sr-only" aria-live="polite" aria-atomic="true">
-              {announcement}
-            </div>
-          </>
-        )}
       </div>
     );
   }

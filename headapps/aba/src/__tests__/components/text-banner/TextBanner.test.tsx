@@ -4,6 +4,7 @@ import {
   Default as TextBanner,
   TextBanner01,
   TextBanner02,
+  GrayContentLeft,
 } from '@/components/text-banner/TextBanner';
 import {
   defaultProps,
@@ -447,6 +448,35 @@ describe('TextBanner Component', () => {
       buttons.forEach((button) => {
         expect(button).toHaveAttribute('data-size', 'sm');
       });
+    });
+  });
+
+  describe('GrayContentLeft variant (aba.com featured resource band)', () => {
+    it('should render gray band with headline and Category1–3 pill links', () => {
+      const { container } = render(<GrayContentLeft {...defaultProps} />);
+
+      const section = container.querySelector('section.featured-tiles');
+      expect(section).toBeInTheDocument();
+      expect(section).toHaveClass('bg-[var(--color-aba-text-banner-gray-band)]');
+
+      expect(screen.getByText('Welcome to Our Platform')).toBeInTheDocument();
+
+      expect(screen.getByText('Fraud Prevention')).toBeInTheDocument();
+      expect(screen.getByText('ABA Routing Number')).toBeInTheDocument();
+      expect(screen.getByText('Third Resource')).toBeInTheDocument();
+
+      const links = screen.getAllByTestId('link-field');
+      expect(links).toHaveLength(3);
+      links.forEach((a) => {
+        expect(a.className).toContain('topic-tag');
+      });
+    });
+
+    it('should show NoDataFallback when no fields', () => {
+      render(<GrayContentLeft {...propsWithoutFields} />);
+
+      expect(screen.getByTestId('no-data-fallback')).toBeInTheDocument();
+      expect(screen.getByText('Text Banner: Gray Content Left')).toBeInTheDocument();
     });
   });
 

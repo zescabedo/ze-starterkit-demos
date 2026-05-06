@@ -1,9 +1,13 @@
 import { Meteors } from '@/components/magicui/meteors';
+import { getPlainTextFromSitecoreField } from '@/components/text-banner/text-banner-field-utils';
+import { buttonVariants } from '@/components/ui/button';
 import type React from 'react';
 import { Text } from '@sitecore-content-sdk/nextjs';
 import { TopicListingProps } from './topic-listing.props';
+import { flattenTopicLinkResultItem, getTopicListingDatasource } from './topic-listing-field-utils';
 import { NoDataFallback } from '@/utils/NoDataFallback';
 import { TopicItem } from './TopicItem.dev';
+import { cn } from '@/lib/utils';
 
 export const Default: React.FC<TopicListingProps> = (props) => {
   const {
@@ -11,7 +15,11 @@ export const Default: React.FC<TopicListingProps> = (props) => {
     params: { backgroundTheme },
     page
   } = props;
-  const { title, children } = fields?.data?.datasource ?? {};
+  const isPageEditing = page?.mode?.isEditing;
+  const ds = getTopicListingDatasource(fields);
+  const { title, children, button: buttonField } = ds;
+  const buttonPlain = (getPlainTextFromSitecoreField(buttonField) ?? '').trim();
+  const showListingButton = Boolean(isPageEditing || buttonPlain.length > 0);
 
   if (fields) {
     return (
@@ -51,17 +59,33 @@ export const Default: React.FC<TopicListingProps> = (props) => {
                 />
               )}
             </div>
-            {children?.results && (
-              <div className="flex flex-wrap items-center justify-center gap-6">
-                {children.results.map((topic, index) => (
-                  <TopicItem
-                    key={index}
-                    {...topic}
-                    isPageEditing={page?.mode?.isEditing}
+            <div className="flex w-full max-w-6xl flex-col items-center gap-12 md:gap-16">
+              {children?.results && children.results.length > 0 ? (
+                <div className="grid w-full grid-cols-1 gap-10 md:grid-cols-3 md:gap-8 lg:gap-12">
+                  {children.results.map((topic, index) => (
+                    <TopicItem
+                      key={index}
+                      {...flattenTopicLinkResultItem(topic)}
+                      isPageEditing={isPageEditing}
+                    />
+                  ))}
+                </div>
+              ) : null}
+              {showListingButton ? (
+                <div
+                  className={cn(
+                    buttonVariants({ variant: 'rounded-white' }),
+                    'inline-flex items-center justify-center px-8 py-3'
+                  )}
+                >
+                  <Text
+                    tag="span"
+                    field={buttonField?.jsonValue ?? { value: '' }}
+                    className="text-sm font-bold uppercase tracking-wide text-heading"
                   />
-                ))}
-              </div>
-            )}
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
       </div>

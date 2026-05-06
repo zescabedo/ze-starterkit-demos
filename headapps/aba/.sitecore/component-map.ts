@@ -11,10 +11,14 @@ import * as Video from 'src/components/video/Video';
 import * as verticalimageaccordionprops from 'src/components/vertical-image-accordion/vertical-image-accordion.props';
 import * as VerticalImageAccordion from 'src/components/vertical-image-accordion/VerticalImageAccordion';
 import * as topiclistingprops from 'src/components/topic-listing/topic-listing.props';
+import * as topiclistingfieldutils from 'src/components/topic-listing/topic-listing-field-utils';
+import * as topiclinkimage from 'src/components/topic-listing/topic-link-image';
 import * as TopicListing from 'src/components/topic-listing/TopicListing';
 import * as TopicItemdev from 'src/components/topic-listing/TopicItem.dev';
 import * as themeproviderdev from 'src/components/theme-provider/theme-provider.dev';
 import * as textbannerprops from 'src/components/text-banner/text-banner.props';
+import * as textbannerfieldutils from 'src/components/text-banner/text-banner-field-utils';
+import * as TextBannerGrayContentLeftdev from 'src/components/text-banner/TextBannerGrayContentLeft.dev';
 import * as TextBannerDefaultdev from 'src/components/text-banner/TextBannerDefault.dev';
 import * as TextBanner02dev from 'src/components/text-banner/TextBanner02.dev';
 import * as TextBanner01dev from 'src/components/text-banner/TextBanner01.dev';
@@ -144,10 +148,14 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['vertical-image-accordion', { ...verticalimageaccordionprops }],
   ['VerticalImageAccordion', { ...VerticalImageAccordion, componentType: 'client' }],
   ['topic-listing', { ...topiclistingprops }],
+  ['topic-listing-field-utils', { ...topiclistingfieldutils }],
+  ['topic-link-image', { ...topiclinkimage }],
   ['TopicListing', { ...TopicListing }],
   ['TopicItem', { ...TopicItemdev }],
   ['theme-provider', { ...themeproviderdev }],
   ['text-banner', { ...textbannerprops }],
+  ['text-banner-field-utils', { ...textbannerfieldutils }],
+  ['TextBannerGrayContentLeft', { ...TextBannerGrayContentLeftdev }],
   ['TextBannerDefault', { ...TextBannerDefaultdev }],
   ['TextBanner02', { ...TextBanner02dev }],
   ['TextBanner01', { ...TextBanner01dev }],

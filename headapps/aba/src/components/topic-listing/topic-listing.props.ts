@@ -1,4 +1,4 @@
-import { Field, LinkField } from '@sitecore-content-sdk/nextjs';
+import { Field, ImageField, LinkField } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from '@/lib/component-props';
 
 export interface TopicListingParams {
@@ -10,6 +10,10 @@ export interface TopicListingFields {
   data: {
     datasource: {
       title: { jsonValue: Field<string> };
+      /** Sitecore template field `Button` (single-line text), exposed as `button` after GraphQL alias. */
+      button?: {
+        jsonValue?: Field<string>;
+      };
       children?: {
         results: TopicItemProps[];
       };
@@ -25,6 +29,15 @@ export interface TopicListingProps extends ComponentProps {
 export type TopicItemProps = {
   link?: {
     jsonValue?: LinkField;
+  };
+  icon?: {
+    jsonValue?: Field<string>;
+  };
+  image?: {
+    jsonValue?: ImageField;
+  };
+  description?: {
+    jsonValue?: Field<string>;
   };
   isPageEditing?: boolean;
 };

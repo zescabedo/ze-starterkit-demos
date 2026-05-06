@@ -28,11 +28,15 @@ Languages:
         sitecore\anton.kechashin@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ce1f018c-5c42-4b3a-92d8-2a23a227004c"
+      Value: "eac4ba7c-d8b2-4a18-9af8-829e0196b382"
+    - ID: "919fb716-ca94-45e1-b4ca-8d92e8d71f4f"
+      Hint: Image
+      Value: |
+        <image mediaid="{37290109-46DF-4843-A54A-3288E72E5502}" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\anton.kechashin@sitecore.com
+        sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250717T134104Z
+      Value: 20260506T143316Z

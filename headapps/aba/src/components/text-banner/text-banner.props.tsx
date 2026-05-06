@@ -14,7 +14,16 @@ export type TextBannerFields = {
     description?: Field<string>; // Sitecore editable text field
     link?: LinkField; // Sitecore editable link field
     link2?: LinkField; // Sitecore editable link field
+    /** General Link fields for Gray Content Left / category-style pill bands */
+    Category1?: LinkField;
+    Category2?: LinkField;
+    Category3?: LinkField;
     image?: ImageField; // Sitecore editable image field
+    /** Headless layout: datasource fields may be nested here (same as Promo / Title) */
+    data?: {
+      datasource?: Record<string, unknown>;
+      contextItem?: Record<string, unknown>;
+    };
   };
   isPageEditing?: boolean;
 };

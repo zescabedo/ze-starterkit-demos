@@ -10,13 +10,15 @@ SharedFields:
   Value: "container-color-background"
 - ID: "69bb49f3-da64-4b0e-abd6-184b832ff6ab"
   Hint: Allowed Renderings
-  Value: "{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
+  Value: |
+    {7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}
+    {D806DDF7-39A7-4A6D-8E0A-D138BC53845D}
 - ID: "95579875-484e-41f0-b9c2-804eafaf3ccc"
   Hint: IsVerifiedStyle
   Value: 1
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "e393c363-9971-4e4a-b204-9e1951a0b0c5"
+  Value: "e7a364fe-7814-4617-b624-3d798bc27b18"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{42F920F7-3F88-4A62-B9DA-876FC835E814}"
@@ -41,11 +43,11 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "bf7cf1aa-ea99-4033-ba31-1e5184abca66"
+      Value: "fa523be4-918f-45e5-bedf-ffd578ee583d"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T154428Z
+      Value: 20260506T140909Z

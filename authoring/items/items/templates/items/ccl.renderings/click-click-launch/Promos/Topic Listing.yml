@@ -19,15 +19,23 @@ SharedFields:
           title: titleRequired {
             jsonValue
           }
-         
+          button: field(name: "Button") {
+            jsonValue
+          }
         }
         children {
           results {
-            ... on TopicLink{
-              link:linkOptional {
+            ... on TopicLink {
+              link: linkOptional {
                 jsonValue
               }
-              icon:iconOptional {
+              icon: iconOptional {
+                jsonValue
+              }
+              image: field(name: "Image") {
+                jsonValue
+              }
+              description: field(name: "Description") {
                 jsonValue
               }
             }
@@ -49,7 +57,7 @@ SharedFields:
   Value: "query:$site/*[@@name='Data']/*[@@templatename='Topic Listing Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Topic Listing Folder']"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "89c80ea1-bbcc-4659-a885-717e8b87d721"
+  Value: "0d375312-a9ac-481e-b83a-87c42e88bcc7"
 - ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
   Hint: OtherProperties
   Value: IsRenderingsWithDynamicPlaceholders=true
@@ -71,11 +79,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "46d94c28-c0c4-4824-9a84-f2b4220ea356"
+      Value: "b916688b-aaba-46d2-b163-a0f014fbcb3c"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\richard.seal@sitecore.com
+        sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250528T012425Z
+      Value: 20260506T150149Z

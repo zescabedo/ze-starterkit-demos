@@ -30,7 +30,15 @@ export interface MultiPromoProps extends ComponentProps {
 
 export type MultiPromoItemProps = {
   isPageEditing?: boolean;
+  /** Optional date / label line (Sitecore field `eyebrow`); rendered uppercase above the title. */
+  eyebrow?: {
+    jsonValue: Field<string>;
+  };
   heading: {
+    jsonValue: Field<string>;
+  };
+  /** Sitecore `description` on SimplePromo / promo item (single-line). */
+  description?: {
     jsonValue: Field<string>;
   };
   image: {

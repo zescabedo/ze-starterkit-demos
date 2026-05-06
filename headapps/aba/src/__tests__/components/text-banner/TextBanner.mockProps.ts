@@ -71,6 +71,33 @@ export const mockLink2: LinkField = {
   },
 };
 
+export const mockCategory1: LinkField = {
+  value: {
+    href: '/banking-topics/risk-management/fraud',
+    text: 'Fraud Prevention',
+    linktype: 'internal',
+    url: '/banking-topics/risk-management/fraud',
+  },
+};
+
+export const mockCategory2: LinkField = {
+  value: {
+    href: '/about-us/routing-number',
+    text: 'ABA Routing Number',
+    linktype: 'internal',
+    url: '/about-us/routing-number',
+  },
+};
+
+export const mockCategory3: LinkField = {
+  value: {
+    href: '/resources/third',
+    text: 'Third Resource',
+    linktype: 'internal',
+    url: '/resources/third',
+  },
+};
+
 export const mockImage: ImageField = {
   value: {
     src: '/images/banner-background.jpg',
@@ -87,6 +114,9 @@ export const defaultProps: TextBannerProps = {
     description: mockDescription,
     link: mockLink,
     link2: mockLink2,
+    Category1: mockCategory1,
+    Category2: mockCategory2,
+    Category3: mockCategory3,
     image: mockImage,
   },
   params: {

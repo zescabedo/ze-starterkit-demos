@@ -1,0 +1,54 @@
+﻿---
+ID: "6b71ee9d-180c-47aa-804f-9986e0d63a21"
+Parent: "ba13a1db-a227-4228-a143-ff5afab3f21e"
+Template: "15e94068-d790-48f2-aa56-44836ff7042a"
+Path: "/sitecore/content/article-sites/aba/Data/Topic Listings/Why Our Members Love Us/ABA Communities"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "1d1fc373-fc4b-490a-abee-9408d9eb1222"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260506T142142Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5d17ef75-dcec-4e33-b878-9881386d988b"
+      Hint: Description
+      Value: Connect with others and share professional resources and best practices.
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4c8afb86-7f9a-4e7c-8326-c2980b2f3c07"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260506T150503Z
+    - ID: "d9d7a7a2-017d-4a0e-92ab-3608b2c88afe"
+      Hint: linkOptional
+      Value: |
+        <link linktype="internal" id="6666b6a4-7bfe-4193-9ee5-dc21a31cef40" anchor="" querystring="" target="" class="" text="ABA Communities" title=""/>

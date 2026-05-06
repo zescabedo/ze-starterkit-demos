@@ -259,7 +259,7 @@ describe('MultiPromo Component', () => {
       const carousel = screen.getByTestId('carousel');
       const opts = JSON.parse(carousel.getAttribute('data-opts') || '{}');
 
-      expect(opts.align).toBe('center');
+      expect(opts.align).toBe('start');
       expect(opts.loop).toBe(true);
       expect(opts.skipSnaps).toBe(true);
       expect(opts.breakpoints).toBeDefined();
@@ -289,7 +289,8 @@ describe('MultiPromo Component', () => {
 
       const carouselItems = screen.getAllByTestId('carousel-item');
       carouselItems.forEach((item) => {
-        expect(item.className).toContain('lg:basis-[31%]');
+        expect(item.className).toContain('lg:flex-1');
+        expect(item.className).toContain('lg:basis-0');
       });
     });
 
@@ -298,7 +299,7 @@ describe('MultiPromo Component', () => {
 
       const carouselItems = screen.getAllByTestId('carousel-item');
       carouselItems.forEach((item) => {
-        expect(item.className).toContain('xl:basis-[23%]');
+        expect(item.className).toContain('xl:min-w-[200px]');
       });
     });
 
@@ -307,7 +308,7 @@ describe('MultiPromo Component', () => {
 
       const carouselItems = screen.getAllByTestId('carousel-item');
       carouselItems.forEach((item) => {
-        expect(item.className).toContain('basis-3/4');
+        expect(item.className).toContain('basis-[260px]');
         expect(item.className).toContain('sm:basis-[45%]');
         expect(item.className).toContain('md:basis-[31%]');
       });
@@ -501,23 +502,24 @@ describe('MultiPromo Component', () => {
       const { container } = render(<MultiPromo {...defaultProps} />);
 
       const component = container.querySelector('[data-component="MultiPromoCarousel"]');
-      expect(component).toHaveClass('mx-auto', 'my-8', 'md:my-16', 'max-w-screen-xl');
+      expect(component).toHaveClass('multi-promo-events');
+      const inner = container.querySelector('.max-w-screen-xl');
+      expect(inner).toHaveClass('mx-auto', 'max-w-screen-xl');
     });
 
     it('should apply flex layout to header section', () => {
       const { container } = render(<MultiPromo {...defaultProps} />);
 
-      const headerSection = container.querySelector('.flex.flex-col');
-      expect(headerSection).toHaveClass('xl:flex-row', 'xl:items-end', 'xl:justify-between');
+      const headerSection = container.querySelector('.multi-promo-events__intro');
+      expect(headerSection).toBeInTheDocument();
     });
 
     it('should apply carousel overflow classes', () => {
       render(<MultiPromo {...defaultProps} />);
 
       const carousel = screen.getByTestId('carousel');
-      expect(carousel.className).toContain('overflow-hidden');
-      expect(carousel.className).toContain('-ml-4');
-      expect(carousel.className).toContain('-mr-4');
+      expect(carousel.className).toContain('overflow-visible');
+      expect(carousel.className).toContain('w-full');
     });
   });
 
@@ -574,27 +576,25 @@ describe('MultiPromo Component', () => {
       render(<MultiPromo {...defaultProps} />);
 
       const title = screen.getByText('Featured Products');
-      expect(title).toHaveClass(
-        'font-heading',
-        'text-4xl',
-        'sm:text-5xl',
-        'lg:text-6xl',
-        'tracking-tighter'
-      );
+      expect(title).toHaveClass('multi-promo-events__intro-title');
     });
 
     it('should apply correct description classes', () => {
       const { container } = render(<MultiPromo {...defaultProps} />);
 
       const description = container.querySelector('.prose');
-      expect(description).toHaveClass('text-lg', 'leading-[1.444]', 'tracking-tight');
+      expect(description).toHaveClass(
+        'multi-promo-events__intro-description',
+        'prose-sm',
+        'max-w-3xl'
+      );
     });
 
     it('should apply carousel content margin classes', () => {
       render(<MultiPromo {...defaultProps} />);
 
       const carouselContent = screen.getByTestId('carousel-content');
-      expect(carouselContent).toHaveClass('my-12', 'sm:my-16', 'sm:-ml-8');
+      expect(carouselContent).toHaveClass('multi-promo-events__track', 'gap-[var(--gap-multi-promo-grid)]');
     });
 
     it('should apply carousel item sizing classes', () => {
@@ -602,7 +602,7 @@ describe('MultiPromo Component', () => {
 
       const carouselItems = screen.getAllByTestId('carousel-item');
       carouselItems.forEach((item) => {
-        expect(item).toHaveClass('min-w-[238px]', 'max-w-[416px]', 'pl-4', 'sm:pl-8');
+        expect(item).toHaveClass('pl-0', 'basis-[260px]');
       });
     });
   });

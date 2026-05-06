@@ -19,6 +19,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260505T154242Z
@@ -35,14 +38,14 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "6b22b32f-4c8b-4c6e-b004-7b762ebad3fa"
       Hint: titleRequired
-      Value: Our areas of impact.  Making people a priority.
+      Value: Why our members love us Member Benefits
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3f255708-60a6-4803-837e-0d7ae7d37ea1"
+      Value: "49ed6683-b363-4868-87f1-12c0edc17ea2"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T154409Z
+      Value: 20260506T141703Z

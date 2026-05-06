@@ -212,18 +212,19 @@ describe('TopicListing Component', () => {
       expect(screen.getByText('Technology')).toBeInTheDocument();
     });
 
-    it('should render topics in flex container', () => {
+    it('should render topics in a responsive grid', () => {
       const { container } = render(<TopicListing {...defaultProps} />);
 
-      const topicsContainer = container.querySelector('.flex.flex-wrap.items-center.justify-center');
+      const topicsContainer = container.querySelector('.grid.w-full');
       expect(topicsContainer).toBeInTheDocument();
+      expect(topicsContainer).toHaveClass('grid-cols-1', 'md:grid-cols-3');
     });
 
-    it('should apply gap between topics', () => {
+    it('should apply gap between topic columns', () => {
       const { container } = render(<TopicListing {...defaultProps} />);
 
-      const topicsContainer = container.querySelector('.flex.flex-wrap');
-      expect(topicsContainer).toHaveClass('gap-6');
+      const topicsContainer = container.querySelector('.grid.w-full.grid-cols-1');
+      expect(topicsContainer).toHaveClass('gap-10', 'md:gap-8', 'lg:gap-12');
     });
   });
 

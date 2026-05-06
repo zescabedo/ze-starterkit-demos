@@ -3,6 +3,7 @@ import { TextBannerProps } from './text-banner.props';
 import { Default as TextBannerDefault } from './TextBannerDefault.dev';
 import { Default as TextBanerVariant01 } from './TextBanner01.dev';
 import { Default as TextBanerVariant02 } from './TextBanner02.dev';
+import { Default as TextBannerGrayContentLeft } from './TextBannerGrayContentLeft.dev';
 
 // Data source checks are done in the child components
 
@@ -21,4 +22,10 @@ export const TextBanner01: React.FC<TextBannerProps> = (props) => {
 export const TextBanner02: React.FC<TextBannerProps> = (props) => {
   const isPageEditing = props.page.mode.isEditing;
   return <TextBanerVariant02 {...props} isPageEditing={isPageEditing} />;
+};
+
+/** Gray band, left-aligned label + pill links — matches aba.com featured resource band */
+export const GrayContentLeft: React.FC<TextBannerProps> = (props) => {
+  const isPageEditing = props.page.mode.isEditing;
+  return <TextBannerGrayContentLeft {...props} isPageEditing={isPageEditing} />;
 };

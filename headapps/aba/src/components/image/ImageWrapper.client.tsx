@@ -79,7 +79,16 @@ export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
   return (
     <div className={cn('image-container', wrapperClass)}>
       {isPageEditing || isPreview || isSvg ? (
-        <ContentSdkImage field={image} className={className} />
+        <ContentSdkImage
+          field={image}
+          className={cn(
+            className,
+            isPageEditing &&
+              !image?.value?.src &&
+              'box-border min-h-20 min-w-[5rem] rounded-md border-2 border-dashed border-current/35'
+          )}
+          editable={isPageEditing}
+        />
       ) : (
         <NextImage
           loader={isPicsumImage ? placeholderImageLoader : undefined}
