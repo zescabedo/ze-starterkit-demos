@@ -93,14 +93,14 @@ export const Default: React.FC<MultiPromoProps> = (props) => {
               <Text
                 tag="h2"
                 field={title?.jsonValue}
-                className="font-heading text-heading text-box-trim-both text-box-edge-asc-baseline -ml-1 max-w-[20ch] text-pretty text-4xl font-normal leading-[1.1333] tracking-tighter sm:text-5xl md:max-w-[17.5ch] lg:text-6xl"
+                className="font-heading text-primary-foreground text-box-trim-both text-box-edge-asc-baseline -ml-1 max-w-[20ch] text-pretty text-4xl font-normal leading-[1.1333] tracking-tighter sm:text-5xl md:max-w-[17.5ch] lg:text-6xl"
               />
             </div>
           )}
           {description && (
             <div className="basis-full xl:basis-1/2">
               <RichText
-                className="text-body prose text-box-trim-both text-box-edge-asc-baseline mt-6 max-w-[51.5ch] text-pretty text-lg leading-[1.444] tracking-tight [&_a]:text-brand-link [&_a:hover]:text-brand-navy"
+                className="text-primary-foreground prose text-box-trim-both text-box-edge-asc-baseline mt-6 max-w-[51.5ch] text-pretty text-lg leading-[1.444] tracking-tight [&_a]:text-primary-foreground [&_a]:underline [&_a:hover]:text-primary-foreground/90"
                 field={description?.jsonValue}
               />
             </div>

@@ -1,0 +1,12 @@
+{
+  "$schema": "./.sitecore/schemas/RootConfigurationFile.schema.json",
+  "modules": [
+    "items/items/templates/ccl.module.json",
+    "items/nextjs-starter.module.json",
+    "items/aba.module.json",
+    "items/sickkids.module.json",
+    "items/alaris.module.json",
+    "items/sync.module.json",
+    "items/solterra-co.module.json"
+  ]
+}

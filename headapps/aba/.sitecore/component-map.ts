@@ -52,6 +52,7 @@ import * as promoanimatedutil from 'src/components/promo-animated/promo-animated
 import * as promoanimatedprops from 'src/components/promo-animated/promo-animated.props';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
 import * as PromoAnimatedDefaultdev from 'src/components/promo-animated/PromoAnimatedDefault.dev';
+import * as PromoAnimatedABAPromodev from 'src/components/promo-animated/PromoAnimatedABAPromo.dev';
 import * as PromoAnimated from 'src/components/promo-animated/PromoAnimated';
 import * as portaldev from 'src/components/portal/portal.dev';
 import * as pageheaderprops from 'src/components/page-header/page-header.props';
@@ -182,6 +183,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['promo-animated', { ...promoanimatedutil, ...promoanimatedprops }],
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
   ['PromoAnimatedDefault', { ...PromoAnimatedDefaultdev }],
+  ['PromoAnimatedABAPromo', { ...PromoAnimatedABAPromodev }],
   ['PromoAnimated', { ...PromoAnimated, componentType: 'client' }],
   ['portal', { ...portaldev }],
   ['page-header', { ...pageheaderprops }],

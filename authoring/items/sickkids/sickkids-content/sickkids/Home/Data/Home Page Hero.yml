@@ -1,0 +1,64 @@
+﻿---
+ID: "4e88d763-25eb-4286-a90c-be15b1fa7e6d"
+Parent: "7a63a3e1-7355-43b4-940f-088ed31c3602"
+Template: "ae018465-4e68-4a49-8b15-9702274fa75a"
+Path: /sitecore/content/automotive/sickkids/Home/Data/Home Page Hero
+BranchID: "9ba623cf-080b-4074-9a36-e54550ca4d13"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "7b99d29e-93d7-4aa7-ad45-8151269c0c4a"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{3A4AA49B-BF56-4FE9-83F2-3D2598CE3C9A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T220230Z
+    - ID: "3c2b7d00-8de2-4636-a65f-d667a75ec4a7"
+      Hint: description
+      Value: 
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{4460E76C-87E9-4859-9DE6-DE122774937F}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\richard.seal@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5dcf4d99-0791-48b6-aeac-64ffb3fe4eb6"
+    - ID: "9ad66b62-4ebd-42da-8e1a-09dca7db5aea"
+      Hint: bannerText
+      Value: 
+    - ID: "b80f6e4e-44ec-4bf5-92b0-f50f71530c06"
+      Hint: bannerCTA
+      Value: 
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "c65eb2cc-503f-48cd-ba69-42c29df106c1"
+      Hint: image
+      Value: |
+        <image mediaid="1845a4bc-581f-4a9f-be01-7eee71385654" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260430T191157Z
+    - ID: "e5e059ce-66e3-4039-887b-0086e7764f09"
+      Hint: title
+      Value: "How can we help you today?"

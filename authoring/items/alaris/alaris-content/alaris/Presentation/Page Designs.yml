@@ -1,0 +1,45 @@
+﻿---
+ID: "93b92410-cbfd-4aec-821b-d84bf66da08f"
+Parent: "48e3693d-fb66-4c1d-85f4-fe8cae65c9ff"
+Template: "8d980bbc-346a-4538-bebd-e08268af87e5"
+Path: /sitecore/content/automotive/alaris/Presentation/Page Designs
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7bED70B7CE-B018-440B-A40A-21E04E43A7D5%7d%3d%257B097A2D09-BDA8-4431-A069-8B0D750D9A77%257D%26%7bEE64E9BC-BDF8-47AD-9ED0-21FB1327787B%7d%3d%257B097A2D09-BDA8-4431-A069-8B0D750D9A77%257D%26%7bC1D81DFD-6EB2-460C-A084-CA56120CFE18%7d%26%7b5649553E-C5D4-415F-A6CD-F8D97FBC043C%7d%3d%257B097A2D09-BDA8-4431-A069-8B0D750D9A77%257D%26%7bC17CD143-1A58-4CE2-93D2-562AE4C6861C%7d%3d%257B097A2D09-BDA8-4431-A069-8B0D750D9A77%257D%26%7bAB599773-C64F-40E1-9354-33E9BCCD8A97%7d%3d%257B097A2D09-BDA8-4431-A069-8B0D750D9A77%257D%26%7b507C38B6-6C66-4A75-9209-98AF1D5286A8%7d%3d%257B097A2D09-BDA8-4431-A069-8B0D750D9A77%257D"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "5d74edbd-b86a-40e6-b4a6-a238ec62df58"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T201531Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3ba688e0-1b98-466b-9646-3b248c75170c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260429T201808Z

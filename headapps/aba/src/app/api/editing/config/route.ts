@@ -1,6 +1,6 @@
 import { createEditingConfigRouteHandler } from '@sitecore-content-sdk/nextjs/route-handler';
-import components from '.sitecore/component-map';
-import clientComponents from '.sitecore/component-map.client';
+import components from '@/lib/sitecore-component-map';
+import clientComponents from '@/lib/sitecore-component-map.client';
 import metadata from '.sitecore/metadata.json';
 
 /**

@@ -3,7 +3,7 @@ import { cva } from 'class-variance-authority';
 import { PlaceholderProps } from '@/types/Placeholder.props';
 import { ComponentProps } from '@/lib/component-props';
 import { BackgroundColor } from '@/enumerations/BackgroundColor.enum';
-import componentMap from '.sitecore/component-map';
+import componentMap from '@/lib/sitecore-component-map';
 import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
 
 /**

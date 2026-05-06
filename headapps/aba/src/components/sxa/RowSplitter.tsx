@@ -4,7 +4,7 @@ import {
   AppPlaceholder,
 } from '@sitecore-content-sdk/nextjs';
 import { ComponentProps } from 'lib/component-props';
-import componentMap from '.sitecore/component-map';
+import componentMap from '@/lib/sitecore-component-map';
 
 /**
  * The number of rows that can be inserted into the row splitter component.

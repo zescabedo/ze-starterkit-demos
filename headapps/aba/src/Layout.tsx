@@ -12,7 +12,7 @@ import {
 import Scripts from 'src/Scripts';
 import SitecoreStyles from 'components/content-sdk/SitecoreStyles';
 import { Figtree } from 'next/font/google';
-import componentMap from '.sitecore/component-map';
+import componentMap from '@/lib/sitecore-component-map';
 import Providers from './Providers';
 
 const heading = Figtree({

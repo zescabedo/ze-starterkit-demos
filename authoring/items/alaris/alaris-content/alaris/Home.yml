@@ -1,0 +1,133 @@
+﻿---
+ID: "95b065f5-fda8-4070-949a-cfccb2aac82e"
+Parent: "b07f9d03-faae-421e-b26d-c7465a1cd469"
+Template: "ed70b7ce-b018-440b-a40a-21e04e43a7d5"
+Path: /sitecore/content/automotive/alaris/Home
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
+  Hint: __Thumbnail
+  Value: |
+    <image mediaid="{AFD508C0-64A6-41DF-98DD-E373A95B2123}" />
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{40BA4FCC-1FFE-4E33-8CB6-3D06033C45AF}"
+              p:before="*"
+              s:id="{E80C2A78-FCC2-4D32-8EC5-4133F608BE5C}"
+              s:par="?DynamicPlaceholderId=1&amp;excludeTopMargin=1"
+              s:ph="headless-main" />
+            <r
+              uid="{9F4B38DC-3FA6-4068-A7EA-F3C310BB4906}"
+              p:after="r[@uid='{40BA4FCC-1FFE-4E33-8CB6-3D06033C45AF}']"
+              s:ds="local:/Data/Home Page Hero"
+              s:id="{6D0AAE4A-C2D1-4F3A-8285-705D13DE8244}"
+              s:par="?DynamicPlaceholderId=2&amp;FieldNames=%7b8C6BDC12-8FF4-4DF7-9439-F2A99BDE8BFA%7d"
+              s:ph="/headless-main/container-fullbleed-1" />
+            <r
+              uid="{07EB83B0-848C-43DB-9734-54F914B56930}"
+              p:after="r[@uid='{9F4B38DC-3FA6-4068-A7EA-F3C310BB4906}']"
+              s:ds="local:/Data/Home Page Text Banner"
+              s:id="{E7B031D3-161F-4391-8B23-785FC8445D1E}"
+              s:par="?DynamicPlaceholderId=3&amp;FieldNames=%7b68EE7B9D-C11D-48D5-8032-AC2AD0B97552%7d"
+              s:ph="/headless-main/container-fullbleed-1" />
+            <r
+              uid="{F14783DF-5BD9-41C1-AC04-A70EF84CECBC}"
+              p:after="r[@uid='{07EB83B0-848C-43DB-9734-54F914B56930}']"
+              s:ds="local:/Data/Home Page Image Carousel"
+              s:id="{C18FD197-8254-4AB4-8C02-70C4A391354C}"
+              s:par="?DynamicPlaceholderId=5&amp;FieldNames=%7b0FE1ACCA-432B-49C4-8F4F-67C951319996%7d"
+              s:ph="/headless-main/container-fullbleed-1" />
+            <r
+              uid="{F546309C-1A1F-4BFF-8D4D-FDF7972CA748}"
+              p:after="r[@uid='{F14783DF-5BD9-41C1-AC04-A70EF84CECBC}']"
+              s:ds="local:/Data/Home Page Promo"
+              s:id="{945776A1-8F30-4749-A668-4FCC434A60ED}"
+              s:par="?DynamicPlaceholderId=4&amp;FieldNames=%7bBDC5F51F-0AD9-4C65-9088-956235F35AAC%7d"
+              s:ph="/headless-main/container-fullbleed-1" />
+            <r
+              uid="{3EEB8F60-7B38-4506-BBF0-7583A9010241}"
+              p:after="r[@uid='{F546309C-1A1F-4BFF-8D4D-FDF7972CA748}']"
+              s:ds="local:/Data/Home Page Product Listing"
+              s:id="{167CA3F5-04E0-4683-AF27-B24C6329F76D}"
+              s:ph="/headless-main/container-fullbleed-1" />
+            <r
+              uid="{4771C1A5-65D3-49ED-8122-A1C343233582}"
+              p:after="*[1=2]"
+              s:ds="local:/Data/Home Page Accordion"
+              s:id="{913E30C7-63C2-4A2B-9D44-B2ADAEED6BC2}"
+              s:par="?DynamicPlaceholderId=6&amp;FieldNames=%7bEC4096FA-6A1A-42E5-B68E-07314F1C420B%7d"
+              s:ph="/headless-main/container-fullbleed-1" />
+          </d>
+        </r>
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: Experience the future of electric vehicles with Alaris. Explore our innovative lineup of sustainable cars designed for tomorrow.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T201530Z
+    - ID: "27cd428b-f652-4534-b76f-33f64b742659"
+      Hint: pageShortTitle
+      Value: Alaris
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
+    - ID: "4dd4e18f-b1a3-4225-967f-b4ec9f68928c"
+      Hint: ogDescription
+      Value: Experience the future of electric vehicles with Alaris. Explore our innovative lineup of sustainable cars designed for tomorrow.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
+      Hint: pageTitle
+      Value: "Alaris - Get set for an electric future"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "65408499-25bc-49d0-a2ff-b2fdd798aafc"
+      Hint: ogImage
+      Value: |
+        <image mediaid="{34DE6E63-EE15-4D55-AEEA-C5600D7E7EB8}" />
+    - ID: "8535365d-ae76-4875-ab5b-a618d5819af0"
+      Hint: metadataTitle
+      Value: "Alaris - Get set for an electric future"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7d9d6f9a-e7c2-4116-903a-31aa301681c3"
+    - ID: "9b600e71-cf7a-4874-9032-f394a9bd2e48"
+      Hint: metadataDescription
+      Value: Experience the future of electric vehicles with Alaris. Explore our innovative lineup of sustainable cars designed for tomorrow.
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: Alaris
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260429T201827Z
+    - ID: "e7f8a9b0-c1d2-4e3f-8a9b-0c1d2e3f4a5b"
+      Hint: metadataAuthor
+      Value: Sitecore
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: "Alaris - Get set for an electric future"
+    - ID: "f6fcc0b6-31b2-49cd-8a66-4ba282a8ad24"
+      Hint: metadataKeywords
+      Value: Alaris, electric vehicles, EV, sustainable cars, future mobility

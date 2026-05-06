@@ -11,7 +11,7 @@ import { Slot } from '@radix-ui/react-slot';
 import { EnumValues } from '@/enumerations/generic.enum';
 import { twMerge } from 'tailwind-merge';
 import { ComponentProps } from 'lib/component-props';
-import componentMap from '.sitecore/component-map';
+import componentMap from '@/lib/sitecore-component-map';
 
 /** Flex Component
  * This component is designed for easy layout within a container,

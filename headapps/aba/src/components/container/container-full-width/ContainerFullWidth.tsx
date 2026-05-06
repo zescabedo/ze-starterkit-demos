@@ -2,7 +2,7 @@ import { Flex, FlexItem } from '@/components/flex/Flex.dev';
 import { cn } from '@/lib/utils';
 import { ComponentProps } from '@/lib/component-props';
 import { PlaceholderProps } from '@/types/Placeholder.props';
-import componentMap from '.sitecore/component-map';
+import componentMap from '@/lib/sitecore-component-map';
 import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
 
 export type ContainerFullWidthProps = ComponentProps &

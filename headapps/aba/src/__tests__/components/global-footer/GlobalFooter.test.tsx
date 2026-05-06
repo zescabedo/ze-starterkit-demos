@@ -162,7 +162,7 @@ describe('GlobalFooter Component', () => {
 
       const footer = container.querySelector('footer');
       expect(footer).toBeInTheDocument();
-      expect(footer).toHaveClass('bg-primary', 'text-primary-foreground');
+      expect(footer).toHaveClass('bg-footer-bg', 'text-footer-text', 'border-footer-border');
     });
 
     it('should render logo section', () => {
@@ -195,7 +195,7 @@ describe('GlobalFooter Component', () => {
 
       const copyrightText = screen.getByText('© 2024 Company Name. All rights reserved.');
       expect(copyrightText).toBeInTheDocument();
-      expect(copyrightText).toHaveClass('text-sm', 'text-primary-foreground/80');
+      expect(copyrightText).toHaveClass('text-sm', 'text-footer-text/90');
     });
   });
 
@@ -285,7 +285,7 @@ describe('GlobalFooter Component', () => {
 
       const bottomBorder = container.querySelector('.border-t');
       expect(bottomBorder).toBeInTheDocument();
-      expect(bottomBorder).toHaveClass('border-primary-foreground/15');
+      expect(bottomBorder).toHaveClass('border-footer-border');
     });
 
     it('should apply container query classes', () => {

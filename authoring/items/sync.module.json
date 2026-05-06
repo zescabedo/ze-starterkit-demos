@@ -1,0 +1,21 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Project.SYNC",
+  "references": ["Project.click-click-launch"],
+  "items": {
+    "path": "sync",
+    "includes": [
+      {
+        "name": "sync-content",
+        "path": "/sitecore/content/product-sites/sync",
+        "allowedPushOperations": "CreateUpdateAndDelete",
+        "rules": [
+          {
+            "path": "/Presentation/Styles",
+            "scope": "ignored"
+          }
+        ]
+      }
+    ]
+  }
+}

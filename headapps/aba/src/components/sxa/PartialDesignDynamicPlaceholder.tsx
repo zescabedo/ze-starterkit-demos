@@ -3,7 +3,7 @@ import {
   ComponentRendering,
   AppPlaceholder,
 } from '@sitecore-content-sdk/nextjs';
-import componentMap from '.sitecore/component-map';
+import componentMap from '@/lib/sitecore-component-map';
 import { ComponentProps } from 'lib/component-props';
 
 type DynamicPlaceholderProps = ComponentProps & {

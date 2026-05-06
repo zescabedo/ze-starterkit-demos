@@ -1,0 +1,45 @@
+﻿---
+ID: "519c22f4-d1b6-4bd1-a201-33abf6d6e708"
+Parent: "ed28f5cf-b7d0-4b97-87ae-4538d8de7758"
+Template: "63dff133-b37f-41af-9980-aae9572a6f88"
+Path: "/sitecore/content/article-sites/solterra-co/Presentation/Page Designs"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7bC772DB69-93FF-4E91-B9F6-1B65187378C2%7d%3d%257B9961C0A9-8A5A-4AE1-A529-3AD7865DA9DF%257D%26%7b1D22C294-B26F-4244-B38E-241A2C227BCB%7d%3d%257B9961C0A9-8A5A-4AE1-A529-3AD7865DA9DF%257D%26%7b98316E05-15F5-4A72-B2C4-8295DC9DA42E%7d%26%7bE7F96B93-05BE-4D1C-A92C-EC08B212315E%7d%3d%257B9961C0A9-8A5A-4AE1-A529-3AD7865DA9DF%257D%26%7b69A800F5-5F73-4AC1-B7FC-AF63529F8F31%7d%3d%257B9961C0A9-8A5A-4AE1-A529-3AD7865DA9DF%257D%26%7b35AE55E6-B944-42BD-A710-5FA08163A08B%7d%3d%257B9961C0A9-8A5A-4AE1-A529-3AD7865DA9DF%257D%26%7b1BEE8239-3A2C-4926-9C74-047E7BBFD010%7d%3d%257B9961C0A9-8A5A-4AE1-A529-3AD7865DA9DF%257D"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "826d1fbe-73ac-478d-bc4c-bf5714573fe1"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T202307Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "54d4bb4f-4a06-40b4-a771-8d38188b2de7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260429T202600Z

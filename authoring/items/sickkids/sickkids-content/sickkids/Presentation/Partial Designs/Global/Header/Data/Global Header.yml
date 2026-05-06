@@ -1,0 +1,56 @@
+﻿---
+ID: "0a991eb1-4a24-45ef-aa2e-c4c8055bdf59"
+Parent: "76293cc2-d6c1-40e0-9264-e87a06e1b14d"
+Template: "efd96479-7bf2-4be1-a08a-b01e59f92cdc"
+Path: /sitecore/content/automotive/sickkids/Presentation/Partial Designs/Global/Header/Data/Global Header
+BranchID: "5a9aaf68-3342-4682-bd1d-33e7d00bac8b"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{7870BF23-EF09-48C2-8E1F-696A40318418}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T220245Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
+    - ID: "4da75bcf-390e-46fa-ad87-926ec4db0876"
+      Hint: headerLogo
+      Value: |
+        <image mediaid="444125c0-29d5-40f2-9fe5-8a4d4a7c240a" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "329acb96-0fe8-4ef2-bedd-6b7d6227cc4b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260430T191311Z
+    - ID: "e3289100-a242-4fc7-814f-0ffef0ffe8bd"
+      Hint: headerContact
+      Value: |
+        <link linktype="internal" id="{21479AB1-B406-468E-AE1A-FD40DCE8C947}" anchor="" querystring="" target="" class="" text="Donate" title=""/>
+    - ID: "f073d52d-022c-4560-90c2-71fc674cf8bf"
+      Hint: primaryNavigationLinks
+      Value: |
+        {3B2B6786-5EF2-4F6D-911C-E07560AC7AFF}
+        {9AF85A97-C043-4587-8026-A18A8E5815AC}
+        {C161EB30-36A0-4B5C-B210-A0BC7852437F}

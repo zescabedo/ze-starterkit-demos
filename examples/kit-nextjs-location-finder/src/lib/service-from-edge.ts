@@ -67,7 +67,7 @@ function buildServiceQuery(fragmentType: string): string {
 function buildServicePath(): string {
   const siteName = scConfig.defaultSite || process.env.NEXT_PUBLIC_DEFAULT_SITE_NAME || '';
   if (!siteName) return '';
-  return `/sitecore/content/alaris/${siteName}${SERVICE_DATA_PATH_SUFFIX}`;
+  return `/sitecore/content/automotive/alaris/${siteName}${SERVICE_DATA_PATH_SUFFIX}`;
 }
 
 export async function fetchServicesFromEdge(): Promise<ServiceEdgeResult> {

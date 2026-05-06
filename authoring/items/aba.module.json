@@ -1,0 +1,15 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Project.ABA",
+  "references": ["Project.click-click-launch"],
+  "items": {
+    "path": "aba",
+    "includes": [
+      {
+        "name": "aba-content",
+        "path": "/sitecore/content/article-sites/aba",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      }
+    ]
+  }
+}

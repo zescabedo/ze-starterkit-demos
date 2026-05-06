@@ -34,7 +34,10 @@ export const Default: FC<FooterNavigationColumnProps> = (props) => {
         {isMobile ? (
           <Accordion type="single" collapsible className="w-full" aria-labelledby={accordionId}>
             <AccordionItem value={`item-${header?.jsonValue?.value}`}>
-              <AccordionTrigger className="text-lg font-medium" id={accordionId}>
+              <AccordionTrigger
+                className="text-lg font-bold uppercase tracking-wide text-footer-heading hover:no-underline"
+                id={accordionId}
+              >
                 <Text field={header?.jsonValue} />
               </AccordionTrigger>
               <AccordionContent>
@@ -44,7 +47,7 @@ export const Default: FC<FooterNavigationColumnProps> = (props) => {
                       <Button
                         variant="link"
                         asChild
-                        className="h-auto text-pretty p-0 text-base font-normal text-white"
+                        className="h-auto text-pretty p-0 text-base font-normal text-footer-text underline-offset-4 hover:text-footer-link-accent"
                       >
                         <Link field={item.link?.jsonValue} />
                       </Button>
@@ -57,7 +60,10 @@ export const Default: FC<FooterNavigationColumnProps> = (props) => {
         ) : (
           <ul className="mt-6 space-y-6" aria-labelledby={accordionId}>
             {(isPageEditing || header?.jsonValue?.value) && (
-              <li className="text-lg font-medium" id={accordionId}>
+              <li
+                className="text-lg font-bold uppercase tracking-wide text-footer-heading"
+                id={accordionId}
+              >
                 <Text field={header?.jsonValue} />
               </li>
             )}
@@ -66,7 +72,7 @@ export const Default: FC<FooterNavigationColumnProps> = (props) => {
                 <Button
                   variant="link"
                   asChild
-                  className="h-auto text-pretty p-0 text-base font-normal text-white"
+                  className="h-auto text-pretty p-0 text-base font-normal text-footer-text underline-offset-4 hover:text-footer-link-accent"
                 >
                   <Link field={item.link?.jsonValue} />
                 </Button>

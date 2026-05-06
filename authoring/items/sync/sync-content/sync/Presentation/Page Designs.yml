@@ -1,0 +1,45 @@
+﻿---
+ID: "26c64f1f-81cd-4170-887b-2258a7d1d315"
+Parent: "c20daf99-9fb0-4086-bf19-ade9bbc3037c"
+Template: "c00eac58-52d6-48ce-ad4d-ddfc1abf422d"
+Path: "/sitecore/content/product-sites/sync/Presentation/Page Designs"
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
+  Hint: TemplatesMapping
+  Value: "%7bD0B83DC1-C946-46C8-AB92-90F88E2CCC9F%7d%3d%257B50F294D6-248F-445C-811B-2CFF1FFF44E6%257D%26%7b0EAC017A-A57B-42C0-97F1-9565A32913BD%7d%3d%257B50F294D6-248F-445C-811B-2CFF1FFF44E6%257D%26%7bB5C01643-6976-4B1B-8180-D34DA9BEC685%7d%3d%257B25F8BA85-3EC6-420E-A68F-462E2BE3AC76%257D%26%7b385900C0-9A5D-4935-8115-E9B10CBD75CD%7d%3d%257B50F294D6-248F-445C-811B-2CFF1FFF44E6%257D%26%7b0F981289-AB47-4A8B-80AC-9B74EB0C4348%7d%3d%257B50F294D6-248F-445C-811B-2CFF1FFF44E6%257D%26%7bEA03A79C-408A-4CBB-B4CE-ED873D575335%7d%3d%257B50F294D6-248F-445C-811B-2CFF1FFF44E6%257D%26%7b8B79903B-8EA1-4608-8C42-485538824B30%7d%3d%257B50F294D6-248F-445C-811B-2CFF1FFF44E6%257D"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "ab46daee-8c8c-4ae4-8fb1-d373a7b30b52"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260501T163516Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d4735d51-7205-49db-8495-73d4b2273ef6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260501T163918Z

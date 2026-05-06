@@ -30,14 +30,14 @@ export const Default: React.FC<MultiPromoItemProps> = (props) => {
         <Text
           tag="h3"
           field={title}
-          className="font-heading text-heading text-box-trim-both text-box-edge-asc-desc text-2xl font-medium leading-snug tracking-tighter"
+          className="font-heading text-primary-foreground text-box-trim-both text-box-edge-asc-desc text-2xl font-medium leading-snug tracking-tighter"
         />
       )}
       {(isPageEditing || link?.value?.href) && (
         <Button
           variant="link"
           asChild
-          className="text-box-trim-both text-box-edge-asc-desc mt-4 h-auto text-pretty px-0 pt-0 text-[0.875rem] font-normal text-brand-link hover:text-brand-navy last:pb-0"
+          className="text-box-trim-both text-box-edge-asc-desc mt-4 h-auto text-pretty px-0 pt-0 text-[0.875rem] font-normal text-primary-foreground underline underline-offset-4 hover:text-primary-foreground/90 last:pb-0"
         >
           <Link
             field={

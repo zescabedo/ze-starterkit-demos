@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 import type { JSX } from 'react';
 import { PlaceholderProps } from '@/types/Placeholder.props';
 import { ComponentProps } from '@/lib/component-props';
-import componentMap from '.sitecore/component-map';
+import componentMap from '@/lib/sitecore-component-map';
 import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
 
 /**

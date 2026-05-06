@@ -46,7 +46,7 @@ function buildSummaryQuery(fragmentType: string): string {
 function buildSummaryPath(): string {
   const siteName = scConfig.defaultSite || process.env.NEXT_PUBLIC_DEFAULT_SITE_NAME || '';
   if (!siteName) return '';
-  return `/sitecore/content/sickkids/${siteName}${SUMMARY_DATA_PATH_SUFFIX}`;
+  return `/sitecore/content/automotive/sickkids/${siteName}${SUMMARY_DATA_PATH_SUFFIX}`;
 }
 
 export async function fetchSummaryFromEdge(): Promise<SummaryItem | null> {

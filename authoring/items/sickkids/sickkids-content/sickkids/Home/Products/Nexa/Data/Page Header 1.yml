@@ -1,0 +1,57 @@
+﻿---
+ID: "357a5bae-664d-4f87-a443-ceb86e42de87"
+Parent: "a772b7b6-4eeb-428a-adf7-0edc9f438526"
+Template: "754d4fd3-aa54-46d0-84bd-0bb43f8aeba0"
+Path: /sitecore/content/automotive/sickkids/Home/Products/Nexa/Data/Page Header 1
+BranchID: "6b289b7b-5c87-4423-aee6-bf33e0627fbb"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "aa6fc128-1958-4fe5-873b-71a4e8367ecd"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{410FBD5A-BA44-4BEC-BE92-176298D55A61}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "050b0870-ebcd-41bc-846e-0a5e4828c3a7"
+      Hint: link1
+      Value: |
+        <link class="" id="{21479AB1-B406-468E-AE1A-FD40DCE8C947}" querystring="" anchor="" target="" title="Schedule a Test Drive Today" linktype="internal" text="Schedule a Test Drive" url="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260429T220307Z
+    - ID: "31ada09a-aeeb-4807-9ad2-eccd3ad7e40a"
+      Hint: imageRequired
+      Value: |
+        <image mediaid="f76ab4b8-9973-42f5-b8f0-9925a3963877" />
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{4460E76C-87E9-4859-9DE6-DE122774937F}"
+    - ID: "4a3ab7ba-d36c-4133-96a3-30e15566056f"
+      Hint: link2
+      Value: |
+        <link class="" id="{3DAD81C4-548F-46C1-AF83-2BACF4F3F98C}" querystring="" anchor="" target="" title="Reserve your new model" linktype="internal" text="Reserve" url="" />
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "96b793fa-cbd6-49be-bc09-88dd25c7462d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260429T220442Z

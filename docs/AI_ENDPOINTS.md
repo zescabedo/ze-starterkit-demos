@@ -306,9 +306,9 @@ The content path is dynamically constructed from the configured site name (`NEXT
 
 | Starter | Content Path Pattern |
 |---|---|
-| article-starter | `/sitecore/content/solterra/{siteName}/Data/AI Config/Summary` |
-| product-listing | `/sitecore/content/sync/{siteName}/Data/AI Config/Summary` |
-| location-finder | `/sitecore/content/alaris/{siteName}/Data/AI Config/Summary` |
+| article-starter | `/sitecore/content/article-sites/solterra-co/{siteName}/Data/AI Config/Summary` |
+| product-listing | `/sitecore/content/product-sites/sync/{siteName}/Data/AI Config/Summary` |
+| location-finder | `/sitecore/content/automotive/alaris/{siteName}/Data/AI Config/Summary` |
 
 The GraphQL query uses the `AISummary` fragment type to access custom template fields (`title` and `description`), both returned as `jsonValue` scalars.
 
@@ -434,9 +434,9 @@ The content path is dynamically constructed from the configured site name (`NEXT
 
 | Starter | Content Path Pattern |
 |---|---|
-| article-starter | `/sitecore/content/solterra/{siteName}/Data/AI Config/FAQ` |
-| product-listing | `/sitecore/content/sync/{siteName}/Data/AI Config/FAQ` |
-| location-finder | `/sitecore/content/alaris/{siteName}/Data/AI Config/FAQ` |
+| article-starter | `/sitecore/content/article-sites/solterra-co/{siteName}/Data/AI Config/FAQ` |
+| product-listing | `/sitecore/content/product-sites/sync/{siteName}/Data/AI Config/FAQ` |
+| location-finder | `/sitecore/content/automotive/alaris/{siteName}/Data/AI Config/FAQ` |
 
 This means FAQ content is managed entirely in Sitecore -- no code changes are needed to update questions and answers.
 
@@ -552,9 +552,9 @@ The content path is dynamically constructed from the configured site name (`NEXT
 
 | Starter | Content Path Pattern |
 |---|---|
-| article-starter | `/sitecore/content/solterra/{siteName}/Data/AI Config/Services` |
-| product-listing | `/sitecore/content/sync/{siteName}/Data/AI Config/Services` |
-| location-finder | `/sitecore/content/alaris/{siteName}/Data/AI Config/Services` |
+| article-starter | `/sitecore/content/article-sites/solterra-co/{siteName}/Data/AI Config/Services` |
+| product-listing | `/sitecore/content/product-sites/sync/{siteName}/Data/AI Config/Services` |
+| location-finder | `/sitecore/content/automotive/alaris/{siteName}/Data/AI Config/Services` |
 
 > **Note:** The `name` field on service items is a built-in Sitecore item property (`String!` scalar in GraphQL), so it is queried directly without `{ jsonValue }`. The `description` and `category` fields are custom template fields returned as `jsonValue` scalars.
 

@@ -268,11 +268,15 @@ const EditableImageButton = (props: {
   return (
     <Button asChild variant={variant} size={size} className={className}>
       {isPageEditing ? (
-        <span className="flex">
+        <span className="flex min-h-0 min-w-0 max-w-full items-center justify-center overflow-hidden">
           {iconPosition === IconPosition.LEADING ? (
             <ImageWrapper className={iconClassName} image={icon} aria-hidden={ariaHidden} />
           ) : null}
-          <Link field={buttonLink} editable={isPageEditing} />
+          <Link
+            className="min-w-0 max-w-full overflow-hidden text-ellipsis text-center"
+            field={buttonLink}
+            editable={isPageEditing}
+          />
           {iconPosition !== IconPosition.LEADING ? (
             <ImageWrapper className={iconClassName} image={icon} aria-hidden={ariaHidden} />
           ) : null}

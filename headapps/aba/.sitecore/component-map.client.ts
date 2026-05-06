@@ -18,6 +18,7 @@ import * as SubscriptionBanner from 'src/components/subscription-banner/Subscrip
 import * as SecondaryNavigation from 'src/components/secondary-navigation/SecondaryNavigation';
 import * as PromoAnimatedImageRightdev from 'src/components/promo-animated/PromoAnimatedImageRight.dev';
 import * as PromoAnimatedDefaultdev from 'src/components/promo-animated/PromoAnimatedDefault.dev';
+import * as PromoAnimatedABAPromodev from 'src/components/promo-animated/PromoAnimatedABAPromo.dev';
 import * as PromoAnimated from 'src/components/promo-animated/PromoAnimated';
 import * as portaldev from 'src/components/portal/portal.dev';
 import * as PageHeader from 'src/components/page-header/PageHeader';
@@ -60,6 +61,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['SecondaryNavigation', { ...SecondaryNavigation }],
   ['PromoAnimatedImageRight', { ...PromoAnimatedImageRightdev }],
   ['PromoAnimatedDefault', { ...PromoAnimatedDefaultdev }],
+  ['PromoAnimatedABAPromo', { ...PromoAnimatedABAPromodev }],
   ['PromoAnimated', { ...PromoAnimated }],
   ['portal', { ...portaldev }],
   ['PageHeader', { ...PageHeader }],

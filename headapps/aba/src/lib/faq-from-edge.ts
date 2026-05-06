@@ -64,7 +64,7 @@ function buildFaqQuery(fragmentType: string): string {
 function buildFaqPath(): string {
   const siteName = scConfig.defaultSite || process.env.NEXT_PUBLIC_DEFAULT_SITE_NAME || '';
   if (!siteName) return '';
-  return `/sitecore/content/aba/${siteName}${FAQ_DATA_PATH_SUFFIX}`;
+  return `/sitecore/content/article-sites/aba/${siteName}${FAQ_DATA_PATH_SUFFIX}`;
 }
 
 export async function fetchFaqFromEdge(): Promise<FaqEdgeResult> {

@@ -1,6 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { Default as PromoAnimated, ImageRight } from '@/components/promo-animated/PromoAnimated';
+import {
+  Default as PromoAnimated,
+  ImageRight,
+  ABAPromo,
+  abaPromo,
+} from '@/components/promo-animated/PromoAnimated';
 import type { PromoAnimatedProps } from '@/components/promo-animated/promo-animated.props';
 import type { ImageField, LinkField } from '@sitecore-content-sdk/nextjs';
 import {
@@ -431,6 +436,46 @@ describe('PromoAnimated Component - ImageRight Variant', () => {
       expect(defaultImageContainer).not.toHaveClass('@md:order-2');
       expect(imageRightImageContainer).toHaveClass('@md:order-2');
     });
+  });
+});
+
+describe('PromoAnimated Component - ABAPromo / abaPromo Variant', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it('should render with headline as h1', () => {
+    const { container } = render(<ABAPromo {...defaultProps} />);
+    const heading = container.querySelector('h1');
+    expect(heading).toBeInTheDocument();
+    expect(heading).toHaveTextContent('Discover Excellence');
+  });
+
+  it('should render full-bleed layout class on inner wrapper', () => {
+    const { container } = render(<ABAPromo {...defaultProps} />);
+    const bleed = container.querySelector('[class*="max-w-[100vw]"]');
+    expect(bleed).toBeInTheDocument();
+  });
+
+  it('should render section with data-component and ABA promo grid class', () => {
+    const { container } = render(<ABAPromo {...defaultProps} />);
+    const section = container.querySelector('section[data-component="PromoAnimated"]');
+    expect(section).toBeInTheDocument();
+    const wrapper = container.querySelector('.promo-animated--aba-promo');
+    expect(wrapper).toBeInTheDocument();
+  });
+
+  it('should alias abaPromo to the same variant', () => {
+    const AbaPromoExport = abaPromo;
+    const { container: a } = render(<ABAPromo {...defaultProps} />);
+    const { container: b } = render(<AbaPromoExport {...defaultProps} />);
+    expect(a.querySelector('h1')).toHaveTextContent('Discover Excellence');
+    expect(b.querySelector('h1')).toHaveTextContent('Discover Excellence');
+  });
+
+  it('should render NoDataFallback when fields is null', () => {
+    render(<ABAPromo {...propsWithoutFields} />);
+    expect(screen.getByTestId('no-data-fallback')).toHaveTextContent('Promo Animated: ABA Promo');
   });
 });
 

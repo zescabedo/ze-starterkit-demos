@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 import { ComponentProps } from '@/lib/component-props';
 
 import type { JSX } from 'react';
-import componentMap from '.sitecore/component-map';
+import componentMap from '@/lib/sitecore-component-map';
 import { AppPlaceholder } from '@sitecore-content-sdk/nextjs';
 
 export type Container6321Props = ComponentProps & {

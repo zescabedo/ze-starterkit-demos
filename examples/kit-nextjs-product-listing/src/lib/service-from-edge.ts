@@ -67,7 +67,7 @@ function buildServiceQuery(fragmentType: string): string {
 function buildServicePath(): string {
   const siteName = scConfig.defaultSite || process.env.NEXT_PUBLIC_DEFAULT_SITE_NAME || '';
   if (!siteName) return '';
-  return `/sitecore/content/sync/${siteName}${SERVICE_DATA_PATH_SUFFIX}`;
+  return `/sitecore/content/product-sites/sync/${siteName}${SERVICE_DATA_PATH_SUFFIX}`;
 }
 
 export async function fetchServicesFromEdge(): Promise<ServiceEdgeResult> {

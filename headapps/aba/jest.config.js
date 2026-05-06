@@ -105,6 +105,7 @@ const config = {
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
+    '\\.(png|jpg|jpeg|gif|webp|svg)$': '<rootDir>/src/__tests__/mocks/static-image.ts',
     '^@/(.*)$': '<rootDir>/src/$1',
     '^components/(.*)$': '<rootDir>/src/components/$1',
     '^lib/(.*)$': '<rootDir>/src/lib/$1',

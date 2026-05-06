@@ -59,7 +59,36 @@
   --color-body: #505050;
   --color-surface-subtle: #f3f4f7;
   --color-accent-gold: #ecb84c;
+  /* Metallic gold (distinct from butter-yellow `--color-accent-gold`); hero CTAs / accents */
+  --color-classic-gold: #d4af37;
   --color-hero-highlight: #ffd14e;
+  /*
+   * PromoAnimated ABA Promo — matches aba.com homepage hero column (May 2026):
+   * `.col-lg-6.texture-bg { background-image: url(...HomepageGradient1.png); background-size: cover; }`
+   * `.col-lg-6.texture-bg::before { background-image: linear-gradient(345deg,#0b3052,#1967a6,#0b3052); opacity: 0.97; }`
+   */
+  --color-hero-aba-surface-deep: #0b3052;
+  --color-hero-aba-surface: #1967a6;
+  --color-hero-aba-surface-mid: #0b3052;
+  --color-hero-aba-text: #ffffff;
+  --color-hero-aba-description: #dce6f2;
+  --color-hero-aba-gradient-edge: #0b3052;
+  --color-hero-aba-gradient-center: #1967a6;
+  --color-hero-aba-gradient-end: #0b3052;
+  --hero-aba-gradient-angle: 345deg;
+  --hero-aba-gradient-stop-mid: 50%;
+  --hero-aba-gradient-overlay-opacity: 0.97;
+  /* ABA Promo primary CTA: gold fill + navy label (aba.com hero); hover unchanged vs theme primary */
+  --color-hero-aba-primary-cta-bg: var(--color-classic-gold);
+  --color-hero-aba-primary-cta-text: var(--color-accent-foreground);
+  /* Footer (ABA-style light band: navy headings, gray body, accent links) */
+  --color-footer-bg: #ffffff;
+  --color-footer-heading: #002855;
+  --color-footer-text: #58595b;
+  --color-footer-link-accent: #0077c8;
+  --color-footer-border: #e5e8ed;
+  --color-footer-icon-bg: #09243e;
+  --color-footer-icon-foreground: #ffffff;
   --disabled: [object Object];
   --figma-automations-logo: Brand A;
   --figma-automations-hero: Hero 1;
