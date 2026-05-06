@@ -9,5 +9,8 @@
     "items/sync.module.json",
     "items/solterra-co.module.json"
   ],
-  "plugins": ["Sitecore.DevEx.Extensibility.ResourcePackage@5.2.113"]
+  "plugins": [
+    "Sitecore.DevEx.Extensibility.Serialization@5.2.113",
+    "Sitecore.DevEx.Extensibility.ResourcePackage@5.2.113"
+  ]
 }

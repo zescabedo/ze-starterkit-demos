@@ -20,12 +20,12 @@
             },
             {
                 "name": "ccl.renderings",
-                "path": "/sitecore/Layout/Renderings/Project/click-click-launch",
+                "path": "/sitecore/layout/Renderings/Project/click-click-launch",
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
                 "name": "ccl.placeholderSettings",
-                "path": "/sitecore/Layout/Placeholder Settings/Project/click-click-launch",
+                "path": "/sitecore/layout/Placeholder Settings/Project/click-click-launch",
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
