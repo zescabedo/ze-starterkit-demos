@@ -1,0 +1,58 @@
+﻿---
+ID: "53652995-a4db-45cc-bbb1-5a0ba5f4a986"
+Parent: "8893d53e-115d-40f0-8d1d-c4f97333713d"
+Template: "bee4869d-b588-42c2-9797-76510c397e6a"
+Path: "/sitecore/content/article-sites/aba/Home/Articles/Technology Topic Article/Data/CTA Banner"
+BranchID: "97509128-1b31-4a5b-9c07-d4c94b611d24"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "8810a1c1-49e0-451b-b3be-aa9ad5539056"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{4B2589F4-68C0-4730-8D4B-43AE496B6091}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260505T154256Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "7a8c2095-39f5-4f40-b69d-16ddff188a68"
+      Hint: titleRequired
+      Value: "Ready to embrace beauty  with a conscience?"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5b986369-347e-4311-a137-601661f1c54c"
+    - ID: "9fdcf3e1-5289-4ae0-b4e4-9460ad50814f"
+      Hint: linkOptional
+      Value: |
+        <link class="" querystring="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" anchor="" target="" title="" linktype="internal" text="Explore Our Brands" url="" />
+    - ID: "a35015fe-805c-45d7-9446-f88b33a157d4"
+      Hint: descriptionOptional
+      Value: Be a part of the confidence revolution with Solterra & Co.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260506T151650Z
