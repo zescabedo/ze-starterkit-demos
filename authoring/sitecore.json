@@ -11,6 +11,11 @@
   ],
   "plugins": [
     "Sitecore.DevEx.Extensibility.Serialization@5.2.113",
+    "Sitecore.DevEx.Extensibility.Publishing@5.2.113",
+    "Sitecore.DevEx.Extensibility.Indexing@5.2.113",
     "Sitecore.DevEx.Extensibility.ResourcePackage@5.2.113"
-  ]
+  ],
+  "settings": {
+    "telemetryEnabled": false
+  }
 }

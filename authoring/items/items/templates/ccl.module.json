@@ -2,6 +2,7 @@
     "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
     "namespace": "Project.click-click-launch",
     "items": {
+        "path": "items",
         "includes": [
             {
                 "name": "ccl.templates",
@@ -15,7 +16,7 @@
             },
             {
                 "name": "ccl.modules",
-                "path": "/sitecore/system/settings/Project/click-click-launch",
+                "path": "/sitecore/system/Settings/Project/click-click-launch",
                 "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
