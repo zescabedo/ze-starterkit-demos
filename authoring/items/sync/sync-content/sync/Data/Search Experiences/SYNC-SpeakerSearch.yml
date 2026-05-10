@@ -1,0 +1,38 @@
+﻿---
+ID: "de2444fe-b4c9-4d0c-af4b-a7d926ba8630"
+Parent: "abc0830c-d7dc-46b2-b705-376158ac7dd9"
+Template: "5a3d7aa7-0cb1-468a-9c8d-7bc02d6f110b"
+Path: "/sitecore/content/product-sites/sync/Data/Search Experiences/SYNC-SpeakerSearch"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260508T140921Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "55323273-a15d-4405-9a31-27abe188bcd8"
+      Hint: search
+      Value: |
+        {"searchIndex":"7f51f2c5-2a6e-403f-a110-c79098410676","fieldsMapping":{"tags":"","images":"","description":"","title":"ProductName","type":"AmpPower","link":"Link"}}
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d4927189-90c6-4ede-965c-c3268564055c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260508T141422Z

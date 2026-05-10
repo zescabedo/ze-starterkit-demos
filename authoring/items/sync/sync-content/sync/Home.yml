@@ -9,6 +9,9 @@ SharedFields:
   Hint: __Thumbnail
   Value: |
     <image mediaid="{78483E08-8286-434F-9CDF-63E8CB142998}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0bd64acb-c050-48c3-919d-a5d984432cc7"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
@@ -17,6 +20,9 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
       Hint: __Final Renderings
       Value: |
@@ -29,42 +35,49 @@ Languages:
               p:before="*"
               s:ds="local:/Data/HeroST/HeroST 1"
               s:id="{7943A20A-669D-4921-81EE-F4EC7F2E78A3}"
-              s:par="?DynamicPlaceholderId=1&amp;FieldNames=%7b683A71BD-DFDD-474D-9307-A95B76B4BA65%7d"
+              s:par="DynamicPlaceholderId=1&amp;FieldNames=%7B683A71BD-DFDD-474D-9307-A95B76B4BA65%7D"
+              s:ph="headless-main" />
+            <r
+              uid="{43F82CDF-509C-4F14-B338-007A3ACCE51F}"
+              p:after="r[@uid='{8711D355-B983-492D-AE4E-DAC4927D020B}']"
+              s:ds="de2444fe-b4c9-4d0c-af4b-a7d926ba8630"
+              s:id="{F6952169-D48B-4612-9C31-AC13CAC54C61}"
+              s:par="columns&amp;GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames=%7BC504071B-4818-483D-AB3E-1A029234054E%7D&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=7"
               s:ph="headless-main" />
             <r
               uid="{5F8954F5-5968-4E3B-ACAA-986BD2159827}"
-              p:after="r[@uid='{8711D355-B983-492D-AE4E-DAC4927D020B}']"
+              p:after="r[@uid='{43F82CDF-509C-4F14-B338-007A3ACCE51F}']"
               s:ds="local:/Data/HeroST/HeroST 2"
               s:id="{7943A20A-669D-4921-81EE-F4EC7F2E78A3}"
-              s:par="?DynamicPlaceholderId=3&amp;FieldNames=%7bA03EABD5-0BA3-4E15-9BE4-7008F6814445%7d"
+              s:par="DynamicPlaceholderId=3&amp;FieldNames=%7BA03EABD5-0BA3-4E15-9BE4-7008F6814445%7D"
               s:ph="headless-main" />
             <r
               uid="{BB44CC5E-1898-4122-A47B-ECF92B73878B}"
               p:after="r[@uid='{5F8954F5-5968-4E3B-ACAA-986BD2159827}']"
               s:ds="local:/Data/HeroST/HeroST 3"
               s:id="{7943A20A-669D-4921-81EE-F4EC7F2E78A3}"
-              s:par="?DynamicPlaceholderId=4&amp;FieldNames=%7b683A71BD-DFDD-474D-9307-A95B76B4BA65%7d"
+              s:par="DynamicPlaceholderId=4&amp;FieldNames=%7B683A71BD-DFDD-474D-9307-A95B76B4BA65%7D"
               s:ph="headless-main" />
             <r
               uid="{5BEE62B0-FE21-47D0-8C56-DE4E4F2F9132}"
               p:after="r[@uid='{BB44CC5E-1898-4122-A47B-ECF92B73878B}']"
               s:ds="local:/Data/TextSlider 1"
               s:id="{234881E2-350F-4C17-A310-85138E9310A3}"
-              s:par="?DynamicPlaceholderId=2"
+              s:par="DynamicPlaceholderId=2"
               s:ph="headless-main" />
             <r
               uid="{FD2F0DD4-46DD-4C93-837F-1CABEE0C5191}"
               p:after="r[@uid='{5BEE62B0-FE21-47D0-8C56-DE4E4F2F9132}']"
               s:ds="local:/Data/MultiPromo 2"
               s:id="{D806DDF7-39A7-4A6D-8E0A-D138BC53845D}"
-              s:par="?DynamicPlaceholderId=6&amp;FieldNames=%7bC5D01FEA-2B73-4DB2-8586-18CADE58C010%7d&amp;Styles=%257C%7b210EB5A4-2A92-43F2-82F7-708B8F9F0A9A%7d%257C"
+              s:par="DynamicPlaceholderId=6&amp;FieldNames=%7BC5D01FEA-2B73-4DB2-8586-18CADE58C010%7D&amp;Styles=%257C%7B210EB5A4-2A92-43F2-82F7-708B8F9F0A9A%7D%257C"
               s:ph="headless-main" />
             <r
               uid="{4396BD08-54D2-4CBD-9AC5-60EA6EFBD66D}"
               p:after="*[1=2]"
               s:ds="local:/Data/SignupBanner 1"
               s:id="{EF8925C3-D106-4187-9BC4-3C19A213AE75}"
-              s:par="?DynamicPlaceholderId=5&amp;FieldNames=%7bE12BDED9-64B4-4696-ABAE-40486486FBBC%7d"
+              s:par="DynamicPlaceholderId=5&amp;FieldNames=%7BE12BDED9-64B4-4696-ABAE-40486486FBBC%7D"
               s:ph="headless-main" />
           </d>
         </r>
@@ -103,7 +116,7 @@ Languages:
       Value: SYNC
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "574a9209-1cd7-4435-aae2-94ba39aa6529"
+      Value: "f949a085-ee7a-481b-899c-e2288a57f577"
     - ID: "9b600e71-cf7a-4874-9032-f394a9bd2e48"
       Hint: metadataDescription
       Value: Premium audio equipment and speakers designed for audiophiles. Experience exceptional sound quality with SYNCs heritage collection.
@@ -116,7 +129,7 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260501T163953Z
+      Value: 20260508T140924Z
     - ID: "e7f8a9b0-c1d2-4e3f-8a9b-0c1d2e3f4a5b"
       Hint: metadataAuthor
       Value: Sitecore

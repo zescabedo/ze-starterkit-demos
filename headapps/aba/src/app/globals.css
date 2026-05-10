@@ -168,7 +168,8 @@
 
   .promo-no-image-compressed__headline,
   .promo-no-image-headline,
-  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .featured-tile__body {
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text, .component.people)
+    .featured-tile__body {
     position: relative;
     z-index: 2;
   }
@@ -203,29 +204,29 @@
     margin-bottom: 0;
   }
 
-  /* PromoText + PromoText3 — Lato body, smaller than headline */
-  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+  /* PromoText + PromoText3 — Lato body, smaller than headline (also People **Description**, same classes) */
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text, .component.people)
     .promo-no-image-compressed__body {
     font-family: var(--font-family-body), Lato, sans-serif;
   }
 
-  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text, .component.people)
     .featured-tile.featured-tile--without-image--light
     .featured-tile__body
     p,
-  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text, .component.people)
     .featured-tile.featured-tile--without-image--light
     .promo-no-image-compressed__body-richtext
     :where(p, li) {
     color: var(--color-promo-no-image-body-fg) !important;
-    margin-bottom: 12px !important;
+    margin-bottom: var(--space-promo-no-image-richtext-block-end) !important;
     font-family: var(--font-body), var(--font-family-body), Lato, sans-serif !important;
     font-size: 16px !important;
     line-height: 24px !important;
     font-weight: 400 !important;
   }
 
-  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text, .component.people)
     .featured-tile.featured-tile--without-image--light
     .featured-tile__body
     .rich-text {
@@ -236,7 +237,7 @@
    * Authors sometimes paste a heading into PromoText / PromoText3; neutralize global `h2` scale inside body slots
    * so the category line does not inherit page heading styles.
    */
-  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text)
+  :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text, .component.people)
     .featured-tile.featured-tile--without-image--light
     .promo-no-image-compressed__body-richtext
     :where(h1, h2, h3, h4, h5, h6) {
@@ -245,7 +246,7 @@
     font-size: var(--font-size-base) !important;
     line-height: 24px !important;
     font-weight: 400 !important;
-    margin: 0 0 12px !important;
+    margin: 0 0 var(--space-promo-no-image-richtext-block-end) !important;
     text-transform: none !important;
     letter-spacing: normal !important;
   }
@@ -269,7 +270,7 @@
     background-color: var(--color-promo-no-image-pill-accent);
     border: var(--border-width-promo-no-image-pill) solid var(--color-promo-no-image-pill-accent) !important;
     border-radius: 9999px !important;
-    margin-bottom: 12px;
+    margin-bottom: var(--space-promo-no-image-richtext-block-end);
     padding: var(--padding-promo-no-image-pill-y) var(--padding-promo-no-image-pill-x) !important;
     display: inline-flex !important;
     align-items: center;
@@ -348,25 +349,26 @@
   /* CTA — `.call-to-action` (aba.com); arrow follows `currentColor` on hover */
   :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .call-to-action {
     color: var(--color-promo-no-image-cta-fg);
-    padding-right: 18px;
+    padding-right: var(--padding-promo-no-image-cta-trailing-icon);
     position: absolute;
     bottom: var(--padding-promo-no-image-cta-bottom);
     left: var(--padding-promo-no-image-cta-inline);
     z-index: 1;
-    max-width: calc(100% - 72px);
+    max-width: var(--max-width-promo-no-image-cta);
     margin: 0;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.88px;
+    font-family: var(--font-body), var(--font-family-body), Lato, sans-serif;
+    font-weight: var(--font-weight-promo-no-image-cta);
+    font-size: var(--font-size-promo-no-image-cta);
+    line-height: var(--line-height-promo-no-image-cta);
+    letter-spacing: var(--letter-spacing-promo-no-image-cta);
     text-transform: uppercase;
     transition: color 0.25s ease-in-out;
     text-decoration: none !important;
   }
 
   :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .call-to-action::after {
-    width: 8px;
-    height: 12px;
+    width: var(--width-promo-no-image-cta-chevron);
+    height: var(--height-promo-no-image-cta-chevron);
     display: block;
     position: absolute;
     top: 50%;
@@ -375,14 +377,14 @@
     content: '';
     background-color: currentColor;
     transition: background-color 0.25s ease-in-out;
-    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12'%3E%3Cpath fill='black' d='M2.01 0 0 2.01 4.17 6 0 9.99 2.01 12 8 6z'/%3E%3C/svg%3E");
-    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12'%3E%3Cpath fill='black' d='M2.01 0 0 2.01 4.17 6 0 9.99 2.01 12 8 6z'/%3E%3C/svg%3E");
+    -webkit-mask-image: var(--mask-image-promo-no-image-cta-chevron);
+    mask-image: var(--mask-image-promo-no-image-cta-chevron);
     mask-repeat: no-repeat;
     mask-position: center;
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
-    mask-size: 8px 12px;
-    -webkit-mask-size: 8px 12px;
+    mask-size: var(--width-promo-no-image-cta-chevron) var(--height-promo-no-image-cta-chevron);
+    -webkit-mask-size: var(--width-promo-no-image-cta-chevron) var(--height-promo-no-image-cta-chevron);
   }
 
   :is(.promo--no-image-compressed, .promo--featured-tile-with-image .promo-featured-tile__text) .call-to-action:hover {
@@ -680,5 +682,304 @@
 .multi-promo-events.container-dark-background .multi-promo-events__intro-description a:hover,
 [data-component='MultiPromoCarousel'].container-dark-background .multi-promo-events__intro-description a:hover {
   color: var(--color-dark-foreground);
+}
+
+/*
+ * People (Content Blocks) — ABA promo-style featured tile; uses theme tokens from `@theme` / globals.
+ * Width: align with page column (max-width + horizontal padding). Grid: minmax(0,…) + clipped media
+ * matches `.promo--featured-tile-with-image` so portrait images cannot overflow the content box.
+ */
+.component.people > .component-content.people__content {
+  width: 100%;
+  max-width: var(--max-width-people-content);
+  margin-left: auto;
+  margin-right: auto;
+  padding-inline: var(--padding-people-content-inline);
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .component.people > .component-content.people__content {
+    padding-inline: var(--padding-people-content-inline-lg);
+  }
+}
+
+.component.people .people-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition:
+    box-shadow 0.25s ease-in-out,
+    -webkit-box-shadow 0.25s ease-in-out;
+}
+
+.component.people .people-card:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.component.people .people-card__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1.25rem, 2vw, 2rem);
+  align-items: stretch;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .component.people .people-card__grid {
+    grid-template-columns: var(--grid-promo-featured-tile-text-track) var(--grid-promo-featured-tile-media-track);
+  }
+
+  /*
+   * Image left: JSX renders media → text; swap column definitions so auto-placement still maps
+   * `.people-card__media` to `--grid-promo-featured-tile-media-track` (avoids `order` / `grid-column` bugs).
+   */
+  .component.people.people--with-image.people--image-left .people-card__grid {
+    grid-template-columns: var(--grid-promo-featured-tile-media-track) var(--grid-promo-featured-tile-text-track);
+  }
+}
+
+.component.people .people-card__text {
+  min-width: 0;
+}
+
+.component.people .people-card__media {
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  min-height: var(--min-height-promo-featured-tile-media);
+  background-color: var(--color-promo-featured-tile-media-fallback-bg);
+  border-radius: var(--border-radius-lg);
+}
+
+.component.people .people-card__image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  .component.people .people-card__media {
+    min-height: 0;
+    align-self: stretch;
+  }
+
+  .component.people .people-card__media .people-card__image,
+  .component.people .people-card__media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+  }
+}
+
+/* Gold bar (hero CTA / classic gold family) + L-shaped corners like promo featured tile */
+.component.people .people-card__gold-bar {
+  width: var(--width-people-gold-bar);
+  height: var(--height-people-gold-bar);
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius-sm);
+  background-color: var(--color-people-gold-bar);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.component.people .people-card.featured-tile--without-image--light {
+  position: relative;
+}
+
+.component.people .people-card.featured-tile--without-image--light::before,
+.component.people .people-card.featured-tile--without-image--light::after {
+  width: var(--size-people-gold-corner);
+  height: var(--size-people-gold-corner);
+  display: block;
+  position: absolute;
+  content: '';
+  pointer-events: none;
+  z-index: 1;
+}
+
+.component.people .people-card.featured-tile--without-image--light::before {
+  border-top: var(--border-width-people-gold-corner) solid var(--color-promo-no-image-corner-accent);
+  border-right: var(--border-width-people-gold-corner) solid var(--color-promo-no-image-corner-accent);
+  top: var(--size-people-gold-corner-offset);
+  right: var(--size-people-gold-corner-offset);
+}
+
+.component.people .people-card.featured-tile--without-image--light::after {
+  border-bottom: var(--border-width-people-gold-corner) solid var(--color-promo-no-image-corner-accent);
+  border-left: var(--border-width-people-gold-corner) solid var(--color-promo-no-image-corner-accent);
+  bottom: var(--size-people-gold-corner-offset);
+  left: var(--size-people-gold-corner-offset);
+}
+
+.component.people.people--no-image .people-card__inner {
+  max-width: var(--max-width-people-text-only);
+  margin-inline: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.component.people .people-card--split .people-card__grid {
+  position: relative;
+  z-index: 2;
+}
+
+.component.people .people-card__inner {
+  overflow-wrap: anywhere;
+}
+
+/*
+ * Sitecore **Content alignment** — `position-left` | `position-center` | `position-right` `@utility` on root
+ * (same pattern as Title / Rich Text). Meta uses grid `justify-items` so label/value track alignment.
+ */
+.component.people.position-left .people-card__inner {
+  text-align: start;
+}
+
+.component.people.position-left .people-card__meta-row {
+  justify-items: start;
+}
+
+.component.people.position-center .people-card__inner {
+  text-align: center;
+}
+
+.component.people.position-center .people-card__meta-row {
+  justify-items: center;
+}
+
+.component.people.position-center .people-card__gold-bar {
+  margin-inline: auto;
+}
+
+.component.people.position-right .people-card__inner {
+  text-align: end;
+}
+
+.component.people.position-right .people-card__meta-row {
+  justify-items: end;
+}
+
+.component.people.position-right .people-card__gold-bar {
+  margin-inline-start: auto;
+}
+
+.component.people .people-card__name {
+  color: var(--color-promo-no-image-headline-fg);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 1.2rem + 1.5vw, 2.25rem);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+}
+
+.component.people .people-card__job {
+  color: var(--color-brand-link);
+  font-family: var(--font-body), var(--font-family-body), Lato, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+
+.component.people .people-card__meta {
+  margin: 0;
+  padding: 0;
+}
+
+.component.people .people-card__meta-row {
+  display: grid;
+  grid-template-columns: minmax(5rem, 6.5rem) minmax(0, 1fr);
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-body), var(--font-family-body), Lato, sans-serif;
+  font-size: var(--font-size-base, 1rem);
+  line-height: 1.5;
+}
+
+.component.people .people-card__meta-row:last-child {
+  margin-bottom: var(--space-promo-no-image-richtext-block-end);
+}
+
+.component.people .people-card__meta-label {
+  margin: 0;
+  color: var(--color-muted-foreground);
+  font-weight: 600;
+}
+
+.component.people .people-card__meta-value {
+  margin: 0;
+  color: var(--color-promo-no-image-body-fg);
+}
+
+.component.people .people-card__pill-text {
+  color: var(--color-promo-no-image-pill-accent);
+  font-weight: 800;
+  font-size: var(--font-size-promo-no-image-pill);
+  letter-spacing: var(--letter-spacing-promo-no-image-pill);
+  text-transform: uppercase;
+}
+
+/*
+ * People CTA — same `@theme` tokens and rules as Promo `.call-to-action` (in flow: relative, not tile-anchored).
+ */
+.component.people .people-card__link-wrap {
+  margin-block-start: var(--space-promo-no-image-flow-end-to-cta);
+}
+
+.component.people .people-card__link-wrap .call-to-action {
+  position: relative;
+  color: var(--color-promo-no-image-cta-fg);
+  padding-right: var(--padding-promo-no-image-cta-trailing-icon);
+  margin: 0;
+  max-width: var(--max-width-promo-no-image-cta);
+  font-family: var(--font-body), var(--font-family-body), Lato, sans-serif;
+  font-weight: var(--font-weight-promo-no-image-cta);
+  font-size: var(--font-size-promo-no-image-cta);
+  line-height: var(--line-height-promo-no-image-cta);
+  letter-spacing: var(--letter-spacing-promo-no-image-cta);
+  text-transform: uppercase;
+  transition: color 0.25s ease-in-out;
+  text-decoration: none !important;
+  z-index: 1;
+}
+
+.component.people .people-card__link-wrap .call-to-action::after {
+  width: var(--width-promo-no-image-cta-chevron);
+  height: var(--height-promo-no-image-cta-chevron);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  content: '';
+  background-color: currentColor;
+  transition: background-color 0.25s ease-in-out;
+  -webkit-mask-image: var(--mask-image-promo-no-image-cta-chevron);
+  mask-image: var(--mask-image-promo-no-image-cta-chevron);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-size: var(--width-promo-no-image-cta-chevron) var(--height-promo-no-image-cta-chevron);
+  -webkit-mask-size: var(--width-promo-no-image-cta-chevron) var(--height-promo-no-image-cta-chevron);
+}
+
+.component.people .people-card__link-wrap .call-to-action:hover {
+  color: var(--color-promo-no-image-cta-fg-hover);
+  text-decoration: underline !important;
+}
+
+.component.people .people-card--split .people-card__text {
+  padding: var(--padding-promo-no-image-tile-top) var(--padding-promo-no-image-tile-inline)
+    var(--padding-promo-no-image-tile-bottom);
+}
+
+.component.people.people--no-image .people-card__inner,
+.component.people.people--with-image .people-card__text .people-card__inner {
+  padding: var(--padding-promo-no-image-tile-top) var(--padding-promo-no-image-tile-inline)
+    var(--padding-promo-no-image-tile-bottom);
 }
 

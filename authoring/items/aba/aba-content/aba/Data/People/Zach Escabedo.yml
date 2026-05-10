@@ -1,0 +1,49 @@
+﻿---
+ID: "97e5b11c-cf2d-4a4d-bf3d-548e5e86df79"
+Parent: "2b91458e-ffc2-456e-90d7-37d32d46016d"
+Template: "9674271d-d14b-4a2f-8119-8d1f83d63f6f"
+Path: "/sitecore/content/article-sites/aba/Data/People/Zach Escabedo"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260510T200734Z
+    - ID: "5704692e-2fd7-48e6-9232-95fe8dbb8501"
+      Hint: JobTitle
+      Value: Manager
+    - ID: "83c9788c-b4af-46cc-968e-f547e237ea5f"
+      Hint: Link
+      Value: |
+        <link linktype="internal" id="6666b6a4-7bfe-4193-9ee5-dc21a31cef40" anchor="" querystring="" target="" class="" text="Learn More" title=""/>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ed23ab53-7b80-4304-9a5b-d876b4b1c583"
+    - ID: "9231a1b3-ec9e-4a85-b59e-b930b749ff17"
+      Hint: HeadshotImage
+      Value: |
+        <image mediaid="393ce20e-c8f6-4c03-94aa-8fd0f6ffa6ca" alt="Zach Escabedo Profile Picture" />
+    - ID: "a6fa2d18-cafe-4e9b-8cfd-4745365707eb"
+      Hint: FirstName
+      Value: Zach
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "c01549bc-3c9a-4f1e-a682-e938fd3a9878"
+      Hint: LastName
+      Value: Escabedo
+    - ID: "cf755314-96b0-49e0-bb49-9b8a075f65ab"
+      Hint: Department
+      Value: Solution Consulting
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260510T204019Z
+    - ID: "ffc7a132-1339-44cb-a68b-2e2ba9b060b2"
+      Hint: Description
+      Value: "Zach is a Solution Engineering leader with extensive experience helping enterprise organizations evaluate and implement modern digital experience platforms. He specializes in aligning business objectives with technology strategy across areas such as AI, CMS, personalization, and digital experience transformation. His work focuses on leading customer discovery, shaping technical solutions, and delivering high-impact demonstrations and proof-of-concepts for complex enterprise initiatives. He also leads and mentors presales teams, driving technical excellence and customer engagement across the organization."

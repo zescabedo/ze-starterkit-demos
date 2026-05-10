@@ -1,0 +1,69 @@
+﻿---
+ID: "fec3f54a-09cc-4e3f-b3c7-25842a3c4d45"
+Parent: "9674271d-d14b-4a2f-8119-8d1f83d63f6f"
+Template: "9674271d-d14b-4a2f-8119-8d1f83d63f6f"
+Path: "/sitecore/templates/Project/click-click-launch/Components/Content Blocks/People/__Standard Values"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "2ff60a45-c838-44d9-afa6-5584dbe89148"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "233e0f34-3cad-4c07-968f-3a3d71b5fa71"
+      Hint: Country
+      Value: United States
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260510T184912Z
+    - ID: "3b1dfea3-0181-4d9d-b622-14b27f0ba4bd"
+      Hint: State
+      Value: Texas
+    - ID: "503dd9a1-4eef-4d4e-b7b3-3a6c95fe2810"
+      Hint: City
+      Value: Dallas
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5704692e-2fd7-48e6-9232-95fe8dbb8501"
+      Hint: JobTitle
+      Value: Analyst
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5a2818ce-580f-44ff-8437-1e94e142c2cc"
+    - ID: "9231a1b3-ec9e-4a85-b59e-b930b749ff17"
+      Hint: HeadshotImage
+      Value: |
+        <image mediaid="{F1FC78D7-C720-4022-A6D4-656E50F72ED8}" />
+    - ID: "a6fa2d18-cafe-4e9b-8cfd-4745365707eb"
+      Hint: FirstName
+      Value: First Name
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "c01549bc-3c9a-4f1e-a682-e938fd3a9878"
+      Hint: LastName
+      Value: Last Name
+    - ID: "c99587bf-edee-4f47-be53-fbfb980e7c82"
+      Hint: Company
+      Value: Sitecore
+    - ID: "cf755314-96b0-49e0-bb49-9b8a075f65ab"
+      Hint: Department
+      Value: Services
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260510T204113Z
+    - ID: "ffc7a132-1339-44cb-a68b-2e2ba9b060b2"
+      Hint: Description
+      Value: This individual is an experienced technology and business leader focused on helping organizations evaluate and implement modern digital solutions. They specialize in aligning business goals with technical strategy across areas such as digital experience, AI, content management, and customer engagement.

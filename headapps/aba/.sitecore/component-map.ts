@@ -59,6 +59,9 @@ import * as PromoAnimatedDefaultdev from 'src/components/promo-animated/PromoAni
 import * as PromoAnimatedABAPromodev from 'src/components/promo-animated/PromoAnimatedABAPromo.dev';
 import * as PromoAnimated from 'src/components/promo-animated/PromoAnimated';
 import * as portaldev from 'src/components/portal/portal.dev';
+import * as peopleprops from 'src/components/people/people.props';
+import * as peopleparams from 'src/components/people/people-params';
+import * as People from 'src/components/people/People';
 import * as pageheaderprops from 'src/components/page-header/page-header.props';
 import * as PageHeader from 'src/components/page-header/PageHeader';
 import * as multipromotabsprops from 'src/components/multi-promo-tabs/multi-promo-tabs.props';
@@ -194,6 +197,9 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['PromoAnimatedABAPromo', { ...PromoAnimatedABAPromodev }],
   ['PromoAnimated', { ...PromoAnimated, componentType: 'client' }],
   ['portal', { ...portaldev }],
+  ['people', { ...peopleprops }],
+  ['people-params', { ...peopleparams }],
+  ['People', { ...People }],
   ['page-header', { ...pageheaderprops }],
   ['PageHeader', { ...PageHeader, componentType: 'client' }],
   ['multi-promo-tabs', { ...multipromotabsprops }],

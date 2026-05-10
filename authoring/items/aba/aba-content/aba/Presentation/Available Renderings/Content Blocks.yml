@@ -1,23 +1,15 @@
 ﻿---
-ID: "e8917f6f-356e-4163-b4e6-6f248488f929"
+ID: "c05ddb00-c715-4012-b8e3-c2b96bdbd962"
 Parent: "a66ff18d-72b5-463c-8bce-aa3b2ecc7a57"
 Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
-Path: "/sitecore/content/article-sites/aba/Presentation/Available Renderings/Page Content"
-BranchID: "209f458a-5f7c-4024-9bbb-c78ad6d21abc"
+Path: "/sitecore/content/article-sites/aba/Presentation/Available Renderings/Content Blocks"
 SharedFields:
 - ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
   Hint: Renderings
-  Value: |
-    {C5F905F8-FD1F-444E-A9E5-AC6B774FF0DE}
-    {2492BAC4-DA07-4C86-87F0-9873D40E2276}
-    {9C6D53E3-FE57-4638-AF7B-6D68304C7A94}
-    {3836D951-BB14-43AC-9231-649B7F245DC5}
+  Value: "{2046630F-2FBE-4C77-A268-C554F3781C40}"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "a03e4e56-0a5c-43f5-9f25-fd0bf3a76015"
-- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
-  Hint: __Originator
-  Value: "{EDD5B21F-2BD2-4290-81A2-68428363D312}"
+  Value: "c7525404-ebad-4a04-8b57-573ae14bca05"
 Languages:
 - Language: en
   Versions:
@@ -25,10 +17,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260505T154133Z
-    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
-      Hint: __Workflow state
-      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
+      Value: 20260510T194352Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -39,11 +28,11 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e6d00f9a-27e3-4c49-bbfa-a7d162118a29"
+      Value: "b19bcb0c-0cdd-4a34-bf6b-a2a83622965b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260510T194418Z
+      Value: 20260510T194408Z

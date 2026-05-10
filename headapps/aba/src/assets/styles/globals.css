@@ -114,10 +114,31 @@
   --padding-promo-no-image-tile-top: 37px;
   --padding-promo-no-image-tile-inline: 28px;
   --padding-promo-no-image-tile-bottom: 100px;
+  /* After last `p`/`li` in PromoText / Text3 body — same tail margin before the padded CTA zone */
+  --space-promo-no-image-richtext-block-end: 12px;
+  /*
+   * Vertical gap from end of in-flow body (PromoText3 block, after paragraph margins) to the CTA line box,
+   * matching no-image tile geometry: tile bottom padding − CTA `bottom` offset − CTA line-height.
+   * Used by People (location / meta → link).
+   */
+  --space-promo-no-image-flow-end-to-cta: calc(
+    var(--padding-promo-no-image-tile-bottom) - var(--padding-promo-no-image-cta-bottom) -
+      var(--line-height-promo-no-image-cta)
+  );
   --padding-promo-no-image-tile-dark-block-end: 31px;
   --padding-promo-no-image-tile-dark-inline: 28px;
   --padding-promo-no-image-cta-bottom: 36px;
   --padding-promo-no-image-cta-inline: 36px;
+  /* Promo no-image CTA (`.call-to-action`) — typography, chevron, max width; shared with People */
+  --font-size-promo-no-image-cta: 14px;
+  --line-height-promo-no-image-cta: 17px;
+  --letter-spacing-promo-no-image-cta: 0.88px;
+  --font-weight-promo-no-image-cta: 900;
+  --padding-promo-no-image-cta-trailing-icon: 18px;
+  --width-promo-no-image-cta-chevron: 8px;
+  --height-promo-no-image-cta-chevron: 12px;
+  --max-width-promo-no-image-cta: calc(100% - (2 * var(--padding-promo-no-image-cta-inline)));
+  --mask-image-promo-no-image-cta-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12'%3E%3Cpath fill='black' d='M2.01 0 0 2.01 4.17 6 0 9.99 2.01 12 8 6z'/%3E%3C/svg%3E");
   --border-width-promo-no-image-pill: 2px;
   --border-width-promo-no-image-corner: 2px;
   --size-promo-no-image-corner: 53px;
@@ -377,4 +398,18 @@
   --width-px: 0.0625rem;
   --radius: var(--border-radius-default, 0.5rem);
   --radius-pill: 500px;
+  /*
+   * People (ABA Content Blocks) — max content width + gold accent geometry.
+   * Colors reference existing tokens in `app/globals.css` (e.g. `--color-promo-no-image-corner-accent`).
+   */
+  --max-width-people-content: 80rem;
+  --padding-people-content-inline: 1rem;
+  --padding-people-content-inline-lg: 1.5rem;
+  --max-width-people-text-only: 48rem;
+  --width-people-gold-bar: 3.5rem;
+  --height-people-gold-bar: 0.25rem;
+  --color-people-gold-bar: #d4af37;
+  --size-people-gold-corner: 44px;
+  --size-people-gold-corner-offset: 12px;
+  --border-width-people-gold-corner: 2px;
 }

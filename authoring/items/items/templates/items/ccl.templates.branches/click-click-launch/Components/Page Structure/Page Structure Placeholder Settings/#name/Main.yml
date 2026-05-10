@@ -7,6 +7,9 @@ SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
   Value: "headless-main"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "50c4f14b-f0a7-4622-a726-7a235ee1dba2"
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Value: |
@@ -16,6 +19,7 @@ SharedFields:
     {688FA7E2-563E-4BA0-B3A8-6EC445C9F78F}
     {20F3EF33-0762-45C4-83C7-0F56A384FFCB}
     {E164E3B5-0FF9-438A-A947-63F1CDD95B78}
+    {2046630F-2FBE-4C77-A268-C554F3781C40}
 Languages:
 - Language: en
   Versions:
@@ -34,11 +38,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ae91da9e-7d75-452d-a576-bfb7027ac065"
+      Value: "5f80b7f3-4aff-4dd3-a543-3ced81de029e"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\Admin
+        sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250313T005246Z
+      Value: 20260510T194126Z

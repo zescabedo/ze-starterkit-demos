@@ -1,0 +1,32 @@
+﻿---
+ID: "2b91458e-ffc2-456e-90d7-37d32d46016d"
+Parent: "a0d38e8f-ab1f-4d2f-a014-f84eb1668acd"
+Template: "462cdcd5-0da9-447e-9cf8-506577161844"
+Path: "/sitecore/content/article-sites/aba/Data/People"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {9674271D-D14B-4A2F-8119-8D1F83D63F6F}
+    {462CDCD5-0DA9-447E-9CF8-506577161844}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "716605f4-d9eb-4f03-a48a-da7a213bbbbc"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260510T192750Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ee79e430-ca4a-497a-b8f0-c4281c9fee9d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260510T192850Z

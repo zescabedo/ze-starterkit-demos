@@ -7,6 +7,9 @@ SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
   Value: "container-fullbleed-{*}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "6d9038e9-6223-442f-b31b-7f0070fb1f1f"
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
   Value: |
@@ -25,6 +28,7 @@ SharedFields:
     {02340885-3692-4CAD-AC11-ED61206501A3}
     {688FA7E2-563E-4BA0-B3A8-6EC445C9F78F}
     {20F3EF33-0762-45C4-83C7-0F56A384FFCB}
+    {2046630F-2FBE-4C77-A268-C554F3781C40}
 Languages:
 - Language: en
   Versions:
@@ -43,11 +47,11 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "224057e3-8b5c-4f85-a237-320cfa945b15"
+      Value: "e16bc88e-1ced-46ec-b311-982f6f44dcf1"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\Admin
+        sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20250313T005139Z
+      Value: 20260510T194104Z
