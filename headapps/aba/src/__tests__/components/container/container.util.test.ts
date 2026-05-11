@@ -1,6 +1,8 @@
 import {
   getContainerPlaceholderProps,
+  hasContainer7030AlignTopStyle,
   isContainerPlaceholderEmpty,
+  stripContainer7030AlignTopStyle,
 } from '@/components/container/container.util';
 import { ComponentRendering } from '@sitecore-content-sdk/nextjs';
 import React from 'react';
@@ -176,6 +178,38 @@ describe('Container Utility Functions', () => {
 
       // Empty arrays are truthy in JavaScript, so placeholder is considered to exist
       expect(result).toBe(false);
+    });
+  });
+
+  describe('hasContainer7030AlignTopStyle', () => {
+    it('returns false for empty input', () => {
+      expect(hasContainer7030AlignTopStyle(undefined)).toBe(false);
+      expect(hasContainer7030AlignTopStyle('')).toBe(false);
+      expect(hasContainer7030AlignTopStyle('   ')).toBe(false);
+    });
+
+    it('detects Align Top token', () => {
+      expect(hasContainer7030AlignTopStyle('Align Top')).toBe(true);
+      expect(hasContainer7030AlignTopStyle('foo Align Top bar')).toBe(true);
+      expect(hasContainer7030AlignTopStyle('align top')).toBe(true);
+    });
+
+    it('does not match unrelated strings', () => {
+      expect(hasContainer7030AlignTopStyle('AlignTop')).toBe(false);
+      expect(hasContainer7030AlignTopStyle('Top Align')).toBe(false);
+    });
+  });
+
+  describe('stripContainer7030AlignTopStyle', () => {
+    it('returns empty for empty input', () => {
+      expect(stripContainer7030AlignTopStyle(undefined)).toBe('');
+      expect(stripContainer7030AlignTopStyle('')).toBe('');
+    });
+
+    it('removes Align Top and normalizes spaces', () => {
+      expect(stripContainer7030AlignTopStyle('Align Top')).toBe('');
+      expect(stripContainer7030AlignTopStyle('foo Align Top bar')).toBe('foo bar');
+      expect(stripContainer7030AlignTopStyle('  custom  Align Top  ')).toBe('custom');
     });
   });
 });

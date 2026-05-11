@@ -118,3 +118,19 @@ export const propsWithOnlyRightPlaceholder = {
   page: mockSitecoreContext.page,
 };
 
+export const propsWithAlignTopStyle = {
+  ...defaultProps,
+  params: {
+    ...defaultProps.params,
+    styles: 'Align Top',
+  },
+};
+
+export const propsWithAlignTopAndCustomStyle = {
+  ...defaultProps,
+  params: {
+    ...defaultProps.params,
+    styles: 'custom-7030-style Align Top',
+  },
+};
+

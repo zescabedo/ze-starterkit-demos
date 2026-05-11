@@ -5,6 +5,8 @@ import {
   ImageRight,
   ABAPromo,
   abaPromo,
+  FullWidthBackground,
+  fullWidthBackground,
 } from '@/components/promo-animated/PromoAnimated';
 import type { PromoAnimatedProps } from '@/components/promo-animated/promo-animated.props';
 import type { ImageField, LinkField } from '@sitecore-content-sdk/nextjs';
@@ -19,6 +21,8 @@ import {
   propsWithoutSecondaryLink,
   propsWithCustomStyles,
   propsWithPositionRight,
+  propsWithCleanBackgroundStyle,
+  propsWithDarkBackgroundStyle,
   propsWithoutFields,
 } from './PromoAnimated.mockProps';
 
@@ -26,10 +30,12 @@ import {
 interface MockTextProps {
   field?: { value?: string };
   tag?: string;
+  className?: string;
 }
 
 interface MockRichTextProps {
   field?: { value?: string };
+  className?: string;
 }
 
 interface MockImageWrapperProps {
@@ -76,23 +82,60 @@ jest.mock('@/lib/utils', () => ({
   },
 }));
 
+interface MockSitecoreImageProps {
+  field?: ImageField;
+  className?: string;
+}
+
 jest.mock('@sitecore-content-sdk/nextjs', () => ({
-  Text: ({ field, tag }: MockTextProps) => {
+  Text: ({ field, tag, className }: MockTextProps) => {
     const Tag = tag || 'span';
-    return React.createElement(Tag, {}, field?.value || '');
+    return React.createElement(Tag, { className }, field?.value || '');
   },
-  RichText: ({ field }: MockRichTextProps) =>
+  RichText: ({ field, className }: MockRichTextProps) =>
     React.createElement('div', {
+      className,
       dangerouslySetInnerHTML: { __html: field?.value || '' },
+    }),
+  Image: ({ field, className }: MockSitecoreImageProps) =>
+    React.createElement('img', {
+      'data-testid': 'sitecore-image',
+      src: field?.value?.src as string | undefined,
+      alt: (field?.value?.alt as string | undefined) ?? '',
+      className,
     }),
   useSitecore: () => ({
     page: {
       mode: {
         isEditing: false,
+        isPreview: false,
       },
     },
   }),
 }));
+
+jest.mock('next/image', () => {
+  const MockNextImage = ({
+    src,
+    alt,
+    className,
+  }: {
+    src: string;
+    alt: string;
+    className?: string;
+    fill?: boolean;
+    priority?: boolean;
+    sizes?: string;
+  }) =>
+    React.createElement('img', {
+      'data-testid': 'next-image',
+      src,
+      alt,
+      className,
+    });
+  MockNextImage.displayName = 'MockNextImage';
+  return { __esModule: true, default: MockNextImage };
+});
 
 jest.mock('@/components/image/ImageWrapper.dev', () => ({
   Default: ({ image, className, wrapperClass }: MockImageWrapperProps) => (
@@ -476,6 +519,219 @@ describe('PromoAnimated Component - ABAPromo / abaPromo Variant', () => {
   it('should render NoDataFallback when fields is null', () => {
     render(<ABAPromo {...propsWithoutFields} />);
     expect(screen.getByTestId('no-data-fallback')).toHaveTextContent('Promo Animated: ABA Promo');
+  });
+});
+
+describe('PromoAnimated Component - FullWidthBackground Variant', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it('should render the title as an h2 (same as Default)', () => {
+    const { container } = render(<FullWidthBackground {...defaultProps} />);
+    const heading = container.querySelector('h2');
+    expect(heading).toBeInTheDocument();
+    expect(heading).toHaveTextContent('Discover Excellence');
+  });
+
+  it('should render description and CTAs', () => {
+    render(<FullWidthBackground {...defaultProps} />);
+    expect(screen.getByText('Shop Now')).toBeInTheDocument();
+    expect(screen.getByText('Learn More')).toBeInTheDocument();
+  });
+
+  it('should render the datasource image as a full-bleed background', () => {
+    const { container } = render(<FullWidthBackground {...defaultProps} />);
+
+    const fullBleed = container.querySelector('.promo-animated--full-width-bg');
+    expect(fullBleed).toBeInTheDocument();
+    expect(fullBleed).toHaveClass('w-screen', 'max-w-[100vw]');
+
+    const bgImage = container.querySelector('.promo-animated--full-width-bg__image');
+    expect(bgImage).toBeInTheDocument();
+    expect(bgImage).toHaveClass('absolute', 'inset-0');
+
+    // Production (non-editing) path renders next/image with `fill`, no width/height.
+    const img = bgImage?.querySelector('img');
+    expect(img).toHaveAttribute('data-testid', 'next-image');
+    expect(img).toHaveAttribute('src', '/images/promo-animated.jpg');
+    expect(img).toHaveAttribute('alt', 'Promo Animated Image');
+    expect(img).toHaveClass('object-cover', 'object-center');
+  });
+
+  it('should apply min-height tokens so the bg covers the entire section', () => {
+    const { container } = render(<FullWidthBackground {...defaultProps} />);
+    const fullBleed = container.querySelector('.promo-animated--full-width-bg');
+
+    expect(fullBleed).toHaveClass(
+      'min-h-[var(--min-height-promo-animated-full-width-bg)]',
+      '@md:min-h-[var(--min-height-promo-animated-full-width-bg-md)]',
+      '@lg:min-h-[var(--min-height-promo-animated-full-width-bg-lg)]'
+    );
+  });
+
+  it('should vertically center its content within the full-bleed area', () => {
+    const { container } = render(<FullWidthBackground {...defaultProps} />);
+    const fullBleed = container.querySelector('.promo-animated--full-width-bg');
+    expect(fullBleed).toHaveClass('flex', 'items-center');
+  });
+
+  it('should place content in the left grid column (ABA Promo–style order)', () => {
+    const { container } = render(<FullWidthBackground {...defaultProps} />);
+
+    const content = container.querySelector('.promo-animated__content');
+    expect(content).toBeInTheDocument();
+    expect(content).toHaveClass('@md:order-1');
+
+    const decorativeSlot = container.querySelector('.promo-animated__image');
+    expect(decorativeSlot).toBeInTheDocument();
+    expect(decorativeSlot).toHaveClass('@md:order-2');
+  });
+
+  it('should render the primary CTA wrapper with the gold-token anchor styles', () => {
+    const { getByTestId } = render(<FullWidthBackground {...defaultProps} />);
+
+    const primary = getByTestId('primary-cta');
+    expect(primary).toHaveClass(
+      '[&_a]:!bg-[var(--color-promo-animated-full-width-bg-primary-cta-bg)]',
+      '[&_a]:!text-[var(--color-promo-animated-full-width-bg-primary-cta-text)]',
+      '[&_a:hover]:!bg-[var(--color-promo-animated-full-width-bg-primary-cta-bg-hover)]',
+      '[&_a:hover]:!text-[var(--color-promo-animated-full-width-bg-primary-cta-text-hover)]'
+    );
+    const link = primary.querySelector('[data-testid="button-component"]');
+    expect(link).toHaveAttribute('href', '/shop/premium');
+  });
+
+  it('should render the secondary CTA wrapper with the primary-blue-token anchor styles', () => {
+    const { getByTestId } = render(<FullWidthBackground {...defaultProps} />);
+
+    const secondary = getByTestId('secondary-cta');
+    expect(secondary).toHaveClass(
+      '[&_a]:!bg-[var(--color-promo-animated-full-width-bg-secondary-cta-bg)]',
+      '[&_a]:!text-[var(--color-promo-animated-full-width-bg-secondary-cta-text)]',
+      '[&_a:hover]:!bg-[var(--color-promo-animated-full-width-bg-secondary-cta-bg-hover)]',
+      '[&_a:hover]:!text-[var(--color-promo-animated-full-width-bg-secondary-cta-text-hover)]'
+    );
+    const link = secondary.querySelector('[data-testid="button-component"]');
+    expect(link).toHaveAttribute('href', '/learn-more');
+  });
+
+  it('should render both CTAs with the solid primary (`default`) button variant', () => {
+    const { getByTestId } = render(<FullWidthBackground {...defaultProps} />);
+
+    expect(
+      getByTestId('primary-cta').querySelector('[data-testid="button-component"]')
+    ).toHaveAttribute('data-variant', 'default');
+    expect(
+      getByTestId('secondary-cta').querySelector('[data-testid="button-component"]')
+    ).toHaveAttribute('data-variant', 'default');
+  });
+
+  it('should not render any readability overlay (gradient removed)', () => {
+    const { container } = render(<FullWidthBackground {...defaultProps} />);
+    expect(container.querySelector('.promo-animated--full-width-bg__overlay')).toBeNull();
+  });
+
+  it('should keep the same two-column content wrapper layout as Default', () => {
+    const { container } = render(<FullWidthBackground {...defaultProps} />);
+    const wrapper = container.querySelector('.promo-animated__content-wrapper');
+    expect(wrapper).toBeInTheDocument();
+    expect(wrapper).toHaveClass('grid', 'grid-cols-1', '@md:grid-cols-2');
+  });
+
+  it('should apply custom styles from params', () => {
+    const { container } = render(<FullWidthBackground {...propsWithCustomStyles} />);
+    const wrapper = container.querySelector('.promo-animated__content-wrapper');
+    expect(wrapper).toHaveClass('position-center');
+  });
+
+  it('should render title/description with the default (clean) text color tokens', () => {
+    const { container } = render(<FullWidthBackground {...defaultProps} />);
+
+    const title = container.querySelector('h2');
+    expect(title).toHaveClass(
+      'text-[var(--color-promo-animated-full-width-bg-title-fg)]',
+      'group-[.container-dark-background]:text-[var(--color-promo-animated-full-width-bg-title-fg-on-dark-bg)]'
+    );
+    expect(title).not.toHaveClass('text-white');
+
+    const description = container.querySelector('.prose');
+    expect(description).toHaveClass(
+      'text-[var(--color-promo-animated-full-width-bg-description-fg)]',
+      'group-[.container-dark-background]:text-[var(--color-promo-animated-full-width-bg-description-fg-on-dark-bg)]'
+    );
+    expect(description).not.toHaveClass('text-white/90');
+  });
+
+  it('should also override RichText prose color vars on dark background', () => {
+    const { container } = render(<FullWidthBackground {...defaultProps} />);
+    const description = container.querySelector('.prose');
+    expect(description).toHaveClass(
+      'group-[.container-dark-background]:[--tw-prose-body:var(--color-promo-animated-full-width-bg-description-fg-on-dark-bg)]',
+      'group-[.container-dark-background]:[--tw-prose-headings:var(--color-promo-animated-full-width-bg-description-fg-on-dark-bg)]',
+      'group-[.container-dark-background]:[--tw-prose-bold:var(--color-promo-animated-full-width-bg-description-fg-on-dark-bg)]',
+      'group-[.container-dark-background]:[--tw-prose-links:var(--color-promo-animated-full-width-bg-description-fg-on-dark-bg)]'
+    );
+  });
+
+  it('should pass the "container-clean-background" style through to the group wrapper without changing the static color classes', () => {
+    const { container } = render(<FullWidthBackground {...propsWithCleanBackgroundStyle} />);
+    const wrapper = container.querySelector('.promo-animated__content-wrapper');
+    expect(wrapper).toHaveClass('group', 'container-clean-background');
+
+    // Static color tokens stay on title/description; the clean-background style is the
+    // "default" state, so no override classes activate.
+    const title = container.querySelector('h2');
+    expect(title).toHaveClass(
+      'text-[var(--color-promo-animated-full-width-bg-title-fg)]'
+    );
+  });
+
+  it('should pass the "container-dark-background" style through to the group wrapper so the override classes activate', () => {
+    const { container } = render(<FullWidthBackground {...propsWithDarkBackgroundStyle} />);
+    const wrapper = container.querySelector('.promo-animated__content-wrapper');
+    expect(wrapper).toHaveClass('group', 'container-dark-background');
+
+    // Title/description carry both default + group-[.container-dark-background] override
+    // classes; on the rendered DOM the override variant gets matched by CSS at runtime.
+    const title = container.querySelector('h2');
+    expect(title).toHaveClass(
+      'text-[var(--color-promo-animated-full-width-bg-title-fg)]',
+      'group-[.container-dark-background]:text-[var(--color-promo-animated-full-width-bg-title-fg-on-dark-bg)]'
+    );
+
+    const description = container.querySelector('.prose');
+    expect(description).toHaveClass(
+      'text-[var(--color-promo-animated-full-width-bg-description-fg)]',
+      'group-[.container-dark-background]:text-[var(--color-promo-animated-full-width-bg-description-fg-on-dark-bg)]'
+    );
+  });
+
+  it('should not alter button styling when a background-color style is selected', () => {
+    const { getByTestId } = render(<FullWidthBackground {...propsWithDarkBackgroundStyle} />);
+
+    // Primary CTA still uses the gold-token anchor styles, secondary still uses primary-blue.
+    expect(getByTestId('primary-cta').className).toContain(
+      '[&_a]:!bg-[var(--color-promo-animated-full-width-bg-primary-cta-bg)]'
+    );
+    expect(getByTestId('secondary-cta').className).toContain(
+      '[&_a]:!bg-[var(--color-promo-animated-full-width-bg-secondary-cta-bg)]'
+    );
+  });
+
+  it('should alias fullWidthBackground to the same variant', () => {
+    const FullWidthBackgroundAlias = fullWidthBackground;
+    const { container: a } = render(<FullWidthBackground {...defaultProps} />);
+    const { container: b } = render(<FullWidthBackgroundAlias {...defaultProps} />);
+    expect(a.querySelector('h2')).toHaveTextContent('Discover Excellence');
+    expect(b.querySelector('h2')).toHaveTextContent('Discover Excellence');
+  });
+
+  it('should render NoDataFallback when fields is null', () => {
+    render(<FullWidthBackground {...propsWithoutFields} />);
+    expect(screen.getByTestId('no-data-fallback')).toHaveTextContent(
+      'Promo Animated: Full Width Background'
+    );
   });
 });
 

@@ -34,7 +34,7 @@ Languages:
               p:before="*"
               s:ds="local:/Data/Wealth and Trust School Level 2"
               s:id="{241A1B8E-E69A-4E07-B5E4-53975371AD3C}"
-              s:par="colorScheme&amp;FieldNames=%7B8777BBB3-8528-4FFE-85FE-20B0EB55E331%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:par="colorScheme&amp;FieldNames=%7BD5A4329E-6AEA-402F-979E-7AA27B535447%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1&amp;Styles"
               s:ph="headless-main" />
             <r
               uid="{723D4B6C-13F7-4677-9122-837F5CC0B50C}"
@@ -46,7 +46,7 @@ Languages:
               uid="{CF3E7A11-80BA-4073-A28F-8882EEAEC676}"
               p:after="r[@uid='{723D4B6C-13F7-4677-9122-837F5CC0B50C}']"
               s:id="{688FA7E2-563E-4BA0-B3A8-6EC445C9F78F}"
-              s:par="excludeTopMargin&amp;CSSStyles&amp;DynamicPlaceholderId=6&amp;Styles"
+              s:par="excludeTopMargin&amp;CSSStyles&amp;DynamicPlaceholderId=6&amp;Styles=%7C%7B043156E8-3D51-452E-B681-12E266818334%7D"
               s:ph="/headless-main/container-fullwidth-3" />
             <r
               uid="{DBA98631-CC62-4B84-B5C5-863E1DDF33C8}"
@@ -86,14 +86,14 @@ Languages:
       Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6b9a7238-7b2d-43d9-9694-9cc0aa33c2f4"
+      Value: "68e227d2-f6af-4fbd-9732-bdfaecc7e7e9"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260511T183413Z
+      Value: 20260511T212408Z
     - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
       Hint: ogTitle
       Value: How Advisors Are Evolving in 2025

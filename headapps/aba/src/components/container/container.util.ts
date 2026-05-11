@@ -31,3 +31,19 @@ export const isContainerPlaceholderEmpty = (
     ) && !children
   );
 };
+
+/** Matches Sitecore style "Value" for Container 70/30 — see Presentation/Styles/Container/Align Top */
+const ALIGN_TOP_PRESENTATION_STYLE = /(^|\s)Align\s+Top(\s|$)/i;
+
+export function hasContainer7030AlignTopStyle(styles: string | undefined): boolean {
+  const trimmed = styles?.trim();
+  if (!trimmed) return false;
+  return ALIGN_TOP_PRESENTATION_STYLE.test(trimmed);
+}
+
+/** Removes the presentation-only token so it is not emitted as stray CSS class names */
+export function stripContainer7030AlignTopStyle(styles: string | undefined): string {
+  const trimmed = styles?.trim();
+  if (!trimmed) return '';
+  return trimmed.replace(ALIGN_TOP_PRESENTATION_STYLE, ' ').replace(/\s+/g, ' ').trim();
+}

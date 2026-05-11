@@ -1,8 +1,16 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+
+jest.mock('@/lib/sitecore-component-map', () => ({
+  __esModule: true,
+  default: new Map(),
+}));
+
 import { Default as Container7030 } from '@/components/container/container-7030/Container7030';
 import {
   defaultProps,
+  propsWithAlignTopAndCustomStyle,
+  propsWithAlignTopStyle,
   propsWithExcludeTopMargin,
   propsWithEmptyPlaceholders,
   propsWithOnlyLeftPlaceholder,
@@ -28,6 +36,7 @@ jest.mock('@sitecore-content-sdk/nextjs', () => ({
 interface MockFlexProps {
   children?: React.ReactNode;
   wrap?: string;
+  align?: string;
 }
 
 interface MockFlexItemProps {
@@ -37,8 +46,8 @@ interface MockFlexItemProps {
 }
 
 jest.mock('@/components/flex/Flex.dev', () => ({
-  Flex: ({ children, wrap }: MockFlexProps) => (
-    <div data-testid="flex" data-wrap={wrap}>
+  Flex: ({ children, wrap, align }: MockFlexProps) => (
+    <div data-testid="flex" data-wrap={wrap} data-align={align}>
       {children}
     </div>
   ),
@@ -112,6 +121,23 @@ describe('Container7030 Component', () => {
 
       const flex = screen.getByTestId('flex');
       expect(flex).toHaveAttribute('data-wrap', 'nowrap');
+    });
+
+    it('should vertically center columns by default (Flex align center)', () => {
+      render(<Container7030 {...defaultProps} />);
+      expect(screen.getByTestId('flex')).toHaveAttribute('data-align', 'center');
+    });
+
+    it('should align columns to top when Align Top presentation style is set', () => {
+      render(<Container7030 {...propsWithAlignTopStyle} />);
+      expect(screen.getByTestId('flex')).toHaveAttribute('data-align', 'start');
+    });
+
+    it('should strip Align Top from section class list but keep other styles', () => {
+      const { container } = render(<Container7030 {...propsWithAlignTopAndCustomStyle} />);
+      const section = container.querySelector('section');
+      expect(section).toHaveClass('custom-7030-style');
+      expect(section?.className).not.toMatch(/Align/);
     });
 
     it('should render FlexItems with correct basis', () => {

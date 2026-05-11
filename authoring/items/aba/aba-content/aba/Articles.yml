@@ -9,17 +9,14 @@ SharedFields:
   Hint: __Masters
   Value: |
     {D7548E9E-D73D-4C02-9991-00F25BBBB674}
-    {98316E05-15F5-4A72-B2C4-8295DC9DA42E}
-    {69A800F5-5F73-4AC1-B7FC-AF63529F8F31}
     {35AE55E6-B944-42BD-A710-5FA08163A08B}
-    {1BEE8239-3A2C-4926-9C74-047E7BBFD010}
     {F510E926-F9F2-4E1B-BA81-601A09741587}
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 21
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "992256c5-c403-44d8-a8f4-2168cf33be59"
+  Value: "78a2f661-2b58-4181-9215-908f61021cf2"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{39A4DE41-B99F-4781-8A38-BC77B726443B}"
@@ -44,11 +41,11 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "49730912-7d0b-4b98-ac1e-b5685e31b77b"
+      Value: "495f3206-8730-4b0f-a0d6-1eaf9142a4ae"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260511T191233Z
+      Value: 20260511T204436Z

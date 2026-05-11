@@ -149,6 +149,23 @@ export const mockParamsWithPositionRight: PromoAnimatedProps['params'] = {
   RenderingIdentifier: 'promo-animated-rendering-id',
 };
 
+/**
+ * Sitecore "Background color" presentation styles serialized under
+ * /aba/Presentation/Styles/Background color/*.yml. Tokens flow through
+ * `params.styles` onto the rendering's root.
+ */
+export const mockParamsWithCleanBackgroundStyle: PromoAnimatedProps['params'] = {
+  colorScheme: 'default' as EnumValues<typeof ColorSchemeLimited>,
+  styles: 'container-clean-background',
+  RenderingIdentifier: 'promo-animated-rendering-id',
+};
+
+export const mockParamsWithDarkBackgroundStyle: PromoAnimatedProps['params'] = {
+  colorScheme: 'default' as EnumValues<typeof ColorSchemeLimited>,
+  styles: 'container-dark-background',
+  RenderingIdentifier: 'promo-animated-rendering-id',
+};
+
 // Mock rendering
 const mockRendering: ComponentRendering = {
   componentName: 'PromoAnimated',
@@ -229,6 +246,22 @@ export const propsWithCustomStyles: PromoAnimatedProps = {
 
 export const propsWithPositionRight: PromoAnimatedProps = {
   params: mockParamsWithPositionRight,
+  fields: mockFields,
+  rendering: mockRendering,
+  isPageEditing: false,
+  page: mockPageBase,
+};
+
+export const propsWithCleanBackgroundStyle: PromoAnimatedProps = {
+  params: mockParamsWithCleanBackgroundStyle,
+  fields: mockFields,
+  rendering: mockRendering,
+  isPageEditing: false,
+  page: mockPageBase,
+};
+
+export const propsWithDarkBackgroundStyle: PromoAnimatedProps = {
+  params: mockParamsWithDarkBackgroundStyle,
   fields: mockFields,
   rendering: mockRendering,
   isPageEditing: false,

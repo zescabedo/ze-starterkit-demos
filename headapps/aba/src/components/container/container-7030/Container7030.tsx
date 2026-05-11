@@ -1,9 +1,12 @@
 import type React from 'react';
 import {
   getContainerPlaceholderProps,
+  hasContainer7030AlignTopStyle,
   isContainerPlaceholderEmpty,
+  stripContainer7030AlignTopStyle,
 } from '@/components/container/container.util';
 import { Flex, FlexItem } from '@/components/flex/Flex.dev';
+import * as e from '@/lib/enum';
 import { cn } from '@/lib/utils';
 import { PlaceholderProps } from '@/types/Placeholder.props';
 import { ComponentProps } from '@/lib/component-props';
@@ -45,14 +48,21 @@ export const Default: React.FC<Container7030Props> = (props) => {
   const excludeTopMargin =
     props?.params?.excludeTopMargin === '1' ? true : false;
 
+  const rawStyles = props.params?.styles as string | undefined;
+  const presentationStyles = stripContainer7030AlignTopStyle(rawStyles);
+  const alignTop = hasContainer7030AlignTopStyle(rawStyles);
+
   return (
     <section
       className={cn('container--7030', 'mt-4', {
         'mt-0': excludeTopMargin,
-        [props.params.styles]: props?.params?.styles,
+        [presentationStyles]: Boolean(presentationStyles),
       })}
     >
-      <Flex wrap="nowrap">
+      <Flex
+        wrap="nowrap"
+        align={alignTop ? e.FlexAlign.START : e.FlexAlign.CENTER}
+      >
         <FlexItem as="div" basis="7/10">
           <AppPlaceholder
             name={leftPlaceholders.dynamicKey}

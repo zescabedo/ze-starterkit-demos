@@ -84,6 +84,37 @@
   /* ABA Promo primary CTA: gold fill + navy label (aba.com hero); hover unchanged vs theme primary */
   --color-hero-aba-primary-cta-bg: var(--color-classic-gold);
   --color-hero-aba-primary-cta-text: var(--color-accent-foreground);
+  /*
+   * PromoAnimated — Full Width Background variant.
+   * Hero-style section min-heights so the datasource `image` renders as a substantial,
+   * fully-covered background regardless of content length. Used by
+   * `.promo-animated--full-width-bg` (Tailwind arbitrary values in the variant component).
+   */
+  --min-height-promo-animated-full-width-bg: 20rem;
+  --min-height-promo-animated-full-width-bg-md: 24rem;
+  --min-height-promo-animated-full-width-bg-lg: 28rem;
+  /*
+   * CTA colors — primary = gold pill (matches ABA Promo hero treatment),
+   * secondary = solid primary blue (same look as the standard primary button).
+   * Token values reference base color tokens above; no base tokens are modified.
+   */
+  --color-promo-animated-full-width-bg-primary-cta-bg: var(--color-classic-gold);
+  --color-promo-animated-full-width-bg-primary-cta-text: var(--color-accent-foreground);
+  --color-promo-animated-full-width-bg-primary-cta-bg-hover: var(--color-primary-hover);
+  --color-promo-animated-full-width-bg-primary-cta-text-hover: var(--color-primary-foreground);
+  --color-promo-animated-full-width-bg-secondary-cta-bg: var(--color-primary);
+  --color-promo-animated-full-width-bg-secondary-cta-text: var(--color-primary-foreground);
+  --color-promo-animated-full-width-bg-secondary-cta-bg-hover: var(--color-primary-hover);
+  --color-promo-animated-full-width-bg-secondary-cta-text-hover: var(--color-primary-foreground);
+  /*
+   * Title / description text colors — Full Width Background variant.
+   * Default (no style or `container-clean-background`): white over the bg image.
+   * `container-dark-background` style override: primary brand blue (#155897).
+   */
+  --color-promo-animated-full-width-bg-title-fg: #ffffff;
+  --color-promo-animated-full-width-bg-description-fg: rgba(255, 255, 255, 0.9);
+  --color-promo-animated-full-width-bg-title-fg-on-dark-bg: var(--color-primary);
+  --color-promo-animated-full-width-bg-description-fg-on-dark-bg: var(--color-primary);
   /* Footer (ABA-style light band: navy headings, gray body, accent links) */
   --color-footer-bg: #ffffff;
   --color-footer-heading: #002855;
