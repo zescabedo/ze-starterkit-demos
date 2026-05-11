@@ -21,18 +21,18 @@ Languages:
     - ID: "55323273-a15d-4405-9a31-27abe188bcd8"
       Hint: search
       Value: |
-        {"searchIndex":"7f51f2c5-2a6e-403f-a110-c79098410676","fieldsMapping":{"tags":"","images":"","description":"","title":"ProductName","type":"AmpPower","link":"Link"}}
+        {"searchIndex":"7f51f2c5-2a6e-403f-a110-c79098410676","fieldsMapping":{"tags":"AmpPower","images":"","description":"Description","title":"ProductName","type":"AmpPower","link":"Link"}}
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d4927189-90c6-4ede-965c-c3268564055c"
+      Value: "6341f1fb-14a5-4ecb-89e9-84f221a27d53"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\zach.escabedo@sitecore.com
+        sitecore\paul.trundle@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260508T141422Z
+      Value: 20260511T144050Z

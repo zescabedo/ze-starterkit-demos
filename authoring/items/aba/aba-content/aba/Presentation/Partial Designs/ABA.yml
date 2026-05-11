@@ -1,0 +1,23 @@
+﻿---
+ID: "7040c44f-f086-4c0a-919c-3b7469f56e30"
+Parent: "4b9cc30c-80b5-4144-8252-3fb3506e3b7f"
+Template: "0adb0bc5-f5f7-463a-beae-ff095d2219a2"
+Path: "/sitecore/content/article-sites/aba/Presentation/Partial Designs/ABA"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260510T215932Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e81b0033-ea44-439f-88d1-68135cf0b191"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260510T215932Z

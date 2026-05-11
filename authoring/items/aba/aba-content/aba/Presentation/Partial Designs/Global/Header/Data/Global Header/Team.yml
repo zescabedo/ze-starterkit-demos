@@ -41,15 +41,15 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6a24f0c0-98f6-47e2-bc8b-c5decea3170c"
+      Value: "6fd630fe-6821-4618-80f6-a82a6b8c1c3a"
     - ID: "969b132e-3dc2-4526-8f8d-61e3ea742df6"
       Hint: link
       Value: |
-        <link linktype="internal" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" anchor="" querystring="" target="" class="" text="News &amp; Research" title=""/>
+        <link class="" querystring="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" anchor="" target="" title="" linktype="internal" text="News &amp; Research" url="/article-sites/aba/Landing Page" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T215013Z
+      Value: 20260510T233241Z

@@ -1,0 +1,23 @@
+﻿---
+ID: "c0993735-ae87-43db-8f31-e1dd28fd1374"
+Parent: "384815e7-e0d4-4dc1-b018-61611545e306"
+Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
+Path: "/sitecore/templates/Branches/Project/click-click-launch/Solterra and Co/Article/$name/Data"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250404T160628Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4cda18de-c627-42b2-b79a-521af9ca60b7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T185355Z

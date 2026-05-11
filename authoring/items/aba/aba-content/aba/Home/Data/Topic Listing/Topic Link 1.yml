@@ -41,15 +41,15 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "79ef1fc9-1247-4be1-87e2-93589435fdb3"
+      Value: "c57573d0-fc55-41f7-9646-6d23b48c4851"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T141648Z
+      Value: 20260510T233304Z
     - ID: "d9d7a7a2-017d-4a0e-92ab-3608b2c88afe"
       Hint: linkOptional
       Value: |
-        <link linktype="internal" id="{7242A4E1-722E-4B6D-BC19-D208EBEEABE5}" anchor="" querystring="" target="" class="" text="Training &amp; Events" title=""/>
+        <link class="" id="{81B67ABC-FE2A-4CDB-90DF-77D40DFD499B}" querystring="" anchor="" target="" title="" linktype="internal" text="Training &amp; Events" url="/article-sites/aba/Articles/Technology Topic Article" />

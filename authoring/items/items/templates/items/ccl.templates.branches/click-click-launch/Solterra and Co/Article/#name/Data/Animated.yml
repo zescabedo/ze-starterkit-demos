@@ -1,0 +1,26 @@
+﻿---
+ID: "10803e0c-8ed9-411c-88f6-b674999bee19"
+Parent: "c0993735-ae87-43db-8f31-e1dd28fd1374"
+Template: "bd372d9d-6e4f-4ae9-a54c-dbc2acdebe2a"
+Path: "/sitecore/templates/Branches/Project/click-click-launch/Solterra and Co/Article/$name/Data/Animated"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250409T193931Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c58274c3-757f-4fe3-99fa-843d4977fbdb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T185355Z
+    - ID: "da7db0f2-08eb-47c5-af07-ed12a1e998db"
+      Hint: title
+      Value: Animated

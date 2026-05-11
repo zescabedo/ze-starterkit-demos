@@ -5,10 +5,16 @@ Template: "c772db69-93ff-4e91-b9f6-1b65187378c2"
 Path: "/sitecore/content/article-sites/aba/Home"
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
 SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
     <image mediaid="{D1DA3BDF-C8F6-47B7-B25D-DD762A62EDC1}" />
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "f09ddb75-aca5-4973-8f34-fa4671ce4458"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
@@ -163,7 +169,7 @@ Languages:
       Value: Solterra & Co.
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "44d5e7bd-ba6d-48cf-92dc-b6467bb3131a"
+      Value: "b66e862b-351d-4a4f-8212-77d0da16bc17"
     - ID: "9b600e71-cf7a-4874-9032-f394a9bd2e48"
       Hint: metadataDescription
       Value: Discover wellness, lifestyle, and editorial content that inspires your everyday journey with Solterra & Co.
@@ -176,7 +182,7 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260510T204653Z
+      Value: 20260511T200441Z
     - ID: "e7f8a9b0-c1d2-4e3f-8a9b-0c1d2e3f4a5b"
       Hint: metadataAuthor
       Value: Sitecore

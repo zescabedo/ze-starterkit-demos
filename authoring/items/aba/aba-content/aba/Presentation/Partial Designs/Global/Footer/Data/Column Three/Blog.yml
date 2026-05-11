@@ -38,15 +38,15 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "41f1efda-dac3-4615-9921-f6fb1b3ea6f5"
+      Value: "449d67bd-1035-446b-a12c-f542d288548f"
     - ID: "969b132e-3dc2-4526-8f8d-61e3ea742df6"
       Hint: link
       Value: |
-        <link class="" querystring="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" anchor="" target="" title="" linktype="internal" text="Blog" url="" />
+        <link class="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" querystring="" anchor="" target="" title="" linktype="internal" text="Blog" url="/article-sites/aba/Landing Page" />
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T154426Z
+      Value: 20260510T233241Z

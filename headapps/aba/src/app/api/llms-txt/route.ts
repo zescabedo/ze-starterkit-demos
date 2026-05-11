@@ -19,7 +19,8 @@ The site offers a curated reading experience with hero sections, article listing
 
 - [Home](${baseUrl}/): Brand landing and featured content
 - [Articles](${baseUrl}/Articles): Article listing and editorial index
-- [Article page](${baseUrl}/Article-Page): Full article layout and reading experience
+- [Technology](${baseUrl}/Technology): Technology topic page
+- [Technology topic article](${baseUrl}/Technology-Topic-Article): Sample article layout and reading experience
 - [Landing page](${baseUrl}/Landing-Page): Full landing page layout and experience
 
 ## Optional

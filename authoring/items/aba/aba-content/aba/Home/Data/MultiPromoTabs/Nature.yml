@@ -46,10 +46,10 @@ Languages:
     - ID: "60629870-4b2c-4574-a086-ad5cf20fce16"
       Hint: link1
       Value: |
-        <link class="" querystring="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" anchor="" target="" title="" linktype="internal" text="Nature Link" url="" />
+        <link class="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" querystring="" anchor="" target="" title="" linktype="internal" text="Nature Link" url="/article-sites/aba/Landing Page" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7f981b8f-d7a2-4491-b3f1-f5b5e3938cfc"
+      Value: "60ae975d-0992-4fd5-a283-e3c53b799781"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -64,4 +64,4 @@ Languages:
         <link class="" id="{6666B6A4-7BFE-4193-9EE5-DC21A31CEF40}" querystring="" anchor="" target="" title="" linktype="internal" text="Nature Link 2" url="" />
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T154407Z
+      Value: 20260510T233242Z

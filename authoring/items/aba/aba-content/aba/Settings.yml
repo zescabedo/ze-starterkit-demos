@@ -40,7 +40,7 @@ SharedFields:
   Value: "{3BCAB9EF-1E4F-4C23-B452-783BB82AA686}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 2000
+  Value: 600
 - ID: "c8d002f9-9518-4c5e-9baa-6617e13f0797"
   Hint: LayoutPath
   Value: "{96E5F4BA-A2CF-4A4C-A4E7-64DA88226362}"
@@ -49,7 +49,7 @@ SharedFields:
   Value: "{AF584191-45C9-4201-8740-5409F4CF8BDD}|{CA7B6C8B-92CA-4E3C-B5E5-313B48EF37BD}"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "130192e9-41cf-400a-bdef-e0789222514b"
+  Value: "b8a05f28-ab60-492a-982e-899695e0cbfd"
 - ID: "e8881464-38af-4655-be4a-ee10586578a2"
   Hint: Templates
   Value: "{D7C099E0-14CC-4585-A84C-8040F92FC0C6}"
@@ -80,11 +80,11 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5db1f18a-e5a5-48a0-a51b-591c146d6414"
+      Value: "9abdd898-f2d6-4952-b212-d295cc9d70f5"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T154431Z
+      Value: 20260510T233215Z

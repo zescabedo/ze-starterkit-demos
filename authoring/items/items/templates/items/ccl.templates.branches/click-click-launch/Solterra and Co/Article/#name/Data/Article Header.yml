@@ -1,0 +1,30 @@
+﻿---
+ID: "49be4d0d-cc90-4662-a23c-8dcd5b1b875b"
+Parent: "c0993735-ae87-43db-8f31-e1dd28fd1374"
+Template: "0906b950-0047-4b98-93e1-cca545685259"
+Path: "/sitecore/templates/Branches/Project/click-click-launch/Solterra and Co/Article/$name/Data/Article Header"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20250409T200914Z
+    - ID: "74450b29-7ed3-4288-aa64-47fced8e06f2"
+      Hint: imageRequired
+      Value: |
+        <image mediaid="ddd4a2d5-a723-4a19-96bb-d783921e6757" alt="Woman in Sand" />
+    - ID: "75aa702f-5fe3-47ab-8d77-78eb2c37cc7a"
+      Hint: eyebrowOptional
+      Value: Solar Power
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "18c620bd-4899-48c1-9e85-76b5fd6df0de"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260511T185355Z

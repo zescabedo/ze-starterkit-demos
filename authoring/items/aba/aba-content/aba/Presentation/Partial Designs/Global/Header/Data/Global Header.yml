@@ -36,18 +36,18 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0555bc13-6f47-4395-bc48-59d247407de3"
+      Value: "f1fd06bb-d9eb-4d96-8ff2-8e931ff3fd95"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T215028Z
+      Value: 20260510T233241Z
     - ID: "e3289100-a242-4fc7-814f-0ffef0ffe8bd"
       Hint: headerContact
       Value: |
-        <link linktype="internal" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" anchor="" querystring="" target="" class="" text="SIGN IN" title=""/>
+        <link class="" querystring="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" anchor="" target="" title="" linktype="internal" text="SIGN IN" url="/article-sites/aba/Landing Page" />
     - ID: "f073d52d-022c-4560-90c2-71fc674cf8bf"
       Hint: primaryNavigationLinks
       Value: |

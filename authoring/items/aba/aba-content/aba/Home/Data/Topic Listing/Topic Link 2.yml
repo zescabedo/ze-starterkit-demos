@@ -41,15 +41,15 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f272c17a-4898-4565-9d97-898bd7c8a8be"
+      Value: "332ec2ba-f701-4931-b3c2-785df51362b5"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T141657Z
+      Value: 20260510T233304Z
     - ID: "d9d7a7a2-017d-4a0e-92ab-3608b2c88afe"
       Hint: linkOptional
       Value: |
-        <link linktype="internal" id="{D6EE15C7-CA2D-4C23-B3C0-FE795E9EC501}" anchor="" querystring="" target="" class="" text="ABA Communities" title=""/>
+        <link class="" id="{EA062FEE-338F-4FE0-ACEB-25F254F2BC0C}" querystring="" anchor="" target="" title="" linktype="internal" text="ABA Communities" url="/article-sites/aba/Articles/Technology" />

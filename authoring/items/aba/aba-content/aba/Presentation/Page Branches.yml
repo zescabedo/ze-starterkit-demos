@@ -5,6 +5,29 @@ Template: "fbc802e5-4b9e-480f-93da-3f2a80cae5cb"
 Path: "/sitecore/content/article-sites/aba/Presentation/Page Branches"
 BranchID: "aa6c7b9e-a399-47ae-82b8-0d88c695249b"
 SharedFields:
+- ID: "bb3391dd-f8be-4b2e-ae9f-47bb63c166ce"
+  Hint: Rule
+  Value: |
+    <ruleset>
+      <rule
+        uid="{457AAB0D-82C3-4EDF-A315-E5EDE16523C9}">
+        <conditions>
+          <condition
+            id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+            uid="82DA4C3F16E348F49CE8C37CDCE41DEB"
+            itemid="{59F39AB8-D204-40DC-82AB-7F8B44664F47}" />
+        </conditions>
+        <actions>
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="940F2A00E24E4127BC891719420143F5"
+            PageBranchId="{D7548E9E-D73D-4C02-9991-00F25BBBB674}" />
+        </actions>
+      </rule>
+    </ruleset>
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "b3ef4109-37c1-4476-98f3-9df848e7be89"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{63D0F6B2-D72F-4C31-BBA2-1709C4B68B7B}"
@@ -29,11 +52,11 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a277faa3-e5aa-46b7-a6aa-8682dc1d9a90"
+      Value: "cfa74f19-8b94-4288-95f3-a237c2522ee6"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T154424Z
+      Value: 20260511T190429Z

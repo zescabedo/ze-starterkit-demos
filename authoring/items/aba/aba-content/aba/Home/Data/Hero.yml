@@ -58,7 +58,7 @@ Languages:
         <image mediaid="c3f90f33-1083-4d97-9d58-ee3a437c65b3" alt="Oil Painting" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "507036a2-c334-467a-8fc7-eb506a329494"
+      Value: "7e1523fe-c260-4334-a1e6-75d8ffb7b813"
     - ID: "b39f9979-146b-4205-aa65-0cc7637d5d7e"
       Hint: heroImageOptional2
       Value: |
@@ -70,10 +70,10 @@ Languages:
     - ID: "c17f89f8-7429-4af1-a47d-b7b1e037fe45"
       Hint: linkOptional
       Value: |
-        <link class="" querystring="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" anchor="" target="" title="" linktype="internal" text="For the People" url="" />
+        <link class="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" querystring="" anchor="" target="" title="" linktype="internal" text="For the People" url="/article-sites/aba/Landing Page" />
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T154406Z
+      Value: 20260510T233242Z
     - ID: "e2223200-5161-4e5a-9a35-9a5ac126c05c"
       Hint: descriptionOptional
       Value: Our commitment to green energy is paving the way for a cleaner, healthier planet. Join us on our journey towards a future where clean, renewable energy transform the way we power our lives.

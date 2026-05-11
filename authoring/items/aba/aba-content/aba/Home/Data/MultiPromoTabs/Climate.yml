@@ -46,10 +46,10 @@ Languages:
     - ID: "60629870-4b2c-4574-a086-ad5cf20fce16"
       Hint: link1
       Value: |
-        <link class="" querystring="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" anchor="" target="_blank" title="" linktype="internal" text="Solar Electric Program" url="" />
+        <link class="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="Solar Electric Program" url="/article-sites/aba/Landing Page" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "da45260d-3c97-4171-ad5d-a5110d607bf0"
+      Value: "b477ba69-80c9-4ffd-ba0d-4274980b29d3"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -61,7 +61,7 @@ Languages:
     - ID: "c4d68c1f-0cd0-41e2-b986-0fec9a910176"
       Hint: link2
       Value: |
-        <link class="" querystring="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" anchor="" target="_blank" title="" linktype="internal" text="Wind Energy Collection" url="" />
+        <link class="" id="{9C69BF24-8516-4215-9896-43E3BC29357A}" querystring="" anchor="" target="_blank" title="" linktype="internal" text="Wind Energy Collection" url="/article-sites/aba/Landing Page" />
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T154407Z
+      Value: 20260510T233242Z

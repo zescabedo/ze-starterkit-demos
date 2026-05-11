@@ -32,7 +32,7 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "aa2f9cef-bb6c-47d6-87e7-3b1690842344"
+      Value: "28d092cd-9a19-4baf-bc20-61e9bdc26ad0"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -43,8 +43,8 @@ Languages:
         <div class="ck-content"><p>Help educate seniors and their families on avoiding scams, supporting financial caregiving and more with free resources.</p></div>
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T025105Z
+      Value: 20260510T233304Z
     - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
       Hint: PromoLink
       Value: |
-        <link linktype="internal" id="7242a4e1722e4b6dbc19d208ebeeabe5" anchor="" querystring="" target="" class="" text="Access resources" title=""/>
+        <link class="" id="81b67abcfe2a4cdb90df77d40dfd499b" querystring="" anchor="" target="" title="" linktype="internal" text="Access resources" url="/article-sites/aba/Articles/Technology Topic Article" />

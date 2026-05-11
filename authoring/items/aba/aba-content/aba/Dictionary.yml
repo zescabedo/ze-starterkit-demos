@@ -10,10 +10,10 @@ SharedFields:
   Value: Office/32x32/book2.png
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 1500
+  Value: 400
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "2d8de945-448e-4b61-a0f7-380fef971470"
+  Value: "2ba19e3d-2ac3-44d4-ac38-c0ee1dd13475"
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{95DA6E6D-AA58-4322-A36E-E5C63FCF1AD1}"
@@ -38,14 +38,14 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "21a38442-37d7-4409-b077-0c57eea2eda4"
+      Value: "480e81cd-7aee-44de-a775-e27a17958adf"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T154436Z
+      Value: 20260510T233215Z
 - Language: "en-CA"
   Versions:
   - Version: 1
