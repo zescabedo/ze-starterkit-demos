@@ -39,5 +39,13 @@ export type TopicItemProps = {
   description?: {
     jsonValue?: Field<string>;
   };
+  /** EventName section — requested by Topic Listing rendering query for Calendar rows. */
+  eventTitle?: { jsonValue?: Field<string> };
+  eventDescription?: { jsonValue?: Field<string> };
+  dateAndTime?: { jsonValue?: Field<string> };
+  location?: { jsonValue?: Field<string> };
+  eventType?: { jsonValue?: Field<string> };
+  buttonLink?: { jsonValue?: LinkField };
+  featured?: { jsonValue?: Field<boolean> };
   isPageEditing?: boolean;
 };

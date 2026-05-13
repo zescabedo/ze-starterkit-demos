@@ -42,6 +42,11 @@ interface MockNoDataFallbackProps {
   componentName?: string;
 }
 
+// Mock calendar shell (client + lucide) — Default-only tests do not need the real implementation.
+jest.mock('@/components/topic-listing/TopicListingCalendarShell', () => ({
+  TopicListingCalendarShell: () => <div data-testid="topic-listing-calendar-shell-mock" />,
+}));
+
 // Mock Sitecore Content SDK
 jest.mock('@sitecore-content-sdk/nextjs', () => ({
   Text: ({ field, tag, className }: MockTextProps) => {

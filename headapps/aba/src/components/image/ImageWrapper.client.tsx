@@ -41,7 +41,7 @@ export type ImageWrapperProps = {
 };
 
 export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
-  const { image, className, wrapperClass, sizes, ...rest } = props;
+  const { image, className, wrapperClass, sizes, blurDataURL, alt, priority } = props;
   const { page } = useSitecore();
   const isPageEditing = page.mode.isEditing;
   const isPreview = page?.mode.isPreview;
@@ -76,8 +76,13 @@ export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
 
   const isPicsumImage = imageSrc.includes('picsum.photos');
 
+  const resolvedAlt =
+    (typeof alt === 'string' && alt ? alt : undefined) ??
+    (typeof image?.value?.alt === 'string' ? image.value.alt : undefined) ??
+    '';
+
   return (
-    <div className={cn('image-container', wrapperClass)}>
+    <div ref={ref} className={cn('image-container', wrapperClass)}>
       {isPageEditing || isPreview || isSvg ? (
         <ContentSdkImage
           field={image}
@@ -95,7 +100,7 @@ export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
           {...(image?.value as ImageProps)}
           className={className}
           unoptimized={isUnoptimized}
-          priority={inView ? true : false}
+          priority={priority ?? (inView ? true : false)}
           // Always use sizes for responsive images (except SVG which doesn't need it)
           // If sizes not provided, use a sensible default for full-width images
           sizes={
@@ -104,11 +109,11 @@ export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
               : sizes ||
                 '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 1200px'
           }
-          blurDataURL={image?.value?.src}
+          blurDataURL={blurDataURL ?? image?.value?.src}
           placeholder="blur"
+          alt={resolvedAlt}
           //if image is an svg and no width is provide, set a default to avoid error, this will be overwritten by css
           {...(!image?.value?.width && isSvg ? { width: 16, height: 16 } : {})}
-          {...rest}
         />
       )}
     </div>

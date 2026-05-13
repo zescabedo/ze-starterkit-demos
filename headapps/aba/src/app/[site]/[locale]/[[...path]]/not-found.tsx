@@ -4,24 +4,27 @@ import client from 'lib/sitecore-client';
 import scConfig from 'sitecore.config';
 import Layout from 'src/Layout';
 import Providers from 'src/Providers';
-import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages, setRequestLocale } from 'next-intl/server';
 
 export default async function NotFound() {
   const { site, locale } = getCachedPageParams();
+  const resolvedSite = site || scConfig.defaultSite;
+  const resolvedLocale = locale || scConfig.defaultLanguage;
+  setRequestLocale(`${resolvedSite}_${resolvedLocale}`);
 
   try {
     const page = await client.getErrorPage(ErrorPage.NotFound, {
-      site: site || scConfig.defaultSite,
-      locale: locale || scConfig.defaultLanguage,
+      site: resolvedSite,
+      locale: resolvedLocale,
     });
 
     if (page) {
+      const [intlMessages, intlLocale] = await Promise.all([getMessages(), getLocale()]);
+
       return (
-        <NextIntlClientProvider>
-          <Providers page={page}>
-            <Layout page={page} />
-          </Providers>
-        </NextIntlClientProvider>
+        <Providers page={page} intlLocale={intlLocale} intlMessages={intlMessages}>
+          <Layout page={page} />
+        </Providers>
       );
     }
   } catch (error) {

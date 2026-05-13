@@ -36,6 +36,22 @@ jest.mock('next/image', () => ({
   },
 }));
 
+/** lucide-react ships ESM; Jest needs a CJS shim for components that import icons (e.g. Topic Listing calendar). */
+jest.mock('lucide-react', () =>
+  new Proxy(
+    {},
+    {
+      get: (_target, prop) => {
+        if (prop === '__esModule') return true;
+        const Mock = (p) =>
+          React.createElement('span', { 'data-lucide': String(prop), ...p }, null);
+        Mock.displayName = `Lucide(${String(prop)})`;
+        return Mock;
+      },
+    },
+  ),
+);
+
 // Mock Sitecore Content SDK components
 jest.mock('@sitecore-content-sdk/nextjs', () => ({
   RichText: jest.fn(({ field }) => {

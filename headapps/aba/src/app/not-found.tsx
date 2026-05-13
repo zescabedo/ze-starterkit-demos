@@ -5,6 +5,7 @@ import client from 'lib/sitecore-client';
 import scConfig from 'sitecore.config';
 import Layout from 'src/Layout';
 import Providers from 'src/Providers';
+import { getLocale, getMessages, setRequestLocale } from 'next-intl/server';
 
 // Metadata for 404 Not Found page
 export const metadata: Metadata = {
@@ -27,8 +28,11 @@ export default async function NotFound() {
     });
 
     if (page) {
+      setRequestLocale(`${scConfig.defaultSite}_${scConfig.defaultLanguage}`);
+      const [intlMessages, intlLocale] = await Promise.all([getMessages(), getLocale()]);
+
       return (
-        <Providers page={page}>
+        <Providers page={page} intlLocale={intlLocale} intlMessages={intlMessages}>
           <Layout page={page} />
         </Providers>
       );

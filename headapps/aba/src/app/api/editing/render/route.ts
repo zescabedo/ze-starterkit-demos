@@ -1,4 +1,5 @@
 import { createEditingRenderRouteHandlers } from '@sitecore-content-sdk/nextjs/route-handler';
+import { getBaseUrl } from 'lib/utils';
 
 /**
  * API route to handler Sitecore Editor rendeing.
@@ -12,4 +13,17 @@ import { createEditingRenderRouteHandlers } from '@sitecore-content-sdk/nextjs/r
  *  4. Return the rendered HTML for editing mode
  */
 
-export const { GET, POST, OPTIONS } = createEditingRenderRouteHandlers({});
+export const { GET, POST, OPTIONS } = createEditingRenderRouteHandlers({
+  /**
+   * Return an absolute page URL so the internal editing fetch never uses a relative path
+   * (e.g. `/`) without a base, which throws `Failed to parse URL from /` when host headers are missing.
+   */
+  resolvePageUrl: (encodedRoute) => {
+    const path = decodeURIComponent(encodedRoute);
+    if (path.startsWith('http://') || path.startsWith('https://')) {
+      return path;
+    }
+    const origin = getBaseUrl().replace(/\/$/, '');
+    return `${origin}${path.startsWith('/') ? path : `/${path}`}`;
+  },
+});

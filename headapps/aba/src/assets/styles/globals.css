@@ -443,4 +443,37 @@
   --size-people-gold-corner: 44px;
   --size-people-gold-corner-offset: 12px;
   --border-width-people-gold-corner: 2px;
+  /*
+   * Topic Listing — Calendar variant (events / webinars list + month grid).
+   * New tokens only; reference palette from aba.com-style mockups (May 2026).
+   */
+  --color-topic-listing-events-page-bg: #ffffff;
+  --color-topic-listing-events-heading: #09243e;
+  --color-topic-listing-events-subtitle: #6c7684;
+  --color-topic-listing-events-card-border: #e5e8ed;
+  --color-topic-listing-events-card-shadow: rgba(0, 0, 0, 0.06);
+  --color-topic-listing-events-card-top-accent: var(--color-primary);
+  --color-topic-listing-events-list-divider: #e5e8ed;
+  --color-topic-listing-events-calendar-header-bg: #f3f4f7;
+  --color-topic-listing-events-calendar-today-ring: var(--color-primary);
+  --color-topic-listing-events-calendar-today-fg: #ffffff;
+  --color-topic-listing-events-bar-fg: #ffffff;
+  --color-topic-listing-events-type-webinar-bg: #0b8182;
+  --color-topic-listing-events-type-webinar-fg: #ffffff;
+  --color-topic-listing-events-type-conference-bg: var(--color-primary);
+  --color-topic-listing-events-type-conference-fg: #ffffff;
+  --color-topic-listing-events-type-training-bg: #2d6a4f;
+  --color-topic-listing-events-type-training-fg: #ffffff;
+  --color-topic-listing-events-type-workshop-bg: #c45c26;
+  --color-topic-listing-events-type-workshop-fg: #ffffff;
+  --color-topic-listing-events-type-default-bg: var(--color-secondary);
+  --color-topic-listing-events-type-default-fg: var(--color-secondary-foreground);
+  --color-topic-listing-events-virtual-outline: #0b8182;
+  --color-topic-listing-events-virtual-fg: #0b8182;
+  --radius-topic-listing-events-pill: 500px;
+  --radius-topic-listing-events-card: 0.5rem;
+  --radius-topic-listing-events-toggle: 0.5rem;
+  --shadow-topic-listing-events-card: 0 4px 14px rgba(0, 0, 0, 0.08);
+  --min-height-topic-listing-events-calendar-cell: 5.5rem;
+  --min-height-topic-listing-events-calendar-cell-sm: 7rem;
 }

@@ -8,6 +8,7 @@ import { flattenTopicLinkResultItem, getTopicListingDatasource } from './topic-l
 import { NoDataFallback } from '@/utils/NoDataFallback';
 import { TopicItem } from './TopicItem.dev';
 import { cn } from '@/lib/utils';
+import { TopicListingCalendarShell } from './TopicListingCalendarShell';
 
 export const Default: React.FC<TopicListingProps> = (props) => {
   const {
@@ -93,4 +94,13 @@ export const Default: React.FC<TopicListingProps> = (props) => {
   }
 
   return <NoDataFallback componentName="Topic Listing" />;
+};
+
+/** Headless variant: Calendar — events list + month grid (see `Presentation/Headless Variants/TopicListing`). */
+export const Calendar: React.FC<TopicListingProps> = (props) => {
+  const { fields, page } = props;
+  if (!fields) {
+    return <NoDataFallback componentName="Topic Listing" />;
+  }
+  return <TopicListingCalendarShell fields={fields} page={page} />;
 };

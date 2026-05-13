@@ -9,8 +9,7 @@ import client from 'src/lib/sitecore-client';
 import Layout, { RouteFields } from 'src/Layout';
 import components from '@/lib/sitecore-component-map';
 import Providers from 'src/Providers';
-import { NextIntlClientProvider } from 'next-intl';
-import { setRequestLocale } from 'next-intl/server';
+import { getLocale, getMessages, setRequestLocale } from 'next-intl/server';
 import { StructuredData } from '@/components/structured-data/StructuredData';
 import { generateWebPageSchema } from '@/lib/structured-data/schema';
 import { getBaseUrl } from 'lib/utils';
@@ -79,13 +78,18 @@ export default async function Page({ params, searchParams }: PageProps) {
     }),
   });
 
+  const [intlMessages, intlLocale] = await Promise.all([getMessages(), getLocale()]);
+
   return (
-    <NextIntlClientProvider>
-      <Providers page={page} componentProps={componentProps}>
-        <StructuredData id="webpage-schema" data={webPageSchema} />
-        <Layout page={page} />
-      </Providers>
-    </NextIntlClientProvider>
+    <Providers
+      page={page}
+      componentProps={componentProps}
+      intlLocale={intlLocale}
+      intlMessages={intlMessages}
+    >
+      <StructuredData id="webpage-schema" data={webPageSchema} />
+      <Layout page={page} />
+    </Providers>
   );
 }
 

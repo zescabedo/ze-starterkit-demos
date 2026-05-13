@@ -7,6 +7,8 @@ import {
   Page,
   SitecoreProvider,
 } from '@sitecore-content-sdk/nextjs';
+import type { AbstractIntlMessages } from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
 import scConfig from 'sitecore.config';
 import components from '@/lib/sitecore-component-map.client';
 import { ThemeProvider } from 'components/theme-provider/theme-provider.dev';
@@ -16,11 +18,26 @@ export default function Providers({
   children,
   page,
   componentProps = {},
+  intlLocale,
+  intlMessages,
 }: {
   children: React.ReactNode;
   page: Page;
   componentProps?: ComponentPropsCollection;
+  /** When set with intlMessages, wraps children inside SitecoreProvider so intl is not above the Sitecore tree (avoids RSC serializing component maps). */
+  intlLocale?: string;
+  intlMessages?: AbstractIntlMessages;
 }) {
+  const intlInner = (
+    <ComponentPropsContext value={componentProps}>
+      <VideoProvider>
+        <ThemeProvider attribute="class" disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
+      </VideoProvider>
+    </ComponentPropsContext>
+  );
+
   return (
     <SitecoreProvider
       api={scConfig.api}
@@ -28,13 +45,13 @@ export default function Providers({
       page={page}
       loadImportMap={() => import('.sitecore/import-map.client')}
     >
-      <ComponentPropsContext value={componentProps}>
-        <VideoProvider>
-          <ThemeProvider attribute="class" disableTransitionOnChange>
-            {children}
-          </ThemeProvider>
-        </VideoProvider>
-      </ComponentPropsContext>
+      {intlLocale != null && intlMessages != null ? (
+        <NextIntlClientProvider locale={intlLocale} messages={intlMessages}>
+          {intlInner}
+        </NextIntlClientProvider>
+      ) : (
+        intlInner
+      )}
     </SitecoreProvider>
   );
 }

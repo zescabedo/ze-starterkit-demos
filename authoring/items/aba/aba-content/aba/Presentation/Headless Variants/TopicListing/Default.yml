@@ -1,38 +1,38 @@
 ﻿---
-ID: "171fcb48-12e9-4be6-b7af-fe4e0418889b"
-Parent: "15e94068-d790-48f2-aa56-44836ff7042a"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: "/sitecore/templates/Project/click-click-launch/Components/Page Content/Topic Link/Topic Link"
+ID: "10d9fd71-2bfc-4ea6-b4d0-eb855c1bef7c"
+Parent: "95113362-ff3a-48b6-883a-33c17a4421e3"
+Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
+Path: "/sitecore/content/article-sites/aba/Presentation/Headless Variants/TopicListing/Default"
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 0
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "92850204-dbe9-4c37-9cb7-bb2548c67430"
+  Value: "303c7adb-5f9d-436c-8b14-c634b1303b2b"
 Languages:
 - Language: en
   Versions:
-  - Version: 2
+  - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20250305T204402Z
+      Value: 20260512T215826Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\Admin
+        sitecore\zach.escabedo@sitecore.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\Admin
+        sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a06cc9c7-c19e-4729-a3e5-71234aa29db5"
+      Value: "2eaf97be-23ba-47a6-913b-d4590404d08b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T000545Z
+      Value: 20260512T215841Z

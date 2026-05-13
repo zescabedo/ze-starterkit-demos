@@ -93,15 +93,15 @@ Languages:
               s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;SplitterSize=2&amp;EnabledPlaceholders=1%2C2&amp;FieldNames&amp;Styles1=%7C%7B3861A076-53C0-454F-BC42-467B6E4284DD%7D&amp;Styles2&amp;Styles3&amp;Styles4&amp;Styles5&amp;Styles6&amp;Styles7&amp;Styles&amp;Styles8&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=40"
               s:ph="headless-main" />
             <r
-              uid="{905357BE-5AA2-46C4-9F84-32983C4CCE9B}"
+              uid="{4FC9EB76-852D-4432-8C1B-AE9F8B5F66CB}"
               p:after="r[@uid='{BD6D2F8A-32DD-4CF5-AAC3-31D255A7B794}']"
               s:ds="ba13a1db-a227-4228-a143-ff5afab3f21e"
               s:id="{D890160D-BD57-42EF-9FBD-F9666F385004}"
-              s:par="backgroundTheme&amp;CSSStyles&amp;DynamicPlaceholderId=35&amp;Styles=%7B549E494C-B239-4FF4-99B4-D7C92E446745%7D"
+              s:par="backgroundTheme&amp;FieldNames=%7B10D9FD71-2BFC-4EA6-B4D0-EB855C1BEF7C%7D&amp;CSSStyles&amp;DynamicPlaceholderId=45&amp;Styles"
               s:ph="headless-main" />
             <r
               uid="{0A41BE11-CF0E-46F9-9F5A-8B34776728F4}"
-              p:after="r[@uid='{905357BE-5AA2-46C4-9F84-32983C4CCE9B}']"
+              p:after="r[@uid='{4FC9EB76-852D-4432-8C1B-AE9F8B5F66CB}']"
               s:id="{E80C2A78-FCC2-4D32-8EC5-4133F608BE5C}"
               s:par="DynamicPlaceholderId=27&amp;inset=1"
               s:ph="headless-main" />
@@ -169,7 +169,7 @@ Languages:
       Value: Solterra & Co.
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b66e862b-351d-4a4f-8212-77d0da16bc17"
+      Value: "bdb9a312-af7f-432d-8bdb-9239a5e42ebc"
     - ID: "9b600e71-cf7a-4874-9032-f394a9bd2e48"
       Hint: metadataDescription
       Value: Discover wellness, lifestyle, and editorial content that inspires your everyday journey with Solterra & Co.
@@ -182,7 +182,7 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260511T200441Z
+      Value: 20260513T001314Z
     - ID: "e7f8a9b0-c1d2-4e3f-8a9b-0c1d2e3f4a5b"
       Hint: metadataAuthor
       Value: Sitecore

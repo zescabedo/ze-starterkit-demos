@@ -13,7 +13,6 @@ import Scripts from 'src/Scripts';
 import SitecoreStyles from 'components/content-sdk/SitecoreStyles';
 import { Figtree } from 'next/font/google';
 import componentMap from '@/lib/sitecore-component-map';
-import Providers from './Providers';
 
 const heading = Figtree({
   weight: ['400', '500'],
@@ -57,62 +56,60 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
     <>
       <Scripts />
       <SitecoreStyles layoutData={layout} />
-      <Providers page={page}>
-        {/* root placeholder for the app, which we add components to using route data */}
-        <div className={`min-h-screen flex flex-col ${classNamesMain}`}>
-          {mode.isDesignLibrary ? (
-            route && (
-              <DesignLibraryApp
-                page={page}
-                rendering={route}
-                componentMap={componentMap}
-                loadServerImportMap={() =>
-                  import('.sitecore/import-map.server')
-                }
-              />
-            )
-          ) : (
-            <>
-              <header>
-                <div id="header">
-                  {route && (
-                    <AppPlaceholder
-                      page={page}
-                      componentMap={componentMap}
-                      name="headless-header"
-                      rendering={route}
-                    />
-                  )}
-                </div>
-              </header>
-              <main>
-                <div id="content" className="antialiased">
-                  {route && (
-                    <AppPlaceholder
-                      page={page}
-                      componentMap={componentMap}
-                      name="headless-main"
-                      rendering={route}
-                    />
-                  )}
-                </div>
-              </main>
-              <footer>
-                <div id="footer">
-                  {route && (
-                    <AppPlaceholder
-                      page={page}
-                      componentMap={componentMap}
-                      name="headless-footer"
-                      rendering={route}
-                    />
-                  )}
-                </div>
-              </footer>
-            </>
-          )}
-        </div>
-      </Providers>
+      {/* Placeholders must stay under the single SitecoreProvider from page.tsx / not-found.
+          Nesting another client Providers here crosses the RSC boundary and tries to serialize
+          the server componentMap (functions), which breaks edit mode. */}
+      <div className={`min-h-screen flex flex-col ${classNamesMain}`}>
+        {mode.isDesignLibrary ? (
+          route && (
+            <DesignLibraryApp
+              page={page}
+              rendering={route}
+              componentMap={componentMap}
+              loadServerImportMap={() => import('.sitecore/import-map.server')}
+            />
+          )
+        ) : (
+          <>
+            <header>
+              <div id="header">
+                {route && (
+                  <AppPlaceholder
+                    page={page}
+                    componentMap={componentMap}
+                    name="headless-header"
+                    rendering={route}
+                  />
+                )}
+              </div>
+            </header>
+            <main>
+              <div id="content" className="antialiased">
+                {route && (
+                  <AppPlaceholder
+                    page={page}
+                    componentMap={componentMap}
+                    name="headless-main"
+                    rendering={route}
+                  />
+                )}
+              </div>
+            </main>
+            <footer>
+              <div id="footer">
+                {route && (
+                  <AppPlaceholder
+                    page={page}
+                    componentMap={componentMap}
+                    name="headless-footer"
+                    rendering={route}
+                  />
+                )}
+              </div>
+            </footer>
+          </>
+        )}
+      </div>
     </>
   );
 };
