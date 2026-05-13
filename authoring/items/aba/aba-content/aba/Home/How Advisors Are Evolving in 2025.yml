@@ -56,25 +56,11 @@ Languages:
               s:par="CSSStyles&amp;DynamicPlaceholderId=7"
               s:ph="/headless-main/container-fullwidth-3/container-seventy-left-6" />
             <r
-              uid="{20744408-9D9B-42EF-9EE4-17DBBA839889}"
-              p:after="r[@uid='{DBA98631-CC62-4B84-B5C5-863E1DDF33C8}']"
-              s:ds="local:/Data/Text 3"
-              s:id="{50B36874-8C4E-4958-9DD6-8B95C6AFD09A}"
-              s:par="CSSStyles&amp;DynamicPlaceholderId=8"
-              s:ph="/headless-main/container-fullwidth-3/container-thirty-right-6" />
-            <r
-              uid="{0AC84F69-1140-4AA6-BEC2-7E1A90C88AEF}"
-              p:after="r[@uid='{20744408-9D9B-42EF-9EE4-17DBBA839889}']"
-              s:ds="local:/Data/Button 1"
-              s:id="{0E00B26F-4E11-4536-B814-1F0D72A4C058}"
-              s:par="size&amp;iconPosition&amp;iconClassName&amp;CSSStyles&amp;DynamicPlaceholderId=9"
-              s:ph="/headless-main/container-fullwidth-3/container-thirty-right-6" />
-            <r
-              uid="{AC4DDBE8-D8FF-4D31-AD40-02F7EB7395EC}"
+              uid="{17F67DB6-BC7C-4E36-AB89-3493746611E7}"
               p:after="*[1=2]"
-              s:ds="local:/Data/Text 4"
-              s:id="{50B36874-8C4E-4958-9DD6-8B95C6AFD09A}"
-              s:par="CSSStyles&amp;DynamicPlaceholderId=10"
+              s:ds="e11e4215-aaa0-4387-acbc-94b506f2543b"
+              s:id="{F719D52F-940C-43E8-B5F8-4C5874762879}"
+              s:par="CSSStyles"
               s:ph="/headless-main/container-fullwidth-3/container-thirty-right-6" />
           </d>
         </r>
@@ -86,14 +72,14 @@ Languages:
       Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b37a322b-67dc-435f-9051-641569c19bd1"
+      Value: "75bd9370-5d1c-4722-aeb0-421ec63d5d99"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260511T215318Z
+      Value: 20260513T021757Z
     - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
       Hint: ogTitle
       Value: How Advisors Are Evolving in 2025

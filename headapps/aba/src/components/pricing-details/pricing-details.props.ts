@@ -11,6 +11,7 @@ export interface PricingDetailsFields {
       memberPriceLabel?: { jsonValue?: Field<string> };
       nonMemberPriceLabel?: { jsonValue?: Field<string> };
       savingsIntro?: { jsonValue?: Field<string> };
+      creditCost?: { jsonValue?: Field<number> };
       footnote?: { jsonValue?: Field<string> };
     };
   };

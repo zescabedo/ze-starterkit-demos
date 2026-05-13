@@ -9,10 +9,10 @@ SharedFields:
   Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 50
+  Value: 100
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "5b384b58-f365-4267-adee-850100a4bfab"
+  Value: "44e600ea-3951-466a-9e08-cc1e796248c9"
 Languages:
 - Language: en
   Versions:
@@ -43,11 +43,11 @@ Languages:
       Value: Stonier Graduate School of Banking
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ab06977c-744b-4206-90f1-59c66a4c70f0"
+      Value: "57a775ed-a05a-4085-a6c1-ec6f2c44a5f2"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T001748Z
+      Value: 20260513T142107Z

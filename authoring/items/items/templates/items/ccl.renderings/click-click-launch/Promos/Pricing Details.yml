@@ -21,6 +21,7 @@ SharedFields:
                nonMemberPriceLabel: field(name: "NonMemberPriceLabel") { jsonValue }
                savingsIntro: field(name: "SavingsIntro") { jsonValue }
                footnote: field(name: "Footnote") { jsonValue }
+               creditCost: field(name: "CreditCost") { jsonValue }
              }
            }
          }
@@ -29,27 +30,18 @@ SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: "/sitecore/templates/Project/click-click-launch/Components/Page Content/PricingDetails"
-- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
-  Hint: Open Properties after Add
-  Value: 0
-- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
-  Hint: Parameters Template
-  Value: "{66BF51BB-0533-4387-96EE-DB45B218331A}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:$site/*[@@name='Data']/*[@@templatename='Pricing Details Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Pricing Details Folder']"
-- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
-  Hint: OtherProperties
-  Value: IsRenderingsWithDynamicPlaceholders=true
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Pricing Details Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Pricing Details Folder']'"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "754738d0-0344-44e9-9932-dc24de89634a"
+  Value: "6aeabaa7-e3e4-4ccd-9e93-e9700879e2a3"
 Languages:
 - Language: en
   Fields:
   - ID: "30e85e5d-e00a-4864-b358-7624d511deb4"
     Hint: __Unversioned revision
-    Value: "23a624e6-1719-40e3-ad22-b7f3a0e3d981"
+    Value: "8d3b7e89-8d80-4ff3-8432-d1c4c3f39421"
   Versions:
   - Version: 1
     Fields:
@@ -66,11 +58,11 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0af80fda-4c62-4676-b39f-6fde6326baaa"
+      Value: "bcdbf6b1-8791-4255-9ac5-ea9326a5142f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T013754Z
+      Value: 20260513T140448Z

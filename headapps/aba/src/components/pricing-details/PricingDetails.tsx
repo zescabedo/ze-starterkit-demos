@@ -14,6 +14,7 @@ import {
 import { NoDataFallback } from '@/utils/NoDataFallback';
 import { cn } from '@/lib/utils';
 
+import { parseCreditCostFieldValue } from './pricing-details-credit';
 import type { PricingDetailsProps } from './pricing-details.props';
 
 export const Default: React.FC<PricingDetailsProps> = (props) => {
@@ -32,8 +33,14 @@ export const Default: React.FC<PricingDetailsProps> = (props) => {
     memberPriceLabel,
     nonMemberPriceLabel,
     savingsIntro,
+    creditCost,
     footnote,
   } = ds;
+
+  const parsedCreditCost = parseCreditCostFieldValue(creditCost?.jsonValue?.value);
+  const hasParsedCreditCost = parsedCreditCost !== null;
+  const showCreditCostRow =
+    isEditing || (isAuthenticated && memberTier != null && hasParsedCreditCost);
 
   const listPrice = getListPrice();
   const savingsPrefix = savingsIntro?.jsonValue?.value?.trim() || 'Save';
@@ -104,6 +111,26 @@ export const Default: React.FC<PricingDetailsProps> = (props) => {
           >
             Sign in to see member pricing
           </button>
+        </div>
+      )}
+
+      {showCreditCostRow && (
+        <div className="text-sm" data-testid="pricing-credit-cost">
+          {isEditing ? (
+            <p className="leading-relaxed">
+              <span className="font-medium text-foreground">Credits </span>
+              <Text
+                field={creditCost?.jsonValue}
+                tag="span"
+                className="tabular-nums text-muted-foreground"
+              />
+            </p>
+          ) : (
+            <p className="leading-relaxed text-muted-foreground">
+              <span className="font-medium text-foreground">Credits </span>
+              <span className="tabular-nums">{parsedCreditCost}</span>
+            </p>
+          )}
         </div>
       )}
 

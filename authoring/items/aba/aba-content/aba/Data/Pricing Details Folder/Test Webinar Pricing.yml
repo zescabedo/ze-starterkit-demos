@@ -8,31 +8,38 @@ Languages:
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260513T015145Z
     - ID: "357499c1-6bb2-443c-855b-593ccd852c96"
       Hint: SavingsIntro
-      Value: Members save1
+      Value: Members save
+    - ID: "370252b3-785f-4cbe-bbf3-0183b014992e"
+      Hint: CreditCost
+      Value: 2
     - ID: "4543cc36-ce56-46ed-9045-bed228d0b586"
       Hint: NonMemberPriceLabel
-      Value: "Non-Member Price1"
+      Value: "Non-Member Price"
     - ID: "5a5484fe-b734-43b9-b532-4f819b4f76a4"
       Hint: ProductTypeTitle
-      Value: Title1
+      Value: Webinar
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f02389e4-d4e5-4bd3-896d-3c047966e9f8"
+      Value: "410b4178-6bb3-4b6b-be99-53deb781a994"
     - ID: "906832ca-4111-43da-bce4-80631b198b05"
       Hint: MemberPriceLabel
-      Value: Price1
+      Value: ABA Member Price
     - ID: "ae443f1c-9f62-424a-9a1b-71b2d7218b67"
       Hint: Footnote
-      Value: Additional details can be added here1
+      Value: |
+        <div class="ck-content"><p>Registration includes live session + on-demand access for a defined period</p></div>
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T015159Z
+      Value: 20260513T140912Z

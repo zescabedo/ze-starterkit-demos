@@ -7,9 +7,12 @@ SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "6470f4d5-8621-4188-87b5-6029cdf82186"
+  Value: "6f71006f-752c-4c8e-b48a-c34d3c56496a"
 Languages:
 - Language: en
   Versions:
@@ -46,11 +49,11 @@ Languages:
       Value: Fraud Prevention and Financial Crimes Update
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ecca54a6-12e1-4a5a-a25d-b4d339b8827a"
+      Value: "d1bdea69-a001-4303-b21b-047f8e58d1e7"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T001713Z
+      Value: 20260513T142107Z

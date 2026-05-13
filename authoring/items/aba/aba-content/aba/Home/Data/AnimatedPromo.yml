@@ -46,7 +46,7 @@ Languages:
         <image mediaid="6f328be7-137b-4ed6-adaa-d470547a89a8" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b3771183-4e30-4e46-9eca-5e6ffa526a26"
+      Value: "a852c453-fcdd-4745-a9b3-f1d421e1b0dd"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -56,11 +56,11 @@ Languages:
       Value: ABA proudly represents banks of all sizes and their 2 million dedicated employees.
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260505T235459Z
+      Value: 20260513T041438Z
     - ID: "da7db0f2-08eb-47c5-af07-ed12a1e998db"
       Hint: title
       Value: We Are the Voice of America’s Banks
     - ID: "e9e9c847-e0f0-497d-8e41-5211a087029a"
       Hint: primaryLink
       Value: |
-        <link linktype="external" url="www.sitecore.com" target="_blank" text="See what we stand for"/>
+        <link linktype="internal" id="9e20d34e-1b33-4f12-b5bc-507305b632cb" anchor="" querystring="" target="" class="" text="See Events" title=""/>

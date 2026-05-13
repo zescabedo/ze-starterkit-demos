@@ -33,7 +33,7 @@ Languages:
               uid="{296BF89A-FBF1-4DBF-B135-C7142EE9AC26}"
               s:ds="fd89e40a-a54a-4ae9-91e2-352aeffe9774"
               s:id="{D890160D-BD57-42EF-9FBD-F9666F385004}"
-              s:par="backgroundTheme&amp;FieldNames=%7B9BC4B2FA-1735-4685-B2E7-ECF55F0436F1%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1"
+              s:par="backgroundTheme&amp;FieldNames=%7B9BC4B2FA-1735-4685-B2E7-ECF55F0436F1%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1&amp;Styles"
               s:ph="headless-main" />
           </d>
         </r>
@@ -45,14 +45,14 @@ Languages:
       Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "07460a84-7da2-4662-b3f6-6b571d8a4425"
+      Value: "ad557357-5f75-478b-aa39-3a226476797a"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T001334Z
+      Value: 20260513T142108Z
     - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
       Hint: ogTitle
       Value: Events

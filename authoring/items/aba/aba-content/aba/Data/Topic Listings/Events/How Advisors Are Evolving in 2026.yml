@@ -1,53 +1,63 @@
 ﻿---
-ID: "e2f71731-7dff-4532-a59f-af0d423d4aff"
+ID: "0e4406a8-686d-4c0e-84e6-4a20bc894a57"
 Parent: "fd89e40a-a54a-4ae9-91e2-352aeffe9774"
 Template: "15e94068-d790-48f2-aa56-44836ff7042a"
-Path: "/sitecore/content/article-sites/aba/Data/Topic Listings/Events/Risk and Compliance Conference"
+Path: "/sitecore/content/article-sites/aba/Data/Topic Listings/Events/How Advisors Are Evolving in 2026"
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 0
+  Value: 650
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "07f4d9c8-fd29-4dfd-ae59-c8c133ee7e08"
+  Value: "85f9a0f1-854f-44ed-9bb2-aeea6229fc1a"
 Languages:
 - Language: en
   Versions:
   - Version: 1
     Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260512T230306Z
+      Value: 20260513T142106Z
     - ID: "37d43271-38d0-4646-9087-3f75e5aa35cd"
       Hint: ButtonLink
       Value: |
-        <link id="{a244c0ae-f074-4cd5-81ea-e8077d23bf8e}" text="Register" title="" querystring="sc_lang=en&amp;sc_site=ABA" anchor="" target="" linktype="internal"/>
+        <link id="{a244c0ae-f074-4cd5-81ea-e8077d23bf8e}" text="Register" title="Register" querystring="sc_lang=en&amp;sc_site=ABA" anchor="" target="" linktype="internal"/>
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+      Value: "{4460E76C-87E9-4859-9DE6-DE122774937F}"
+    - ID: "47239eb7-56fe-495e-9d0d-5fa60e6e2c08"
+      Hint: Location
+      Value: Virtual
     - ID: "4a264e6d-054c-4348-873b-806ff1f63297"
       Hint: EventDescription
-      Value: A focused event for banking professionals covering today’s regulatory expectations, emerging risk trends, and practical strategies to strengthen compliance programs across the institution.
+      Value: "Gain insights into industry-shaping trends on AI and its applications by examining use cases that showcase how AI drives transformation and innovation. A panel of industry leaders will discuss how advisors are adapting their roles and skills."
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "539a98c0-9882-4e3b-929e-5aedaff4f579"
       Hint: DateAndTime
-      Value: 20260518T143000Z
+      Value: 20260514T143000Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "81b9b5d4-0f64-40c8-9502-d8d63a9326ab"
       Hint: Title
-      Value: Risk and Compliance Conference
+      Value: How Advisors Are Evolving in 2026
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "cdf5a841-13b5-4325-ae31-7f73659f48bd"
+      Value: "405ce39f-1625-4851-9673-0627701233df"
+    - ID: "919fb716-ca94-45e1-b4ca-8d92e8d71f4f"
+      Hint: Image
+      Value: |
+        <image mediaid="{37290109-46DF-4843-A54A-3288E72E5502}" alt="People collaborating icon"/>
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -57,7 +67,7 @@ Languages:
       Value: 1
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T142549Z
+      Value: 20260513T142325Z
     - ID: "d9d7a7a2-017d-4a0e-92ab-3608b2c88afe"
       Hint: linkOptional
       Value: |
