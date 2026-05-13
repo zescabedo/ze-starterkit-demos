@@ -1,0 +1,46 @@
+﻿---
+ID: "277e2067-579d-4917-b915-79be08d7f389"
+Parent: "8ff8cddc-bfa7-4ddf-a439-80e61675466b"
+Template: "8ff8cddc-bfa7-4ddf-a439-80e61675466b"
+Path: "/sitecore/templates/Project/click-click-launch/Components/Page Content/PricingDetails/__Standard Values"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260513T010927Z
+    - ID: "357499c1-6bb2-443c-855b-593ccd852c96"
+      Hint: SavingsIntro
+      Value: Members save
+    - ID: "4543cc36-ce56-46ed-9045-bed228d0b586"
+      Hint: NonMemberPriceLabel
+      Value: "Non-Member Price"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5a5484fe-b734-43b9-b532-4f819b4f76a4"
+      Hint: ProductTypeTitle
+      Value: Title
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ed9f52f9-1c99-4864-b95f-e11b8f845063"
+    - ID: "906832ca-4111-43da-bce4-80631b198b05"
+      Hint: MemberPriceLabel
+      Value: Price
+    - ID: "ae443f1c-9f62-424a-9a1b-71b2d7218b67"
+      Hint: Footnote
+      Value: Additional details can be added here
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260513T011056Z

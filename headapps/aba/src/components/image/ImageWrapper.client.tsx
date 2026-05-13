@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import type React from 'react';
 import { cn } from '@/lib/utils';
 import { ImageField, Image as ContentSdkImage, useSitecore } from '@sitecore-content-sdk/nextjs';
+import { normalizeSitecoreImageField } from '@/lib/sitecore-image-src';
 import { ImageOptimizationContext } from '@/components/image/image-optimization.context';
 import { useInView } from 'framer-motion';
 import NextImage, { ImageProps } from 'next/image';
@@ -46,6 +47,9 @@ export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
   const isPageEditing = page.mode.isEditing;
   const isPreview = page?.mode.isPreview;
 
+  /** Keep raw CM URLs in edit mode; normalize root-relative media for preview + normal. */
+  const displayImage = isPageEditing ? image : normalizeSitecoreImageField(image) ?? image;
+
   const { unoptimized } = useContext(ImageOptimizationContext);
   const ref = useRef(null);
   const inView = useInView(ref);
@@ -58,11 +62,11 @@ export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
     setIsClient(true);
   }, []);
 
-  if (!isPageEditing && !image?.value?.src) {
+  if (!isPageEditing && !displayImage?.value?.src) {
     return <></>;
   }
 
-  const imageSrc = image?.value?.src ? image?.value?.src : '';
+  const imageSrc = displayImage?.value?.src ? String(displayImage.value.src) : '';
   const isSvg = imageSrc.includes('.svg');
   // Only disable optimization for: context override, SVG, or external URLs not in remotePatterns.
   // Sitecore/XM Cloud URLs (edge*, xmc-*, *.sitecore-staging.cloud, *.sitecorecloud.io) are
@@ -78,18 +82,18 @@ export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
 
   const resolvedAlt =
     (typeof alt === 'string' && alt ? alt : undefined) ??
-    (typeof image?.value?.alt === 'string' ? image.value.alt : undefined) ??
+    (typeof displayImage?.value?.alt === 'string' ? displayImage.value.alt : undefined) ??
     '';
 
   return (
     <div ref={ref} className={cn('image-container', wrapperClass)}>
       {isPageEditing || isPreview || isSvg ? (
         <ContentSdkImage
-          field={image}
+          field={displayImage}
           className={cn(
             className,
             isPageEditing &&
-              !image?.value?.src &&
+              !displayImage?.value?.src &&
               'box-border min-h-20 min-w-[5rem] rounded-md border-2 border-dashed border-current/35'
           )}
           editable={isPageEditing}
@@ -97,7 +101,7 @@ export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
       ) : (
         <NextImage
           loader={isPicsumImage ? placeholderImageLoader : undefined}
-          {...(image?.value as ImageProps)}
+          {...(displayImage?.value as ImageProps)}
           className={className}
           unoptimized={isUnoptimized}
           priority={priority ?? (inView ? true : false)}
@@ -109,11 +113,11 @@ export const ImageWrapperClient: React.FC<ImageWrapperProps> = (props) => {
               : sizes ||
                 '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 1200px'
           }
-          blurDataURL={blurDataURL ?? image?.value?.src}
+          blurDataURL={blurDataURL ?? (displayImage?.value?.src as string | undefined)}
           placeholder="blur"
           alt={resolvedAlt}
           //if image is an svg and no width is provide, set a default to avoid error, this will be overwritten by css
-          {...(!image?.value?.width && isSvg ? { width: 16, height: 16 } : {})}
+          {...(!displayImage?.value?.width && isSvg ? { width: 16, height: 16 } : {})}
         />
       )}
     </div>

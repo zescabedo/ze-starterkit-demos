@@ -123,6 +123,23 @@ jest.mock('lucide-react', () => ({
   Menu: () => React.createElement('div', { 'data-testid': 'menu-icon' }, 'Menu'),
 }));
 
+jest.mock('@/contexts/SimulatedMemberAuthContext', () => ({
+  useSimulatedMemberAuth: () => ({
+    isAuthenticated: false,
+    memberTier: null,
+    isReady: true,
+    signIn: jest.fn(),
+    signOut: jest.fn(),
+    isSignInModalOpen: false,
+    openSignInModal: jest.fn(),
+    setSignInModalOpen: jest.fn(),
+  }),
+}));
+
+jest.mock('@/components/auth-demo/SimulatedLoginModal', () => ({
+  SimulatedLoginModal: () => null,
+}));
+
 // Mock UI components
 interface MockNavigationMenuProps {
   children?: React.ReactNode;

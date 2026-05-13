@@ -31,6 +31,7 @@ export default defineCliConfig({
        */
       'src/components/container/container.util.ts',
       'src/components/topic-listing/TopicListingCalendarShell.tsx',
+      'src/components/auth-demo/**',
       'src/components/**/*.props.ts',
       'src/components/**/*.props.tsx',
       'src/components/**/*field-utils.ts',

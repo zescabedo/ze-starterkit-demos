@@ -1,0 +1,23 @@
+﻿---
+ID: "3effdcec-c8c3-42f1-a2a5-f640c1fad00a"
+Parent: "a0d38e8f-ab1f-4d2f-a014-f84eb1668acd"
+Template: "38c59c43-7d30-49e4-ac1a-575a9ca14d56"
+Path: "/sitecore/content/article-sites/aba/Data/Pricing Details Folder"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260513T015009Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b8448edd-2fed-445f-8b21-fddb29d49c41"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260513T015009Z

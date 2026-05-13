@@ -13,6 +13,7 @@ import { ButtonBase as Button } from '@/components/button-component/ButtonCompon
 import { ButtonVariants } from '@/enumerations/ButtonStyle.enum';
 import { Default as AnimatedSection } from '@/components/animated-section/AnimatedSection.dev';
 import { NoDataFallback } from '@/utils/NoDataFallback';
+import { normalizeSitecoreImageField } from '@/lib/sitecore-image-src';
 import { PromoAnimatedProps } from './promo-animated.props';
 
 /**
@@ -57,7 +58,6 @@ const secondaryCtaAnchorStyles =
 export const PromoAnimatedFullWidthBackground: React.FC<PromoAnimatedProps> = (props) => {
   const { fields, isPageEditing } = props;
   const { page } = useSitecore();
-  const isEditableMode = page.mode.isEditing || page.mode.isPreview;
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   useEffect(() => {
@@ -68,8 +68,10 @@ export const PromoAnimatedFullWidthBackground: React.FC<PromoAnimatedProps> = (p
   if (fields) {
     const { image, title, description, primaryLink, secondaryLink } = fields;
     const hasLinks = isPageEditing || primaryLink?.value?.href || secondaryLink?.value?.href;
-    const imageSrc = (image?.value?.src as string | undefined) ?? '';
-    const imageAlt = (image?.value?.alt as string | undefined) ?? '';
+    const fieldForSdk = page.mode.isEditing ? image : normalizeSitecoreImageField(image) ?? image;
+    const imageSrc = (fieldForSdk?.value?.src as string | undefined) ?? '';
+    const imageAlt = (fieldForSdk?.value?.alt as string | undefined) ?? '';
+    const useContentSdkImage = page.mode.isEditing || page.mode.isPreview || !imageSrc;
 
     return (
       <section data-component="PromoAnimated" className="@container">
@@ -84,9 +86,9 @@ export const PromoAnimatedFullWidthBackground: React.FC<PromoAnimatedProps> = (p
         >
           <div className="promo-animated--full-width-bg__image pointer-events-none absolute inset-0 z-0">
             {image && (
-              isEditableMode || !imageSrc ? (
+              useContentSdkImage ? (
                 <ContentSdkImage
-                  field={image}
+                  field={fieldForSdk}
                   className="h-full w-full object-cover object-center"
                   editable={page.mode.isEditing}
                 />

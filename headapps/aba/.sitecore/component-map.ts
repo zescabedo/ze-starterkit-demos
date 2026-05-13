@@ -43,6 +43,7 @@ import * as PromoAnimatedFullWidthBackgrounddev from 'src/components/promo-anima
 import * as PromoAnimatedDefaultdev from 'src/components/promo-animated/PromoAnimatedDefault.dev';
 import * as PromoAnimatedABAPromodev from 'src/components/promo-animated/PromoAnimatedABAPromo.dev';
 import * as PromoAnimated from 'src/components/promo-animated/PromoAnimated';
+import * as PricingDetails from 'src/components/pricing-details/PricingDetails';
 import * as portaldev from 'src/components/portal/portal.dev';
 import * as People from 'src/components/people/People';
 import * as PageHeader from 'src/components/page-header/PageHeader';
@@ -152,6 +153,7 @@ export const componentMap = new Map<string, NextjsContentSdkComponent>([
   ['PromoAnimatedDefault', { ...PromoAnimatedDefaultdev }],
   ['PromoAnimatedABAPromo', { ...PromoAnimatedABAPromodev }],
   ['PromoAnimated', { ...PromoAnimated, componentType: 'client' }],
+  ['PricingDetails', { ...PricingDetails, componentType: 'client' }],
   ['portal', { ...portaldev }],
   ['People', { ...People }],
   ['PageHeader', { ...PageHeader, componentType: 'client' }],

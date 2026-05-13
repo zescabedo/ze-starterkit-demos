@@ -13,6 +13,7 @@ import scConfig from 'sitecore.config';
 import components from '@/lib/sitecore-component-map.client';
 import { ThemeProvider } from 'components/theme-provider/theme-provider.dev';
 import { VideoProvider } from './contexts/VideoContext';
+import { SimulatedMemberAuthProvider } from './contexts/SimulatedMemberAuthContext';
 
 export default function Providers({
   children,
@@ -30,11 +31,13 @@ export default function Providers({
 }) {
   const intlInner = (
     <ComponentPropsContext value={componentProps}>
-      <VideoProvider>
-        <ThemeProvider attribute="class" disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
-      </VideoProvider>
+      <SimulatedMemberAuthProvider>
+        <VideoProvider>
+          <ThemeProvider attribute="class" disableTransitionOnChange>
+            {children}
+          </ThemeProvider>
+        </VideoProvider>
+      </SimulatedMemberAuthProvider>
     </ComponentPropsContext>
   );
 

@@ -17,6 +17,18 @@ describe('applyTopicListingVariantAliases', () => {
     expect(topic.TopicListingCalendar).toBe(Calendar);
   });
 
+  it('supports plain object component maps (non-Map)', () => {
+    const Calendar = () => null;
+    const Default = () => null;
+    const map: Record<string, Record<string, unknown>> = {
+      TopicListing: { Default, Calendar },
+    };
+
+    applyTopicListingVariantAliases(map);
+
+    expect(map.TopicListing.TopicListingCalendar).toBe(Calendar);
+  });
+
   it('no-ops when TopicListing is missing', () => {
     const map = new Map<string, Record<string, unknown>>();
     expect(() => applyTopicListingVariantAliases(map as never)).not.toThrow();

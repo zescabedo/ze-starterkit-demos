@@ -1,4 +1,4 @@
-import type { NextjsContentSdkComponent } from '@sitecore-content-sdk/nextjs';
+import { getComponentMapEntry, type ComponentMapLike } from '@/lib/component-map-get';
 
 /** Headless variant item id (authoring: People / No Image.yml) */
 const NO_IMAGE_VARIANT_ID = '9ad4d22a-aefd-4d26-af3d-c5e0a444aee4';
@@ -7,8 +7,8 @@ const NO_IMAGE_VARIANT_ID = '9ad4d22a-aefd-4d26-af3d-c5e0a444aee4';
  * Sitecore can pass variant keys using display names with spaces (e.g. "No Image"),
  * which do not match the `NoImage` export on the component module.
  */
-export function applyPeopleVariantAliases(map: Map<string, NextjsContentSdkComponent>): void {
-  const entry = map.get('People');
+export function applyPeopleVariantAliases(map: ComponentMapLike): void {
+  const entry = getComponentMapEntry(map, 'People');
   if (!entry || typeof entry !== 'object') return;
 
   const record = entry as Record<string, unknown>;

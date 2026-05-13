@@ -17,6 +17,14 @@ import { Default as Logo } from '@/components/logo/Logo.dev';
 import { GlobalHeaderProps } from './global-header.props';
 import { Button } from '@/components/ui/button';
 import { Url } from 'next/dist/shared/lib/router/router';
+import { useSimulatedMemberAuth } from '@/contexts/SimulatedMemberAuthContext';
+
+function isSignInLinkText(text: string | undefined): boolean {
+  if (!text) {
+    return false;
+  }
+  return /sign\s*in/i.test(text.trim());
+}
 
 export const Default: React.FC<GlobalHeaderProps> = (props) => {
   const { fields, page } = props ?? {};
@@ -24,6 +32,7 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
   const links = fields?.data?.item?.children?.results ?? [];
   const [isOpen, setIsOpen] = useState(false);
   const pageEditing = page.mode.isEditing;
+  const { isAuthenticated, signOut, openSignInModal } = useSimulatedMemberAuth();
 
   const [visible, setVisible] = useState(true);
   const [prevScrollY, setPrevScrollY] = useState(0);
@@ -114,14 +123,37 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
                 <SitecoreLink field={headerContact?.jsonValue} />
               </Button>
             </div>
+          ) : isAuthenticated ? (
+            <div className="@lg:flex @lg:items-center @lg:justify-end hidden">
+              <Button
+                type="button"
+                variant="outline"
+                className="font-heading text-medium rounded-full"
+                onClick={() => signOut()}
+              >
+                Sign Out
+              </Button>
+            </div>
           ) : (
-            headerContact?.jsonValue?.value?.href && (
+            headerContact?.jsonValue?.value &&
+            (headerContact.jsonValue.value.href || isSignInLinkText(headerContact.jsonValue.value.text)) && (
               <div className="@lg:flex @lg:items-center @lg:justify-end hidden">
-                <Button variant="outline" asChild className="font-heading text-medium rounded-full">
-                  <Link href={headerContact.jsonValue.value.href as Url}>
+                {isSignInLinkText(headerContact.jsonValue.value.text) ? (
+                  <Button
+                    type="button"
+                    variant="outline"
+                    className="font-heading text-medium rounded-full"
+                    onClick={() => openSignInModal()}
+                  >
                     {headerContact.jsonValue.value.text}
-                  </Link>
-                </Button>
+                  </Button>
+                ) : (
+                  <Button variant="outline" asChild className="font-heading text-medium rounded-full">
+                    <Link href={headerContact.jsonValue.value.href as Url}>
+                      {headerContact.jsonValue.value.text}
+                    </Link>
+                  </Button>
+                )}
               </div>
             )
           )}
@@ -153,17 +185,47 @@ export const Default: React.FC<GlobalHeaderProps> = (props) => {
                           </Button>
                         )
                     )}
-                  {headerContact?.jsonValue?.value?.href && (
+                  {isAuthenticated ? (
                     <Button
+                      type="button"
                       variant="outline"
-                      asChild
                       className="rounded-full"
-                      onClick={() => setIsOpen(false)}
+                      onClick={() => {
+                        signOut();
+                        setIsOpen(false);
+                      }}
                     >
-                      <Link href={headerContact.jsonValue.value.href as Url}>
-                        {headerContact.jsonValue.value.text}
-                      </Link>
+                      Sign Out
                     </Button>
+                  ) : (
+                    headerContact?.jsonValue?.value &&
+                    (headerContact.jsonValue.value.href ||
+                      isSignInLinkText(headerContact.jsonValue.value.text)) && (
+                      <>
+                        {isSignInLinkText(headerContact.jsonValue.value.text) ? (
+                          <Button
+                            type="button"
+                            variant="outline"
+                            className="rounded-full"
+                            onClick={() => {
+                              openSignInModal();
+                              setIsOpen(false);
+                            }}
+                          >
+                            {headerContact.jsonValue.value.text}
+                          </Button>
+                        ) : (
+                          <Button variant="outline" asChild className="rounded-full">
+                            <Link
+                              href={headerContact.jsonValue.value.href as Url}
+                              onClick={() => setIsOpen(false)}
+                            >
+                              {headerContact.jsonValue.value.text}
+                            </Link>
+                          </Button>
+                        )}
+                      </>
+                    )
                   )}
                 </nav>
               </SheetContent>

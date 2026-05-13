@@ -1,0 +1,40 @@
+﻿---
+ID: "23aef3b4-0559-4768-8c3a-96daa1c31194"
+Parent: "38c59c43-7d30-49e4-ac1a-575a9ca14d56"
+Template: "38c59c43-7d30-49e4-ac1a-575a9ca14d56"
+Path: "/sitecore/templates/Project/click-click-launch/Components/Page Content/Pricing Details Folder/__Standard Values"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {8FF8CDDC-BFA7-4DDF-A439-80E61675466B}
+    {38C59C43-7D30-49E4-AC1A-575A9CA14D56}
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "0455a3d1-6572-49d4-940a-34cf712f47e3"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260513T011750Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a22cdb89-418f-4909-9b4b-ab2ea9c635b1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260513T012147Z
