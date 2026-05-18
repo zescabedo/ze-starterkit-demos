@@ -40,7 +40,7 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "97e83ddb-e8f7-4615-bc90-eb6665b20fab"
+      Value: "e0fe7eaf-7ab4-44a5-9329-eea856206ba9"
     - ID: "919fb716-ca94-45e1-b4ca-8d92e8d71f4f"
       Hint: Image
       Value: |
@@ -51,8 +51,8 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T150512Z
+      Value: 20260513T155500Z
     - ID: "d9d7a7a2-017d-4a0e-92ab-3608b2c88afe"
       Hint: linkOptional
       Value: |
-        <link linktype="internal" id="6666b6a4-7bfe-4193-9ee5-dc21a31cef40" anchor="" querystring="" target="" class="" text="Experts on Call" title=""/>
+        <link linktype="internal" id="d6d14585-9f64-4d56-893b-28631133b274" anchor="" querystring="" target="" class="" text="Experts on Call" title=""/>

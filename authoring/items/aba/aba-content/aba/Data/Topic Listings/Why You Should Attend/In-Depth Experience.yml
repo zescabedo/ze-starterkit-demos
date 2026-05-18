@@ -1,18 +1,15 @@
 ﻿---
-ID: "6b71ee9d-180c-47aa-804f-9986e0d63a21"
-Parent: "ba13a1db-a227-4228-a143-ff5afab3f21e"
+ID: "7eb4d35a-2387-4612-a8ad-d5200fa0dfa4"
+Parent: "8090dd16-e0aa-4022-8d7f-ee563a274b28"
 Template: "15e94068-d790-48f2-aa56-44836ff7042a"
-Path: "/sitecore/content/article-sites/aba/Data/Topic Listings/Why Our Members Love Us/ABA Communities"
+Path: "/sitecore/content/article-sites/aba/Data/Topic Listings/Why You Should Attend/In-Depth Experience"
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 200
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "1d1fc373-fc4b-490a-abee-9408d9eb1222"
+  Value: "3edda3e0-3fa6-478f-a353-b6ae0d152029"
 Languages:
 - Language: en
   Versions:
@@ -23,7 +20,7 @@ Languages:
       Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260506T142142Z
+      Value: 20260513T154507Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
@@ -33,22 +30,22 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "5d17ef75-dcec-4e33-b878-9881386d988b"
       Hint: Description
-      Value: Connect with others and share professional resources and best practices.
+      Value: Advanced learning in fiduciary and trust activities, financial planning, tax law and tax planning, investment management and ethics.  
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2b9fd206-34c6-4011-af78-4f0f606b2f9c"
+      Value: "5d457c7e-8d27-42c6-bdfe-319c1b44d834"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T155454Z
+      Value: 20260513T154856Z
     - ID: "d9d7a7a2-017d-4a0e-92ab-3608b2c88afe"
       Hint: linkOptional
       Value: |
-        <link linktype="internal" id="d6d14585-9f64-4d56-893b-28631133b274" anchor="" querystring="" target="" class="" text="ABA Communities" title=""/>
+        <link linktype="internal" id="d6d14585-9f64-4d56-893b-28631133b274" anchor="" querystring="" target="" class="" text="In-Depth Experience" title=""/>

@@ -1,8 +1,8 @@
 ﻿---
-ID: "d4bc22f5-2968-4def-9261-c3cdb34aee7f"
+ID: "db964d96-9a15-444e-af56-cee071c2407e"
 Parent: "9e20d34e-1b33-4f12-b5bc-507305b632cb"
 Template: "35ae55e6-b944-42bd-a710-5fa08163a08b"
-Path: "/sitecore/content/article-sites/aba/Home/Events/How Advisors Are Evolving in 2026"
+Path: "/sitecore/content/article-sites/aba/Home/Events/Wealth and Trust School Level 2"
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
@@ -10,7 +10,7 @@ SharedFields:
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{343ACA74-3889-433A-9D99-ABC0C34C5AA6}" />
+    <image mediaid="{D2FB5B95-6368-4D2F-9A69-B9C1EDD658B1}" />
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
   Value: "cbeb2eba-9f7e-40f6-929f-ae2f6d7ab7ff"
@@ -30,16 +30,22 @@ Languages:
           <d
             id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
             <r
-              uid="{B8E90B48-086C-4485-9671-D425CCEF88B4}"
+              uid="{C216253D-2090-49F1-A85B-72CED934AFC6}"
               p:before="*"
-              s:id="{7A1D9A21-B8D7-42F9-9B0B-92ABF8D1974F}"
-              s:par="GridParameters=%7B7465D855-992E-4DC2-9855-A03250DFA74B%7D&amp;FieldNames&amp;BackgroundImage&amp;Styles&amp;RenderingIdentifier&amp;CSSStyles&amp;DynamicPlaceholderId=5"
+              s:id="{E80C2A78-FCC2-4D32-8EC5-4133F608BE5C}"
+              s:par="colorScheme&amp;excludeTopMargin=1&amp;inset&amp;CSSStyles&amp;DynamicPlaceholderId=1"
               s:ph="headless-main" />
             <r
-              uid="{1309EC0C-611B-424E-872E-1E9606091CDB}"
+              uid="{77B2711A-4E11-4323-A3AA-2B8AB6352703}"
+              p:after="r[@uid='{C216253D-2090-49F1-A85B-72CED934AFC6}']"
+              s:id="{E80C2A78-FCC2-4D32-8EC5-4133F608BE5C}"
+              s:par="colorScheme&amp;excludeTopMargin=1&amp;inset=1&amp;CSSStyles&amp;DynamicPlaceholderId=2"
+              s:ph="headless-main" />
+            <r
+              uid="{8584460E-131A-4022-A001-F642691F744F}"
               p:after="*[1=2]"
-              s:id="{688FA7E2-563E-4BA0-B3A8-6EC445C9F78F}"
-              s:par="excludeTopMargin&amp;CSSStyles&amp;DynamicPlaceholderId=6&amp;Styles=%7B043156E8-3D51-452E-B681-12E266818334%7D"
+              s:id="{E80C2A78-FCC2-4D32-8EC5-4133F608BE5C}"
+              s:par="colorScheme&amp;excludeTopMargin=1&amp;inset&amp;CSSStyles&amp;DynamicPlaceholderId=5"
               s:ph="headless-main" />
           </d>
         </r>
@@ -51,14 +57,14 @@ Languages:
       Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0ce15858-754f-40c8-98b7-cba88b4f5e2c"
+      Value: "0dfdb574-d9ae-4b63-a4cc-6a7951992621"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T155553Z
+      Value: 20260513T162029Z
     - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
       Hint: ogTitle
       Value: How Advisors Are Evolving in 2026

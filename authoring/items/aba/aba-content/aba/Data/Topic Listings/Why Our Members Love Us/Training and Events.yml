@@ -37,7 +37,7 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9bdcec32-9819-4933-99e2-99b00f485c77"
+      Value: "57023dae-cd18-4937-8590-79d4736325bb"
     - ID: "919fb716-ca94-45e1-b4ca-8d92e8d71f4f"
       Hint: Image
       Value: |
@@ -48,8 +48,8 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T150435Z
+      Value: 20260513T155447Z
     - ID: "d9d7a7a2-017d-4a0e-92ab-3608b2c88afe"
       Hint: linkOptional
       Value: |
-        <link linktype="internal" id="6666b6a4-7bfe-4193-9ee5-dc21a31cef40" anchor="" querystring="" target="" class="" text="Training &amp; Events" title=""/>
+        <link linktype="internal" id="d6d14585-9f64-4d56-893b-28631133b274" anchor="" querystring="" target="" class="" text="Training &amp; Events" title=""/>

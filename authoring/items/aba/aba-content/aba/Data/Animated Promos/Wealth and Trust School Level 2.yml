@@ -1,19 +1,15 @@
 ﻿---
-ID: "44aaca1e-c962-432f-b361-c557218b7314"
-Parent: "327f4264-a8fa-4ee2-8498-1406f1d0fe73"
+ID: "b7bd238a-61a6-4ca4-b08c-67192a9ea549"
+Parent: "46458596-37b7-4dea-9421-f9d9bb81c3ce"
 Template: "bd372d9d-6e4f-4ae9-a54c-dbc2acdebe2a"
-Path: "/sitecore/content/article-sites/aba/Home/Data/AnimatedPromo"
-BranchID: "67d5aed7-9d44-4899-925d-d06ef478b9fb"
+Path: "/sitecore/content/article-sites/aba/Data/Animated Promos/Wealth and Trust School Level 2"
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "d461591c-1608-42b8-a88f-b1948e97c8eb"
-- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
-  Hint: __Originator
-  Value: "{52E1D4E1-91E3-447C-941C-6B04BBF01DD9}"
+  Value: "099909fc-aa55-4bb6-85d6-b71ce65f3248"
 Languages:
 - Language: en
   Versions:
@@ -24,14 +20,14 @@ Languages:
       Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260505T154235Z
+      Value: 20260513T153731Z
     - ID: "3a2a1142-68ca-4f5b-afb0-c17d2c0ef8ea"
       Hint: secondaryLink
       Value: |
-        <link linktype="external" url="https://www.sitecore.com" text="Sign in for your resources" anchor=""/>
+        <link linktype="external" url="https://www.aba.com/training-events/schools/trust-schools/intermediate/curriculum" text="VIEW PROGRAM" anchor=""/>
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{4460E76C-87E9-4859-9DE6-DE122774937F}"
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -43,24 +39,24 @@ Languages:
     - ID: "84a2a397-786e-43bd-85a0-bfbcc51fc3f3"
       Hint: image
       Value: |
-        <image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/980e25f2e7c9459bbf9bed7b908ea2cb?v=f7d2cc15" dam-id="S-w6xi5jS-uSUvUdhOX37w" width="1200" height="860" alt="A man working with a banker teller in a bank setting" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/93559/thumbnail" />
+        <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/ea8f0a1ad7004757bfb4f1325ca8ab11?v=15edd61e" dam-id="weyqO9VCR1eEiprOM3PY2Q" width="700" height="500" alt="WTS-700x500.jpg" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/93541/thumbnail" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9e8d28de-2b81-468e-b59f-5ec141608202"
+      Value: "45bf7036-26ce-40ef-a076-eb950202f5d5"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "c00d4bd2-a452-4067-a861-e8c6d47201a7"
       Hint: description
-      Value: ABA proudly represents banks of all sizes and their 2 million dedicated employees.
+      Value: "May 12-21, 2026           Virtual School "
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T163045Z
+      Value: 20260513T154124Z
     - ID: "da7db0f2-08eb-47c5-af07-ed12a1e998db"
       Hint: title
-      Value: We Are the Voice of America’s Banks
+      Value: Wealth and Trust School Level 2
     - ID: "e9e9c847-e0f0-497d-8e41-5211a087029a"
       Hint: primaryLink
       Value: |
-        <link linktype="internal" id="9e20d34e-1b33-4f12-b5bc-507305b632cb" anchor="" querystring="" target="" class="" text="See Events" title=""/>
+        <link linktype="external" url="https://www.aba.com/training-events/schools/trust-schools/intermediate/registration" text="REGISTER" anchor=""/>

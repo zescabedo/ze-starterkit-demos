@@ -27,7 +27,7 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "af5c9a6e-d36f-434a-8ab3-5dc901d9fa36"
+      Value: "84c3c772-0010-4b31-b177-4b0c5d41c31c"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -37,7 +37,7 @@ Languages:
       Value: <p>As AI adoption accelerates, banks are moving from strategy to execution. This report, based on insights from 250+ industry leaders, examines how institutions are leveraging AI to enhance operations, improve customer experience and stay competitive.</p>
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T034930Z
+      Value: 20260513T163128Z
     - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
       Hint: PromoLink
       Value: |
@@ -45,4 +45,4 @@ Languages:
     - ID: "f94b9858-c439-4291-863b-757b536c8b65"
       Hint: PromoIcon
       Value: |
-        <image mediaid="99792f53-5069-42d1-bd91-fcfa7e8baca4" />
+        <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/8fc0cb5748384c06ba50bd4094d2ef75?v=48fbd691" dam-id="_Ih8Wx4PSl67nAovlfh0FQ" width="300" height="168" alt="AIinBankingImage.jpeg" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/93558/thumbnail" />

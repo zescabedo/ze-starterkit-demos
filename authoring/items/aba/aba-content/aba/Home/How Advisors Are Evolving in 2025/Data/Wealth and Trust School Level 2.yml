@@ -39,10 +39,10 @@ Languages:
     - ID: "84a2a397-786e-43bd-85a0-bfbcc51fc3f3"
       Hint: image
       Value: |
-        <image mediaid="254fc001-d8a1-4c82-955c-c02a11a38e00" />
+        <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/93541-HomepagePromoCTAs-1100x740?v=0fddb912" dam-id="weyqO9VCR1eEiprOM3PY2Q" width="1100" height="740" alt="WTS-700x500.jpg" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/93541/thumbnail" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e214e353-a56d-4b57-938c-4c9550740c58"
+      Value: "f7ac662a-1054-4a60-8fcb-492e28415c70"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -52,7 +52,7 @@ Languages:
       Value: "May 12-21, 2026 Virtual School"
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260511T131329Z
+      Value: 20260513T163206Z
     - ID: "da7db0f2-08eb-47c5-af07-ed12a1e998db"
       Hint: title
       Value: Wealth and Trust School Level 2

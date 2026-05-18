@@ -1,19 +1,15 @@
 ﻿---
-ID: "44aaca1e-c962-432f-b361-c557218b7314"
-Parent: "327f4264-a8fa-4ee2-8498-1406f1d0fe73"
+ID: "94c4f3f0-2ae0-492e-ab61-1e11d92f991a"
+Parent: "46458596-37b7-4dea-9421-f9d9bb81c3ce"
 Template: "bd372d9d-6e4f-4ae9-a54c-dbc2acdebe2a"
-Path: "/sitecore/content/article-sites/aba/Home/Data/AnimatedPromo"
-BranchID: "67d5aed7-9d44-4899-925d-d06ef478b9fb"
+Path: "/sitecore/content/article-sites/aba/Data/Animated Promos/Advisors are evolving promo"
 SharedFields:
 - ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
   Hint: __Workflow
   Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "d461591c-1608-42b8-a88f-b1948e97c8eb"
-- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
-  Hint: __Originator
-  Value: "{52E1D4E1-91E3-447C-941C-6B04BBF01DD9}"
+  Value: "2c74dbfe-c651-4dd8-9fb3-46ce8056cc91"
 Languages:
 - Language: en
   Versions:
@@ -24,11 +20,10 @@ Languages:
       Value: <r />
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260505T154235Z
+      Value: 20260513T145251Z
     - ID: "3a2a1142-68ca-4f5b-afb0-c17d2c0ef8ea"
       Hint: secondaryLink
-      Value: |
-        <link linktype="external" url="https://www.sitecore.com" text="Sign in for your resources" anchor=""/>
+      Value: 
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{4460E76C-87E9-4859-9DE6-DE122774937F}"
@@ -43,24 +38,23 @@ Languages:
     - ID: "84a2a397-786e-43bd-85a0-bfbcc51fc3f3"
       Hint: image
       Value: |
-        <image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/980e25f2e7c9459bbf9bed7b908ea2cb?v=f7d2cc15" dam-id="S-w6xi5jS-uSUvUdhOX37w" width="1200" height="860" alt="A man working with a banker teller in a bank setting" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/93559/thumbnail" />
+        <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/1cc2bdb715f34f6fa90bca007663f0f4?v=523bfee5" dam-id="CL4-_4f-Tr-qebqdfZykCg" width="1554" height="460" alt="AdvisorsEvolvingBackgroundImage.png" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/93526/thumbnail" />
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9e8d28de-2b81-468e-b59f-5ec141608202"
+      Value: "721a5f3f-9adb-4990-a5b4-e6883fcaf345"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "c00d4bd2-a452-4067-a861-e8c6d47201a7"
       Hint: description
-      Value: ABA proudly represents banks of all sizes and their 2 million dedicated employees.
+      Value: "Aired: July 22, 2025"
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T163045Z
+      Value: 20260513T153518Z
     - ID: "da7db0f2-08eb-47c5-af07-ed12a1e998db"
       Hint: title
-      Value: We Are the Voice of America’s Banks
+      Value: "AI: How Advisors Are Evolving in 2025 "
     - ID: "e9e9c847-e0f0-497d-8e41-5211a087029a"
       Hint: primaryLink
-      Value: |
-        <link linktype="internal" id="9e20d34e-1b33-4f12-b5bc-507305b632cb" anchor="" querystring="" target="" class="" text="See Events" title=""/>
+      Value: 

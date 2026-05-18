@@ -1,0 +1,38 @@
+﻿---
+ID: "bc70ea88-cbe4-4a0a-8d9f-14c3576a70bc"
+Parent: "b80d95b0-b77c-4755-a151-81b752c1a211"
+Template: "0a7aa373-5ed1-4e9b-9678-22d3c5faf6df"
+Path: "/sitecore/content/article-sites/aba/Home/Events/Wealth and Trust School Level 2/Data/Text 1"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260513T154210Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "729034fc-24f3-40b7-8fa4-fb49d7de20dd"
+      Hint: Text
+      Value: |
+        <div class="ck-content"><h3>&nbsp;<br /><strong>Hone Your Expertise</strong></h3><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(80, 80, 80);font-family:Lato, sans-serif;font-size:18px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:15px;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">Level 2 offers a curriculum designed for existing fiduciaries to augment their skills and apply what they learned in Level 1. The emphasis will be on aligning industry principles with advanced trust concepts; topics covered include special needs trusts, portfolio management and investments.&nbsp;</p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(80, 80, 80);font-family:Lato, sans-serif;font-size:18px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:15px;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;"><strong style="box-sizing:border-box;font-weight:bolder;">Interested in the CTFA?</strong>&nbsp;After completing Wealth and Trust Schools Level 1 and 2, the pre-certification education requirement is fully met for the Certified Trust and Fiduciary Advisor (CTFA) designation. Review the full list of <a style="background-color:transparent;box-sizing:border-box;color:rgb(0, 96, 185);cursor:pointer;font-family:Lato, sans-serif;transition:color 0.25s ease-in-out;" href="https://www.aba.com/training-events/certifications/certified-trust-and-fiduciary-advisor/eligibility-requirements"><strong><u>eligibility requirements to sit for the CTFA exam</u></strong></a>.</p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(80, 80, 80);font-family:Lato, sans-serif;font-size:18px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:15px;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;"><strong style="box-sizing:border-box;font-weight:bolder;">Upcoming school dates: October 19-23, 2026</strong></p><p style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);box-sizing:border-box;color:rgb(80, 80, 80);font-family:Lato, sans-serif;font-size:18px;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;margin-bottom:15px;margin-top:0px;orphans:2;text-align:left;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;">&nbsp;</p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "895d4a28-89d6-482a-8c05-c5f49e0678a6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260513T155102Z

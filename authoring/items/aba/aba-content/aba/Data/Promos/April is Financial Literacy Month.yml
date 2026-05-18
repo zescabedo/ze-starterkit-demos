@@ -30,7 +30,7 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "f3e6d601-e63e-4c4c-a91e-313aade8a895"
+      Value: "5a6b0d7e-3601-4379-8017-4b4a2478aa2f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
@@ -40,7 +40,7 @@ Languages:
       Value: "<p>Plus, Teach Children to Save Day is April 23! It’s a perfect opportunity to reach out to schools and help their students develop youth financial skills that will last a lifetime.</p>"
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260506T133452Z
+      Value: 20260513T163107Z
     - ID: "ef24bed2-46ab-4d53-ad1a-1019935a4e89"
       Hint: PromoLink
       Value: |
@@ -48,4 +48,4 @@ Languages:
     - ID: "f94b9858-c439-4291-863b-757b536c8b65"
       Hint: PromoIcon
       Value: |
-        <image mediaid="f1fc78d7-c720-4022-a6d4-656e50f72ed8" />
+        <Image src="https://starter-verticals-2.sitecoresandbox.cloud/api/public/content/9249a438a6cf4de999536dd1620891e6?v=fede034b" dam-id="Miw32DODQV-3_WMrr751TA" width="666" height="602" alt="Woman3-Square.webp" dam-content-type="Image" thumbnailsrc="https://starter-verticals-2.sitecoresandbox.cloud/api/gateway/93576/thumbnail" />
