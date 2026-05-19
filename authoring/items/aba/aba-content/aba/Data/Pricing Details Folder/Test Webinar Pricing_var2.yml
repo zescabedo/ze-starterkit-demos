@@ -1,0 +1,45 @@
+﻿---
+ID: "adf33a9b-b268-440e-a9cf-b2444154812a"
+Parent: "3effdcec-c8c3-42f1-a2a5-f640c1fad00a"
+Template: "8ff8cddc-bfa7-4ddf-a439-80e61675466b"
+Path: "/sitecore/content/article-sites/aba/Data/Pricing Details Folder/Test Webinar Pricing_var2"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260513T015145Z
+    - ID: "357499c1-6bb2-443c-855b-593ccd852c96"
+      Hint: SavingsIntro
+      Value: Members save
+    - ID: "370252b3-785f-4cbe-bbf3-0183b014992e"
+      Hint: CreditCost
+      Value: 2
+    - ID: "4543cc36-ce56-46ed-9045-bed228d0b586"
+      Hint: NonMemberPriceLabel
+      Value: "Non-Member Price"
+    - ID: "5a5484fe-b734-43b9-b532-4f819b4f76a4"
+      Hint: ProductTypeTitle
+      Value: Webinar
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2fd720d5-513e-4357-bb5c-2a38c4e86fb2"
+    - ID: "906832ca-4111-43da-bce4-80631b198b05"
+      Hint: MemberPriceLabel
+      Value: ABA Member Price
+    - ID: "ae443f1c-9f62-424a-9a1b-71b2d7218b67"
+      Hint: Footnote
+      Value: |
+        <div class="ck-content"><p>This is a free piece of content that is available for all users</p></div>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260513T192410Z

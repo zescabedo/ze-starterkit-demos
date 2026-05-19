@@ -1,0 +1,48 @@
+﻿---
+ID: "e801e766-0269-4e11-a7a2-46d35dd4ec74"
+Parent: "6f180404-9768-459a-a2c7-98d69e322211"
+Template: "58041043-7bea-44f0-b1b8-08e4ea7054f4"
+Path: "/sitecore/content/article-sites/aba/Home/Events/How Advisors Are Evolving in 2026/Data/Text 3"
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{A053ED9F-4099-4682-9411-2B4C98E481E4}"
+- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
+  Hint: __Shared revision
+  Value: "e03bac1e-c438-4593-bfb5-c3a51fe8272e"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260513T191032Z
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{12FFAC4C-565F-4C9A-B63E-7F77E96B4D1F}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "8b57dadd-0825-4f5d-9c32-187c0af7e1fd"
+      Hint: text
+      Value: |
+        <div class="ck-content"><p style="color:#4E5665;font-family:&quot;Playfair Display&quot;;font-size:25.5pt;margin-bottom:7pt;margin-top:0pt;"><span style="background-color:white;"><strong>Discussion Highlights</strong></span></p><ul style="direction:ltr;list-style-type:disc;margin-bottom:0in;margin-top:0in;unicode-bidi:embed;" type="disc"><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;"><strong>Examine the current trends and use cases leading the change</strong>&nbsp;(e.g. trends shaping the industry and examples)</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;"><strong>Understand the power of AI and future roles/skills for advisors in the AI era</strong>&nbsp;(e.g. how advisors can leverage AI to deliver personalized value)</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;"><strong>Explore challenges and considerations</strong>&nbsp;(e.g. ethical concerns, regulatory landscape, confidentiality, data security/risks and accessibility of AI tools)</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;"><strong>Prepare for the future&nbsp;</strong>(e.g. balancing the application of AI with personalization and human touch and building AI literacy with peers and clients)</span></span></li></ul><p style="color:#4E5665;font-family:&quot;Playfair Display&quot;;font-size:25.5pt;margin-bottom:7pt;margin-top:19pt;"><span style="background-color:white;"><strong>Speakers</strong></span></p><ul style="direction:ltr;list-style-type:disc;margin-bottom:0in;margin-top:0in;unicode-bidi:embed;" type="disc"><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;"><strong>Rahim Nota</strong>, Senior Manager, Wealth &amp; Asset Management, Consulting,Ernst &amp; Young LLP</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;"><strong>Joseph Correnti</strong>, Managing Director, Ernst &amp; Young LLP</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;"><strong>Dave Coffaro</strong>, Principal, Strategic Advisory Consulting Group</span></span></li></ul><p style="color:#4E5665;font-family:&quot;Playfair Display&quot;;font-size:25.5pt;margin-bottom:7pt;margin-top:19pt;"><span style="background-color:white;"><strong>Audience</strong></span></p><ul style="direction:ltr;list-style-type:disc;margin-bottom:0in;margin-top:0in;unicode-bidi:embed;" type="disc"><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">Wealth Management Advisors</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">Wealth Managers</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">Trust and Fiduciary Advisors</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">Trust Officers</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">Estate Planners</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">Trust Counsel</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">Trust Department Managers</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">Private Bankers</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">Trust Tax Professionals</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">Financial Planners</span></span></li><li style="color:#505050;margin-bottom:9pt;margin-top:0pt;vertical-align:middle;"><span style="background-color:white;"><span style="font-family:Lato;font-size:13.5pt;">CTFAs, CISPs, CRSPs, CPAs, CFPs</span></span></li></ul><p style="color:#4E5665;font-family:&quot;Playfair Display&quot;;font-size:25.5pt;margin-bottom:7pt;margin-top:19pt;"><span style="background-color:white;"><strong>Credits</strong></span></p><p style="font-family:Lato;font-size:13.5pt;margin-bottom:11pt;margin-top:0pt;"><span style="background-color:white;color:#505050;">ABA Professional Certifications: 1.25&nbsp;</span><a href="https://www.aba.com/training-events/certifications/certified-aml-and-fraud-professional"><span style="background-color:white;"><strong>CAFP</strong></span></a><span style="background-color:white;color:#505050;">, 1.25&nbsp;</span><a href="https://www.aba.com/training-events/certifications/certified-trust-and-fiduciary-advisor"><span style="background-color:white;"><strong>CTFA</strong></span></a><span style="background-color:white;color:#505050;">; 1.2 CPE (Specialized Knowledge); 1.0 CFP</span></p><p style="color:#505050;font-family:Lato;font-size:13.5pt;margin-bottom:11pt;margin-top:0pt;"><span style="background-color:white;">The Certified Financial Planners Board has granted 1.0 credit for this live webinar. Recordings are not eligible for CFP credits.</span></p><p style="color:#505050;font-family:Lato;font-size:13.5pt;margin-bottom:11pt;margin-top:0pt;"><span style="background-color:white;">This intermediate level, Group Internet-based webinar is eligible for 1.2 CPEs for CPAs (various fields of study). Recordings are not eligible for CPE credits.</span></p><p style="color:#505050;font-family:Lato;font-size:13.5pt;margin-bottom:11pt;margin-top:0pt;"><span style="background-color:white;"><strong>Prerequisite</strong>&nbsp;— Attendees should have background knowledge of the field of wealth management and trust within the financial services industry.</span></p><p style="color:#505050;font-family:Lato;font-size:13.5pt;margin-bottom:11pt;margin-top:0pt;"><span style="background-color:white;"><strong>Advanced Preparation&nbsp;</strong>— None</span></p><p style="font-family:Lato;font-size:13.5pt;margin-bottom:11pt;margin-top:0pt;"><span style="background-color:white;color:#505050;">For more information regarding refund, complaint and program cancellation policies, contact American Bankers Association at&nbsp;</span><a href="tel:1-800-BANKERS"><span style="background-color:white;"><strong>1-800-BANKERS</strong></span></a><span style="background-color:white;color:#505050;">.</span></p><p style="color:#505050;font-family:Lato;font-size:13.5pt;margin-bottom:11pt;margin-top:0pt;"><span style="background-color:white;"><i>Credits are subject to change.</i></span></p></div>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d3a7a77e-3a71-424d-a37a-126385bb466a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260513T191115Z

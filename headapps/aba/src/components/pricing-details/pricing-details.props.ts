@@ -1,8 +1,22 @@
-import type { Field } from '@sitecore-content-sdk/nextjs';
+import type { ComponentParams, Field } from '@sitecore-content-sdk/nextjs';
 
 import { ComponentProps } from '@/lib/component-props';
 
-export type PricingDetailsParams = Record<string, string>;
+/** Known rendering parameters (also accepts other Sitecore layout param keys). */
+export type PricingDetailsParams = ComponentParams & {
+  backgroundTheme?: string;
+  BackgroundTheme?: string;
+  hideTitle?: string;
+  HideTitle?: string;
+  hideCredits?: string;
+  HideCredits?: string;
+  hideFootnote?: string;
+  HideFootnote?: string;
+  hideSavings?: string;
+  HideSavings?: string;
+  contentIsFree?: string;
+  ContentIsFree?: string;
+};
 
 export interface PricingDetailsFields {
   data?: {

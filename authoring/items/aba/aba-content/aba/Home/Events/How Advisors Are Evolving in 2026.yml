@@ -37,28 +37,104 @@ Languages:
               s:ph="headless-main" />
             <r
               uid="{1309EC0C-611B-424E-872E-1E9606091CDB}"
-              p:after="*[1=2]"
+              p:after="r[@uid='{B8E90B48-086C-4485-9671-D425CCEF88B4}']"
               s:id="{688FA7E2-563E-4BA0-B3A8-6EC445C9F78F}"
               s:par="excludeTopMargin&amp;CSSStyles&amp;DynamicPlaceholderId=6&amp;Styles=%7B043156E8-3D51-452E-B681-12E266818334%7D"
               s:ph="headless-main" />
+            <r
+              uid="{1585B9A3-240B-4666-84F4-3909BB46856B}"
+              p:after="r[@uid='{1309EC0C-611B-424E-872E-1E9606091CDB}']"
+              s:ds="94c4f3f0-2ae0-492e-ab61-1e11d92f991a"
+              s:id="{241A1B8E-E69A-4E07-B5E4-53975371AD3C}"
+              s:par="colorScheme&amp;FieldNames=%7BD5A4329E-6AEA-402F-979E-7AA27B535447%7D&amp;CSSStyles&amp;DynamicPlaceholderId=7"
+              s:ph="/headless-main/container-5" />
+            <r
+              uid="{4AEE836E-8E83-48E9-9337-2B104868D83B}"
+              p:after="r[@uid='{1585B9A3-240B-4666-84F4-3909BB46856B}']"
+              s:ds="local:/Data/Text 3"
+              s:id="{50B36874-8C4E-4958-9DD6-8B95C6AFD09A}"
+              s:par="CSSStyles&amp;DynamicPlaceholderId=8"
+              s:ph="/headless-main/container-seventy-left-6" />
+            <r
+              uid="{B30680AC-4199-4E9B-A8B0-FAEB44D1BD0C}"
+              p:after="*[1=2]"
+              s:ds="adf33a9b-b268-440e-a9cf-b2444154812a"
+              s:id="{F719D52F-940C-43E8-B5F8-4C5874762879}"
+              s:par="CSSStyles"
+              s:ph="/headless-main/container-thirty-right-6">
+              <rls>
+                <ruleset
+                  s:pet="true">
+                  <rule
+                    uid="{8DFB4287-950F-4F5A-9CBB-210CE50CA745}"
+                    s:name="b30680ac41994e9ba8b0faeb44d1bd0c_b7b1b47554c546da90e9dfd4859c06bd">
+                    <conditions>
+                      <condition
+                        uid="28256FEF1D514661A4E43A67F1247A5A"
+                        s:id="{8E7426A4-12ED-4C44-8625-E7191860E726}"
+                        s:VariantName="b30680ac41994e9ba8b0faeb44d1bd0c_b7b1b47554c546da90e9dfd4859c06bd" />
+                    </conditions>
+                    <actions>
+                      <action
+                        uid="{AE16C512-BAB4-4546-9BA0-4FE6B3ACA701}"
+                        s:id="{0F3C6BEC-E56B-4875-93D7-2846A75881D2}"
+                        s:DataSource="adf33a9b-b268-440e-a9cf-b2444154812a" />
+                    </actions>
+                  </rule>
+                  <rule
+                    uid="{00000000-0000-0000-0000-000000000000}"
+                    s:name="Default">
+                    <conditions>
+                      <condition
+                        uid="B023AB74D66A4B5CB01E5E16B554B3DF"
+                        s:id="{4888ABBB-F17D-4485-B14B-842413F88732}" />
+                    </conditions>
+                  </rule>
+                </ruleset>
+              </rls>
+            </r>
           </d>
         </r>
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: Industry leaders from EY and Strategic Advisory Consulting Group examine how AI is transforming the advisor role, including emerging use cases, ethical and regulatory considerations, data security, and how to build AI literacy with clients and peers.
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260511T204758Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "4dd4e18f-b1a3-4225-967f-b4ec9f68928c"
+      Hint: ogDescription
+      Value: Learn how AI is changing wealth and trust advising. Earn CAFP, CTFA, CPE, and CFP credits.
+    - ID: "5272817a-75b7-4554-a5ef-2cc4930034d2"
+      Hint: pageSubtitle
+      Value: A panel discussion on AI's role in the future of wealth management and trust advising
+    - ID: "8535365d-ae76-4875-ab5b-a618d5819af0"
+      Hint: metadataTitle
+      Value: AI and the Future of Wealth Advisors in 2026 | ABA Webinar
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0ce15858-754f-40c8-98b7-cba88b4f5e2c"
+      Value: "27def7ab-a57d-40c8-9a00-1feed364af30"
+    - ID: "9b600e71-cf7a-4874-9032-f394a9bd2e48"
+      Hint: metadataDescription
+      Value: "On-demand ABA webinar exploring how AI is reshaping wealth and trust advisor roles in 2026. Hear EY and Strategic Advisory Consulting Group leaders on AI use cases, ethics, regulatory considerations, and the future advisor skill set. Earn CAFP, CTFA, CPE, and CFP credits."
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: "AI: How Advisors Are Evolving in 2026"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T155553Z
+      Value: 20260519T053347Z
+    - ID: "e7f8a9b0-c1d2-4e3f-8a9b-0c1d2e3f4a5b"
+      Hint: metadataAuthor
+      Value: American Bankers Association
     - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
       Hint: ogTitle
-      Value: How Advisors Are Evolving in 2026
+      Value: AI and the Future of Wealth Advisors in 2026 | ABA Webinar
+    - ID: "f6fcc0b6-31b2-49cd-8a66-4ba282a8ad24"
+      Hint: metadataKeywords
+      Value: AI for financial advisors, wealth management AI, trust advisor AI, AI in banking, CTFA webinar, CAFP credit, AI ethics financial services, advisor skills 2026, ABA wealth management

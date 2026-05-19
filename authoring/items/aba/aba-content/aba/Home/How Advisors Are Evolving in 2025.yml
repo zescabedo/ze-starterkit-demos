@@ -69,17 +69,116 @@ Languages:
       Value: 20260511T131100Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
-      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+      Value: "{F7FE5BDD-A991-4A58-9735-CD08F9B097AB}"
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "75bd9370-5d1c-4722-aeb0-421ec63d5d99"
+      Value: "8a259905-eebc-4d2e-b253-f8ec0888e4c6"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T021757Z
+      Value: 20260513T164128Z
     - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
       Hint: ogTitle
       Value: How Advisors Are Evolving in 2025
+  - Version: 2
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{3990B4BD-7C2F-4C0C-9697-53616CECA09A}"
+              p:before="*"
+              s:ds="local:/Data/Wealth and Trust School Level 2"
+              s:id="{241A1B8E-E69A-4E07-B5E4-53975371AD3C}"
+              s:par="colorScheme&amp;FieldNames=%7BD5A4329E-6AEA-402F-979E-7AA27B535447%7D&amp;CSSStyles&amp;DynamicPlaceholderId=1&amp;Styles=%7C%7B9FCF3533-6CFE-4163-B08E-DAAF16C90177%7D"
+              s:ph="headless-main" />
+            <r
+              uid="{723D4B6C-13F7-4677-9122-837F5CC0B50C}"
+              p:after="r[@uid='{3990B4BD-7C2F-4C0C-9697-53616CECA09A}']"
+              s:id="{02340885-3692-4CAD-AC11-ED61206501A3}"
+              s:par="excludeTopMargin&amp;CSSStyles&amp;DynamicPlaceholderId=3"
+              s:ph="headless-main" />
+            <r
+              uid="{CF3E7A11-80BA-4073-A28F-8882EEAEC676}"
+              p:after="r[@uid='{723D4B6C-13F7-4677-9122-837F5CC0B50C}']"
+              s:id="{688FA7E2-563E-4BA0-B3A8-6EC445C9F78F}"
+              s:par="excludeTopMargin&amp;CSSStyles&amp;DynamicPlaceholderId=6&amp;Styles=%7C%7B043156E8-3D51-452E-B681-12E266818334%7D"
+              s:ph="/headless-main/container-fullwidth-3" />
+            <r
+              uid="{DBA98631-CC62-4B84-B5C5-863E1DDF33C8}"
+              p:after="r[@uid='{CF3E7A11-80BA-4073-A28F-8882EEAEC676}']"
+              s:ds="local:/Data/Text 2"
+              s:id="{50B36874-8C4E-4958-9DD6-8B95C6AFD09A}"
+              s:par="CSSStyles&amp;DynamicPlaceholderId=7"
+              s:ph="/headless-main/container-fullwidth-3/container-seventy-left-6" />
+            <r
+              uid="{17F67DB6-BC7C-4E36-AB89-3493746611E7}"
+              p:after="*[1=2]"
+              s:ds="e11e4215-aaa0-4387-acbc-94b506f2543b"
+              s:id="{F719D52F-940C-43E8-B5F8-4C5874762879}"
+              s:par="CSSStyles"
+              s:ph="/headless-main/container-fullwidth-3/container-thirty-right-6" />
+          </d>
+        </r>
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20260513T170638Z
+    - ID: "27cd428b-f652-4534-b76f-33f64b742659"
+      Hint: pageShortTitle
+      Value: Advisors Evolving with AI
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "4dd4e18f-b1a3-4225-967f-b4ec9f68928c"
+      Hint: ogDescription
+      Value: "Hear from EY and industry leaders on how AI is transforming wealth and trust advisory. Live webinar with on-demand access. Earn CE credits."
+    - ID: "5272817a-75b7-4554-a5ef-2cc4930034d2"
+      Hint: pageSubtitle
+      Value: 
+    - ID: "5c01b675-9b56-4d6b-aee4-0ecb1a0021f6"
+      Hint: pageTitle
+      Value: "AI: How Advisors Are Evolving in 2025"
+    - ID: "8535365d-ae76-4875-ab5b-a618d5819af0"
+      Hint: metadataTitle
+      Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "72db909f-23dc-410b-8a04-cd93bd91c7ad"
+    - ID: "9b600e71-cf7a-4874-9032-f394a9bd2e48"
+      Hint: metadataDescription
+      Value: 
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: How Advisors Are Evolving in 2025
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\zach.escabedo@sitecore.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20260513T170638Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20260514T174638Z
+    - ID: "e7f8a9b0-c1d2-4e3f-8a9b-0c1d2e3f4a5b"
+      Hint: metadataAuthor
+      Value: 
+    - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
+      Hint: ogTitle
+      Value: "AI: How Advisors Are Evolving in 2025 — ABA Expert Panel"
+    - ID: "f6fcc0b6-31b2-49cd-8a66-4ba282a8ad24"
+      Hint: metadataKeywords
+      Value: 

@@ -7,9 +7,12 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
   Value: business/32x32/moneybag_dollar.png
+- ID: "087c0553-9162-41f5-98d3-87eb0d80edbb"
+  Hint: Compatible Renderings
+  Value: "{F719D52F-940C-43E8-B5F8-4C5874762879}"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "967e986d-fa3d-4ca3-8ff7-92ba8b72fa25"
+  Value: "869938f2-47e2-47ac-9cc2-0fe1917ef748"
 Languages:
 - Language: en
   Versions:
@@ -28,11 +31,11 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0cfdbc52-20c1-4dd8-8739-5050e00fa6f1"
+      Value: "9bd00587-7412-44fe-b972-8894ab2192e4"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T014355Z
+      Value: 20260519T052941Z

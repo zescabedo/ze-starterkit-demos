@@ -30,12 +30,15 @@ SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: "/sitecore/templates/Project/click-click-launch/Components/Page Content/PricingDetails"
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{E3454E66-A8FC-4D06-9022-2E02036F8BDA}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: "query:$site/*[@@name='Data']/*[@@templatename='Pricing Details Folder']|query:$sharedSites/*[@@name='Data']/*[@@templatename='Pricing Details Folder']'"
 - ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
   Hint: __Shared revision
-  Value: "6aeabaa7-e3e4-4ccd-9e93-e9700879e2a3"
+  Value: "15714b30-080f-4462-8950-60977db3d87c"
 Languages:
 - Language: en
   Fields:
@@ -58,11 +61,11 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "bcdbf6b1-8791-4255-9ac5-ea9326a5142f"
+      Value: "103231aa-0eac-4f20-95dc-0cdab013c214"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T140448Z
+      Value: 20260519T052259Z

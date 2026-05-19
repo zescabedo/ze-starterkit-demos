@@ -1,15 +1,8 @@
 ﻿---
-ID: "18dba511-1f4d-4a0c-ad29-98893afabbe9"
-Parent: "d8f5adf3-c354-4de3-91d9-ee2aed0afece"
-Template: "4d50cdae-c2d9-4de8-b080-8f992bfb1b55"
-Path: "/sitecore/content/article-sites/aba/Presentation/Headless Variants/PricingDetails/Default"
-SharedFields:
-- ID: "087c0553-9162-41f5-98d3-87eb0d80edbb"
-  Hint: Compatible Renderings
-  Value: 
-- ID: "dbbbeca1-21c7-4906-9dd2-493c1efa59a2"
-  Hint: __Shared revision
-  Value: "a157ac61-5c2d-416e-ab57-8e078f0ccd7c"
+ID: "46aff257-72a7-474e-aa17-ebde5b3b3ffb"
+Parent: "e3454e66-a8fc-4d06-9022-2e02036f8bda"
+Template: "e3454e66-a8fc-4d06-9022-2e02036f8bda"
+Path: "/sitecore/templates/Project/click-click-launch/Components/Page Content/Rendering Parameters/Pricing Details/__Standard Values"
 Languages:
 - Language: en
   Versions:
@@ -17,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20260513T014409Z
+      Value: 20260519T051850Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -28,11 +21,11 @@ Languages:
         sitecore\zach.escabedo@sitecore.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2d0c62cb-df64-4f25-8078-bc97048b76bc"
+      Value: "bd471a91-eaeb-485f-9f52-ccf5f34a2aa9"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260519T052653Z
+      Value: 20260519T051850Z

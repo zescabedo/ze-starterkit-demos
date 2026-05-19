@@ -37,6 +37,14 @@ jest.mock('@/components/auth-demo/SimulatedLoginModal', () => ({
   SimulatedLoginModal: () => null,
 }));
 
+jest.mock('@/components/magicui/meteors', () => {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports -- jest.mock factory runs before ESM imports resolve
+  const React = require('react');
+  return {
+    Meteors: () => React.createElement('div', { 'data-testid': 'meteors-mock' }),
+  };
+});
+
 import { SimulatedMemberAuthProvider } from '@/contexts/SimulatedMemberAuthContext';
 import { Default as PricingDetails } from '@/components/pricing-details/PricingDetails';
 import type { PricingDetailsProps } from '@/components/pricing-details/pricing-details.props';
@@ -183,5 +191,107 @@ describe('PricingDetails', () => {
       expect(screen.getByText('Webinar')).toBeInTheDocument();
     });
     expect(screen.getByTestId('pricing-credit-cost')).toBeInTheDocument();
+  });
+
+  it('hides title when HideTitle is checked', async () => {
+    const props: PricingDetailsProps = {
+      rendering: mockRendering,
+      fields: baseFields,
+      params: { HideTitle: '1' },
+      page: mockPage,
+    };
+    renderWithAuth(<PricingDetails {...props} />);
+    await waitFor(() => {
+      expect(screen.queryByText('Webinar')).not.toBeInTheDocument();
+    });
+    expect(screen.getByText(/\$310\.00/)).toBeInTheDocument();
+  });
+
+  it('shows Free and hides pricing CTAs when ContentIsFree is checked', async () => {
+    const props: PricingDetailsProps = {
+      rendering: mockRendering,
+      fields: baseFields,
+      params: { ContentIsFree: '1' },
+      page: mockPage,
+    };
+    renderWithAuth(<PricingDetails {...props} />);
+    await waitFor(() => {
+      expect(screen.getByText('Free')).toBeInTheDocument();
+    });
+    expect(screen.queryByText(/\$310\.00/)).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Sign in to see member pricing/i })).not.toBeInTheDocument();
+    expect(screen.getByTestId('pricing-credit-cost')).toBeInTheDocument();
+  });
+
+  it('shows Free with credits for signed-in users when ContentIsFree is checked', async () => {
+    const props: PricingDetailsProps = {
+      rendering: mockRendering,
+      fields: baseFields,
+      params: { ContentIsFree: '1' },
+      page: mockPage,
+    };
+    renderWithAuth(<PricingDetails {...props} />, 'bank');
+    await waitFor(() => {
+      expect(screen.getByText('Free')).toBeInTheDocument();
+    });
+    expect(screen.queryByText(/Bank member pricing/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/32% as a member/)).not.toBeInTheDocument();
+    expect(screen.getByTestId('pricing-credit-cost')).toBeInTheDocument();
+  });
+
+  it('hides savings when HideSavings is checked and user is signed in', async () => {
+    const props: PricingDetailsProps = {
+      rendering: mockRendering,
+      fields: baseFields,
+      params: { HideSavings: '1' },
+      page: mockPage,
+    };
+    renderWithAuth(<PricingDetails {...props} />, 'bank');
+    await waitFor(() => {
+      expect(screen.getByText(/Bank member pricing/)).toBeInTheDocument();
+    });
+    expect(screen.queryByText(/32% as a member/)).not.toBeInTheDocument();
+  });
+
+  it('hides credits when HideCredits is checked', async () => {
+    const props: PricingDetailsProps = {
+      rendering: mockRendering,
+      fields: baseFields,
+      params: { HideCredits: '1' },
+      page: mockPage,
+    };
+    renderWithAuth(<PricingDetails {...props} />, 'bank');
+    await waitFor(() => {
+      expect(screen.getByText(/Bank member pricing/)).toBeInTheDocument();
+    });
+    expect(screen.queryByTestId('pricing-credit-cost')).not.toBeInTheDocument();
+  });
+
+  it('hides footnote when HideFootnote is checked', async () => {
+    const props: PricingDetailsProps = {
+      rendering: mockRendering,
+      fields: baseFields,
+      params: { HideFootnote: '1' },
+      page: mockPage,
+    };
+    renderWithAuth(<PricingDetails {...props} />);
+    await waitFor(() => {
+      expect(screen.getByText('Webinar')).toBeInTheDocument();
+    });
+    expect(screen.queryByTestId('richtext')).not.toBeInTheDocument();
+  });
+
+  it('renders shooting star meteors when BackgroundTheme is shooting-star', async () => {
+    const props: PricingDetailsProps = {
+      rendering: mockRendering,
+      fields: baseFields,
+      params: { BackgroundTheme: 'shooting-star' },
+      page: mockPage,
+    };
+    const { container } = renderWithAuth(<PricingDetails {...props} />);
+    await waitFor(() => {
+      expect(screen.getByTestId('pricing-shooting-star-meteors')).toBeInTheDocument();
+    });
+    expect(container.querySelector('section')).toHaveClass('bg-primary');
   });
 });

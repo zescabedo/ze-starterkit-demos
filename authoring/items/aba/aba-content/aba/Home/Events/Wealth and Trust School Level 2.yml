@@ -43,28 +43,76 @@ Languages:
               s:ph="headless-main" />
             <r
               uid="{8584460E-131A-4022-A001-F642691F744F}"
-              p:after="*[1=2]"
+              p:after="r[@uid='{77B2711A-4E11-4323-A3AA-2B8AB6352703}']"
               s:id="{E80C2A78-FCC2-4D32-8EC5-4133F608BE5C}"
               s:par="colorScheme&amp;excludeTopMargin=1&amp;inset&amp;CSSStyles&amp;DynamicPlaceholderId=5"
               s:ph="headless-main" />
+            <r
+              uid="{6E4D9DB8-DA4F-4E0B-9A2A-400C87AC2E04}"
+              p:after="r[@uid='{8584460E-131A-4022-A001-F642691F744F}']"
+              s:ds="b7bd238a-61a6-4ca4-b08c-67192a9ea549"
+              s:id="{241A1B8E-E69A-4E07-B5E4-53975371AD3C}"
+              s:par="colorScheme&amp;FieldNames=%7BD5A4329E-6AEA-402F-979E-7AA27B535447%7D&amp;CSSStyles&amp;DynamicPlaceholderId=6&amp;Styles=%7B9FCF3533-6CFE-4163-B08E-DAAF16C90177%7D"
+              s:ph="/headless-main/container-fullbleed-1" />
+            <r
+              uid="{00E41F19-BB21-4BC0-8B80-E0705AE9140A}"
+              p:after="r[@uid='{6E4D9DB8-DA4F-4E0B-9A2A-400C87AC2E04}']"
+              s:ds="local:/Data/Text 2"
+              s:id="{50B36874-8C4E-4958-9DD6-8B95C6AFD09A}"
+              s:par="CSSStyles&amp;DynamicPlaceholderId=7"
+              s:ph="/headless-main/container-fullbleed-2" />
+            <r
+              uid="{2B6FF358-31FC-4250-A937-C86472CB0DE5}"
+              p:after="*[1=2]"
+              s:ds="8090dd16-e0aa-4022-8d7f-ee563a274b28"
+              s:id="{D890160D-BD57-42EF-9FBD-F9666F385004}"
+              s:par="backgroundTheme&amp;FieldNames=%7B10D9FD71-2BFC-4EA6-B4D0-EB855C1BEF7C%7D&amp;CSSStyles&amp;DynamicPlaceholderId=8"
+              s:ph="/headless-main/container-fullbleed-5" />
           </d>
         </r>
+    - ID: "2485de13-6c39-468c-9c26-fe08c27088f4"
+      Hint: pageSummary
+      Value: "Level 2 builds on Level 1 with a curriculum designed for existing fiduciaries, focused on aligning industry principles with advanced trust concepts including special needs trusts, portfolio management, and investments. Together, Levels 1 and 2 fulfill the pre-certification education requirement for the Certified Trust and Fiduciary Advisor designation."
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20260511T204758Z
     - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
       Hint: __Workflow state
       Value: "{57CC7DCE-E6B1-4564-9581-0E5850B8BDF2}"
+    - ID: "4dd4e18f-b1a3-4225-967f-b4ec9f68928c"
+      Hint: ogDescription
+      Value: "Virtual fiduciary school covering special needs trusts, portfolio management, and advanced trust concepts. Meets CTFA pre-certification education when paired with Level 1."
+    - ID: "5272817a-75b7-4554-a5ef-2cc4930034d2"
+      Hint: pageSubtitle
+      Value: "Advanced fiduciary training to complete your CTFA pre-certification education"
+    - ID: "8535365d-ae76-4875-ab5b-a618d5819af0"
+      Hint: metadataTitle
+      Value: Wealth and Trust School Level 2 | Advanced CTFA Prep | ABA
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0dfdb574-d9ae-4b63-a4cc-6a7951992621"
+      Value: "3eaebe56-28ba-4078-86ea-af9aefb86e6f"
+    - ID: "9b600e71-cf7a-4874-9032-f394a9bd2e48"
+      Hint: metadataDescription
+      Value: "ABA's Wealth and Trust School Level 2 is a virtual program for existing fiduciaries covering special needs trusts, portfolio management, investments, and advanced trust concepts. Completing Levels 1 and 2 fulfills the CTFA pre-certification education requirement. Next sessions: May 12 to 21, 2026 and October 19 to 23, 2026."
+    - ID: "b7979eed-6bcb-4117-80bc-4bcc6aab12a9"
+      Hint: pageHeaderTitle
+      Value: Wealth and Trust School Level 2
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\zach.escabedo@sitecore.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20260515T180000Z
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20260513T162029Z
+      Value: 20260519T053309Z
+    - ID: "e7f8a9b0-c1d2-4e3f-8a9b-0c1d2e3f4a5b"
+      Hint: metadataAuthor
+      Value: American Bankers Association
     - ID: "ed981ca0-271d-4543-b735-ecc955bd58a1"
       Hint: ogTitle
-      Value: How Advisors Are Evolving in 2026
+      Value: Wealth and Trust School Level 2 | Advanced CTFA Prep | ABA
+    - ID: "f6fcc0b6-31b2-49cd-8a66-4ba282a8ad24"
+      Hint: metadataKeywords
+      Value: Wealth and Trust School, CTFA prep, trust school level 2, fiduciary training, advanced trust concepts, special needs trusts, portfolio management for trust officers, ABA trust school, certified trust and fiduciary advisor education
